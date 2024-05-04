@@ -1,11 +1,13 @@
-interface Props {
-  direction?: string
-  type?: string
-  delay?: string | number
-  duration?: string | number
-  staggerChildren?: string | number
-  delayChildren?: string | number
-}
+import { TargetAndTransition } from "framer-motion"
+
+// interface Props {
+//   direction?: string
+//   type?: string
+//   delay?: string | number
+//   duration?: string | number
+//   staggerChildren?: string | number
+//   delayChildren?: string | number
+// }
 
 export const navVariants = {
   hidden: {
@@ -46,8 +48,9 @@ export const textVariant = (delay?: string|number) => {
     };
   };
 
-  export const fadeIn = ({ direction, type, delay, duration }: Props) => {
-    return {
+  // export const fadeIn = ({ direction, type, delay, duration }: Props) => {
+    export const fadeIn: any = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
+      return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
         y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -68,8 +71,9 @@ export const textVariant = (delay?: string|number) => {
   };
   
 
-  export const zoomIn = ({ delay, duration }: Props)  => {
-    return {
+  // export const zoomIn = ({ delay, duration }: Props)  => {
+    export const zoomIn: any = (delay?: string, duration?: string) => {
+      return {
       hidden: {
         scale: 0,
         opacity: 0,
@@ -87,8 +91,9 @@ export const textVariant = (delay?: string|number) => {
     };
   };
 
-  export const slideIn = ({ direction, type, delay, duration }: Props) => {
-    return {
+  // export const slideIn = ({ direction, type, delay, duration }: Props) => {
+    export const slideIn: any = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
+      return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
         y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -106,7 +111,8 @@ export const textVariant = (delay?: string|number) => {
     };
   };
 
-export const staggerContainer = ({ staggerChildren, delayChildren }: Props) => {
+// export const staggerContainer = ({ staggerChildren, delayChildren }: Props) => {
+  export const staggerContainer: TargetAndTransition | any = (staggerChildren?: string | number, delayChildren?: string | number) => {
     return {
       hidden: {},
       show: {
@@ -132,7 +138,7 @@ export const textContainer = {
   // Next 13
 
 
-  export const planetVariants = ({ direction }: Props) => ({
+  export const planetVariants = ( direction?: string ) => ({
     hidden: {
         x: direction === 'left' ? '-100%' : '100%',
         rotate: 120,

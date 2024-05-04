@@ -9,11 +9,12 @@ interface Props {
     subtitle: string
 }
 const Payrolls = ({icon, title, subtitle}: Props) => {
+    // const variants = fadeIn("right", "spring", index * 0.5, 0.75)
+
   return (
     <div className="p-8 rounded-[20px] bg-white">
-      {/*   @ts-ignore */}
-        <motion.p variants={fadeIn('left', 'tween', 0.2, 1)}className="text-[#00000A] text-lg sm:text-[32px] font-semibold text-wrap my-2 mb-5">{title}</motion.p>
-        <motion.p variants={planetVariants({direction: 'left'})} className="text-[#808080] text-sm sm:text-base text-wrap">{subtitle}</motion.p>
+        <motion.p variants={textVariant('')}className="text-[#00000A] text-lg sm:text-[32px] font-semibold text-wrap my-2 mb-5">{title}</motion.p>
+        <motion.p variants={planetVariants('left')} className="text-[#808080] text-sm sm:text-base text-wrap">{subtitle}</motion.p>
 
         <Button title="Get Started" className="!bg-[#F2F2F3] !text-[#00000A] mt-5" />
 
