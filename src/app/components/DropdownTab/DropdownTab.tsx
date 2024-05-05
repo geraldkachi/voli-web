@@ -296,8 +296,8 @@ const TABS = [
     title: "Resources",
     Component: Pricing,
   },
-  {
-    title: "Pricing",
-    Component: Blog,
-  },
+  // {
+  //   title: "Pricing",
+  //   Component: Blog,
+  // },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));

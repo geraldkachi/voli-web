@@ -22,8 +22,8 @@ const PriceCards = () => {
                     <div className="border border-slate-200 rounded-lg shadow-sm">
                         <div className="p-6">
                             <p className="mt-8">
-                                <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$0</span>
-
+                                <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$0.00</span>
+                                <div className="bg-[#F2F2F3] p-3 my-2 text-sm rounded-lg text-[#808080] font-bold w-max">Free Plan</div>
                                 {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                             </p>
                         </div>
@@ -69,9 +69,9 @@ const PriceCards = () => {
                     <div className="border border-slate-200 rounded-lg shadow-sm bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90%">
                         <div className="p-6">
                             <p className="mt-8">
-                                <span className="text-4xl md:text-[56px] font-bold text-white tracking-tighter">$8</span>
-
-                                {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
+                                <span className="text-4xl md:text-[56px] font-bold text-white tracking-tighter">$32.00</span>
+                                <div className="bg-[#F2F2F31F] p-3 my-2 text-sm rounded-lg text-white font-bold w-max">Pro Plan</div>
+                                {/* <span className="text-base font-medium text-slate-500">/mo</span> */}   
                             </p>
                         </div>
                             <hr className="m-3 px-3" />
@@ -111,9 +111,10 @@ const PriceCards = () => {
                     <div className="border border-slate-200 rounded-lg shadow-sm">
                         <div className="p-6">
                             <p className="mt-8">
-                                <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$15</span>
+                                <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$128.00</span>
 
                                 {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
+                                <div className="bg-[#E7FDF3] p-3 my-2 text-sm rounded-lg text-[#01C467] font-bold w-max">Enterprise Plan</div>
                             </p>
                         </div>
                             <hr className="m-3 px-3" />

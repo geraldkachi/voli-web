@@ -1,3 +1,4 @@
+import Link from "next/link"
 import SubFooter from "./SubFooter"
 
 const FooterTail = () => {
@@ -59,7 +60,7 @@ const FooterTail = () => {
                     <a href="#" className="hover:underline">Careers</a>
                 </li>
                 <li className="mb-2">
-                    <a href="/faq" className="hover:underline">FAQs</a>
+                    <Link href="/pricing" className="hover:underline">FAQs</Link>
                 </li>
             </ul>
         </div>

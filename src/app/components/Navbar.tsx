@@ -5,10 +5,11 @@ import { navVariants } from "../utils/motion";
 import { motion } from "framer-motion";
 import { ShiftingDropDown } from "./DropdownTab/DropdownTab";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-console.log(nav)
+    console.log(nav)
     return (
         <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
             <div className="absolute w-[50%] inset-0 gradient-01" />
@@ -18,6 +19,9 @@ console.log(nav)
 
                 <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
                     <ShiftingDropDown />
+                    <Link href="/pricing" className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors bg-transparent text-[#55555C] `}>
+                        <span>Pricing</span>
+                    </Link>
                 </div>
 
                 <div onClick={() => setNav(prev => !prev)} className="hidden md:flex items-center relative gap-x-2">
