@@ -19,7 +19,7 @@ const PriceCards = () => {
                 <div
                     className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
                     {/* Card One */}
-                    <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+                    <div className="border border-slate-200 rounded-lg shadow-sm">
                         <div className="p-6">
                             <p className="mt-8">
                                 <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$0</span>
@@ -27,6 +27,7 @@ const PriceCards = () => {
                                 {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                             </p>
                         </div>
+                            <hr className="m-3 px-3" />
                         <div className="flex flex-col justify-between gap-y-10 pt-6 pb-8 px-6">
                             <ul role="list" className="mt-4 space-y-3">
                                 <li className="flex space-x-3">
@@ -65,7 +66,7 @@ const PriceCards = () => {
                         </div>
                     </div>
                     {/* Card 2 */}
-                    <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90%">
+                    <div className="border border-slate-200 rounded-lg shadow-sm bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90%">
                         <div className="p-6">
                             <p className="mt-8">
                                 <span className="text-4xl md:text-[56px] font-bold text-white tracking-tighter">$8</span>
@@ -73,6 +74,7 @@ const PriceCards = () => {
                                 {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                             </p>
                         </div>
+                            <hr className="m-3 px-3" />
                         <div className="flex flex-col justify-between gap-y-10 pt-6 pb-8 px-6">
                             {/* <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">What&apos;s included</h3> */}
                             <ul role="list" className="mt-4 space-y-3">
@@ -106,7 +108,7 @@ const PriceCards = () => {
                         </div>
                     </div>
 
-                    <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+                    <div className="border border-slate-200 rounded-lg shadow-sm">
                         <div className="p-6">
                             <p className="mt-8">
                                 <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-tighter">$15</span>
@@ -114,6 +116,7 @@ const PriceCards = () => {
                                 {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                             </p>
                         </div>
+                            <hr className="m-3 px-3" />
                         <div className="flex flex-col justify-between gap-y-10 pt-6 pb-8 px-6">
                             <ul role="list" className="mt-4 space-y-3">
                                 <li className="flex space-x-3">

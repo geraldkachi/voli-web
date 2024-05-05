@@ -8,7 +8,7 @@ const FooterTail = () => {
 <footer className="bg-white">
     <SubFooter />
     <div className="mx-auto w-full max-w-5xl">
-      <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5">
+      <div className="grid grid-cols-2 gap-8 px-3 md:px-0 py-6 lg:py-8 md:grid-cols-5">
         <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">PRODUCTS</h2>
             <ul className="text-[#666666] font-normal text-sm md:text-base">
@@ -96,11 +96,11 @@ const FooterTail = () => {
         </div>
     </div>
 
-    <div className="max-auto max-w-5xl text-center text-sm md:text-lg leading-[36px text-[#808080] bg-[#FAFAFA] rounded-xl px-5 py-10">
+    <div className="max-auto max-w-5xl text-center text-sm md:text-lg leading-[36px text-[#808080] bg-[#FAFAFA] rounded-xl px-5 md:py-10">
         To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank.
     </div>
 
-    <div className="px-4 py-3 flex md:items-center justify-center md:justify-between">
+    <div className="px-3 md:px-0 py-3 flex md:items-center justify-center md:justify-between">
         <span className="text-sm text-[#808084] sm:text-lg sm:text-center">© {new Date().getFullYear()} Vollie Technologies LTD •  All rights reserved
         </span>
         <div className="hidden md:flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
