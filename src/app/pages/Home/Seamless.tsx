@@ -91,7 +91,7 @@ const Seamless = () => {
             <div className='py-10 md:py-20 px-3'>
                 <p className='text-center text-[#808084] text-lg leading-[22.5px] mb-10'>Recently Published Articles</p>
 
-                <div className="grid md:grid-cols-3 gap-5 items-center justify-center">
+                <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
                         <div className="items-center justify-center flex">
                              <img src="recent-card1.svg" alt="recent-card" />
                         </div>

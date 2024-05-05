@@ -23,7 +23,7 @@ function Accordion({
   const [openAccordion, setopenAccordion] = useState(false);
 
   const toggleAccordion = () => {
-    setopenAccordion(!openAccordion);
+    setopenAccordion(prev => !prev);
   };
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
 
@@ -65,9 +65,9 @@ function Accordion({
           maxHeight: open || openAccordion ? ref.current.scrollHeight : 0,
         }}
         className={`relative transition-all border
-        } overflow-hidden transition-all duration-[0.7rem] pl-2 bg-[#FAFAFA]`}
+        } overflow-hidden transition-all duration-[0.7rem] bg-[#FAFAFA]`}
       >
-        <div className="px-5 bg-[#FAFAFA] hover:bg-[#E7FDF3]">{children}</div>
+        <div className="px-5 bg-[#FAFAFA] hover:bg-[#E7FDF3] p-4">{children}</div>
       </div>
     </div>
   );

@@ -17,10 +17,6 @@ console.log(nav)
 
 
                 <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
-                    {/* <span className="p-1 flex items-center gap-2">Products </span>
-                    <span className="p-1 flex items-center gap-2">Category</span>
-                    <span className="p-1 flex items-center gap-2">Resources</span>
-                    <span className="p-1 flex items-center gap-2">Pricing</span> */}
                     <ShiftingDropDown />
                 </div>
 

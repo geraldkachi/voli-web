@@ -9,11 +9,11 @@ type CardType = {
   };
   
   const cards: CardType[] = [
-    {
-      url: "tailored1.svg",
-      title: "Title 1",
-      id: 1,
-    },
+    // {
+    //   url: "tailored1.svg",
+    //   title: "Title 1",
+    //   id: 1,
+    // },
     {
       url: "tailored2.svg",
       title: "Title 2",
@@ -75,6 +75,9 @@ const HorizontalScrollCarousel = () => {
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
             })}
+            {cards.map((card) => {
+              return <CardOne card={card} key={card.id} />;
+            })}
           </motion.div>
         </motion.div>
       </section>
@@ -86,7 +89,7 @@ const HorizontalScrollCarousel = () => {
       <div
         key={card.id}
         aria-hidden
-        className="group animate-loop-scroll relative w-max overflow-hidden bg-neutral-200 group-hover:pause"
+        className="group animate-loop-scroll h-[400px] w-[400px] relative overflow-hidden bg-neutral-200 group-hover:pause"
       >
         {/* <div
           style={{
@@ -97,7 +100,32 @@ const HorizontalScrollCarousel = () => {
           }}
           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
         ></div> */}
-        <img src={card.url} alt="" />
+        <img src={card.url} alt="" className="h-full w-[400px] " />
+        <div className="absolute inset-0 z-10 grid place-content-center bg-center bg-cover">
+          {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+            {card.title}
+          </p> */}
+        </div>
+      </div>
+    );
+  };
+  const CardOne = ({ card }: { card: CardType }) => {
+    return (
+      <div
+        key={card.id}
+        aria-hidden
+        className="group animate-loop-scroll h-[400px] !w-[400px] relative overflow-hidden bg-neutral-200 group-hover:pause"
+      >
+        {/* <div
+          style={{
+            backgroundImage: `url(${card.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+          }}
+          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        ></div> */}
+        <img src={card.url} alt="" className="h-full w-full " />
         <div className="absolute inset-0 z-10 grid place-content-center bg-center bg-cover">
           {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
             {card.title}

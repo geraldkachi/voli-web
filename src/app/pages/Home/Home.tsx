@@ -2,6 +2,7 @@
 import { Hero, NavBar } from "../../components"
 import StarsCanvas from "../StarCanvas"
 import FinancialAccount from "./FinancialAccount"
+import FooterTail from "./FooterTail"
 import ReadyToEnjoy from "./ReadyToEnjoy"
 import Seamless from "./Seamless"
 import SectionOne from "./SectionOne"
@@ -10,19 +11,11 @@ import Tailored from "./Tailored"
 import { createClient, CreateClientParams } from "contentful"
 
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-// var client = createClient({
-//     space: process.env.CONTENTFUL_SPACE_ID,
-//     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-// })
+
 const HomeStart = () => {
-
-    // console.log(props, 'props title')
-
-  // Sample logo data
   const logosLeft = ['tailored2.svg', 'tailored3.svg', 'tailored2.svg']; // Array of logos for left side
   const logosRight = ['tailored2.svg', 'tailored3.svg', 'tailored2.svg']; // Array of logos for right side
 
-  // Logic for animation
   const { scrollXProgress } = useViewportScroll();
   const leftOffset = useTransform(scrollXProgress, [0, 1], [0, 500]);
   const rightOffset = useTransform(scrollXProgress, [0, 1], [0, -500]);
@@ -37,11 +30,9 @@ const HomeStart = () => {
         </div>
             <Tailored />
             <Seamless />
-            <div className="relative z-0">
             <ReadyToEnjoy />
-            <StarsCanvas />
-            </div>
-            <SubFooter />
+        
+            <FooterTail />
 
 
             {/* <div className="flex justify-between w-full h-max">
