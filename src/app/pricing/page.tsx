@@ -14,7 +14,6 @@ const Pricing = () => {
             </div>
             <Seamless />
             <ReadyToEnjoy />
-
             <FooterTail />
         </div>
     )

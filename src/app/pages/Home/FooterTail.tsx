@@ -51,7 +51,7 @@ const FooterTail = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">COMPANY</h2>
             <ul className="text-[#666666] font-normal text-sm md:text-base">
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">About Us</a>
+                    <Link href="/about" className="hover:underline">About Us</Link>
                 </li>
                 <li className="mb-2">
                     <a href="#" className="hover:underline">Privacy Policy</a>
