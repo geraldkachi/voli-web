@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { NavBar } from '../components'
 import FooterTail from '../pages/Home/FooterTail'
 import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy'
