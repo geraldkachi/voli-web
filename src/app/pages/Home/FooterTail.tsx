@@ -60,7 +60,7 @@ const FooterTail = () => {
                     <a href="#" className="hover:underline">Careers</a>
                 </li>
                 <li className="mb-2">
-                    <Link href="/pricing" className="hover:underline">FAQs</Link>
+                    <Link href="/faq" className="hover:underline">FAQs</Link>
                 </li>
             </ul>
         </div>
@@ -91,7 +91,7 @@ const FooterTail = () => {
                     <a href="#" className="hover:underline">Contact Us</a>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Pricing</a>
+                    <Link href="/pricing" className="hover:underline">Pricing</Link>
                 </li>
             </ul>
         </div>
@@ -101,7 +101,7 @@ const FooterTail = () => {
         To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank.
     </div>
 
-    <div className="px-3 md:px-0 py-3 flex md:items-center justify-center md:justify-between">
+    <div className="px-3 md:px-0 py-6 flex md:items-center justify-center md:justify-between">
         <span className="text-sm text-[#808084] sm:text-lg sm:text-center">© {new Date().getFullYear()} Vollie Technologies LTD •  All rights reserved
         </span>
         <div className="hidden md:flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">

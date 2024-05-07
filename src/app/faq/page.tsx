@@ -1,9 +1,15 @@
 "use client";
+import { Metadata } from "next";
 import { Accordion, NavBar, Tabs } from "../components"
 import FooterTail from "../pages/Home/FooterTail";
 import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
 import Seamless from "../pages/Home/Seamless";
 import SubFooter from "../pages/Home/SubFooter";
+
+// export const metadata: Metadata = {
+//   title: 'Faq'
+// }
+
 const faqArr = [
   {
     header: 'What is the Expense Management feature on the B2B Fintech platform?',
@@ -33,7 +39,7 @@ const Faq = () => {
       <div className="bg-[#F8FEFB]">
         <NavBar />
         <div className={`max-w-6xl mx-auto flex flex-col items-center justify-center`}>
-          <div className="flex flex-col items-center my-10 md:my-14">
+          <div className="flex flex-col items-center my-7 md:my-14">
             <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">FAQ</div>
             <p className={`text-center mt-2 text-[#011311] text-2xl leading-[38.08px] md:leading-[89.6px] font-extrabold md:text-[64px]`}>
               We answered <span className="text-[#01C467] leading-[38.08px] md:leading-[89.6px]">your questions</span> so <br /> you don&apos;t have to ask again.

@@ -21,7 +21,7 @@ const Hero = () => {
             <div
                 className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
             >
-                <div className="flex flex-col my-14">
+                <div className="flex flex-col my-7 md:my-14">
                     <p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
                         All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br /> everything Finance
                     </p>
