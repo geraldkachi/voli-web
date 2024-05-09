@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Button } from "../../components"
+import { Button } from "../../../components"
 import { fadeIn, planetVariants, textVariant } from "@/app/utils/motion"
 import Image from "next/image"
 

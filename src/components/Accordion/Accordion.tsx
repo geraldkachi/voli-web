@@ -39,14 +39,13 @@ function Accordion({
             open || openAccordion
               ? ""
               : ""
-            //   : "border shadow-[0px_8px_22px_rgba(151,143,175,0.08)]"
           }`}
         >
           <div
             onClick={toggleAccordion}
             className={`flex cursor-pointer items-center justify-between py-2 space-x-3 bg-transparent`}
           >
-            <span style={{flexGrow: 2}} className="font-medium text-left cinz">
+            <span style={{flexGrow: 2}} className={`font-semibold my-4 text-base text-[#808084] ${open || openAccordion && '!text-[#01C467]'}`}>
               {heading}{" "}
             </span>
             <button type="button" className="hidden sm:block">

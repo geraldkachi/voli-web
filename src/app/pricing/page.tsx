@@ -1,5 +1,5 @@
 "use client";
-import { NavBar } from '../components'
+import { NavBar } from '../../components'
 import FooterTail from '../pages/Home/FooterTail'
 import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy'
 import Seamless from '../pages/Home/Seamless'

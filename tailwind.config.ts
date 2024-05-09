@@ -14,23 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        'loop-scroll': 'loop-scroll 10s linear infinite',
-        'loop-scroll1': 'loop-scroll 10s linear infinite',
-
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
       },
       keyframes: {
-        'loop-scroll': {
-          from: {transform: 'translateX(0)'},
-          to: {transform: 'translateX(-100%)'},
-        },
-        'loop-scroll1': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
-        },
-
-
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },

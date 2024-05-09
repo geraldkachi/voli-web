@@ -1,5 +1,6 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 type CardType = {
@@ -66,20 +67,15 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["2%", "-45%"]);
   
     return (
-      // <section ref={targetRef} className="relative h-[120vh] bg-">
       <section ref={targetRef} className="relative bg-">
-        {/* <motion.div className={`sticky top-0 flex h-[50vh] items-center overflow-hidden ${x && 'mt-30'}`}> */}
-        <motion.div className={`sticky top-0 flex h-max] items-center overflow-hidden ${x && 'mt-30'}`}>
-          <motion.div className={`flex  overflow-x-hidden group gap-4`}>
-          {/* <motion.div style={{ x }} className={`flex  overflow-x-hidden gap-4`}> */}
+          {/* <motion.div className={`flex relative  overflow-x-hidden`}>
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
             })}
             {cards.map((card) => {
               return <CardOne card={card} key={card.id} />;
             })}
-          </motion.div>
-        </motion.div>
+          </motion.div> */}
       </section>
     );
   };
@@ -88,24 +84,10 @@ const HorizontalScrollCarousel = () => {
     return (
       <div
         key={card.id}
-        aria-hidden
-        className="group animate-loop-scroll h-[400px] w-[400px] relative overflow-hidden bg-neutral-200 group-hover:pause"
-      >
-        {/* <div
-          style={{
-            backgroundImage: `url(${card.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-        ></div> */}
-        <img src={card.url} alt="" className="h-full w-[400px] " />
-        <div className="absolute inset-0 z-10 grid place-content-center bg-center bg-cover">
-          {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-            {card.title}
-          </p> */}
-        </div>
+        className="py-12 animate-marquee whitespace-nowrap flex items-center group group-hover:pause">
+            <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                <Image src={card.url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+            </span>
       </div>
     );
   };
@@ -114,24 +96,11 @@ const HorizontalScrollCarousel = () => {
       <div
         key={card.id}
         aria-hidden
-        className="group animate-loop-scroll h-[400px] !w-[400px] relative overflow-hidden bg-neutral-200 group-hover:pause"
-      >
-        {/* <div
-          style={{
-            backgroundImage: `url(${card.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-        ></div> */}
-        <img src={card.url} alt="" className="h-full w-full " />
-        <div className="absolute inset-0 z-10 grid place-content-center bg-center bg-cover">
-          {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-            {card.title}
-          </p> */}
+        className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap flex items-center group group-hover:pause">
+        <span className="mx-4 text-4xl h-[400px] w-[300px]">
+            <Image src={card.url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+        </span>
         </div>
-      </div>
     );
   };
 
@@ -146,9 +115,44 @@ const Tailored = () => {
 
             <HorizontalScrollCarousel />
 
-            {/* {cards.map((card) => {
-              return <Card card={card} key={card.id} />;
-            })} */}
+            <div className="relative flex overflow-x-hidden group group-hover:pause">
+                <div className="py-12 animate-marquee whitespace-nowrap flex items-center group group-hover:pause">
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[0].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[1].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[2].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[3].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[4].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                </div>
+
+                <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap flex items-center group group-hover:pause">
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[0].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[1].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[2].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[3].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                    <span className="mx-4 text-4xl h-[400px] w-[300px]">
+                        <Image src={cards[4].url} width={400} height={400} alt="scroll-image" className="h-full w-[400px] " />
+                    </span>
+                </div>
+            </div>
+
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import { LoadingComponent } from './components'
+import { LoadingComponent } from '../components'
 
 const loading = () => {
   return (
     <div>
 
-Loading    </div>
+Loading   
+ </div>
   )
 }
 

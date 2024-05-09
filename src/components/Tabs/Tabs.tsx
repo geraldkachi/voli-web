@@ -50,7 +50,7 @@ const Tabs = ({ data, activeTab = 0, className }: Props) => {
                 key={idx}
                 // @ts-ignore
                 ref={(el) => (tabsRef.current[idx] = el)}
-                className={`${activeTabIndex === idx && "!text-[#01C467]"} pt-2 pb-3 text-[#808084] px-3 md:px-4 text-xs md:text-sm leading-[19.6px] flex items-center whitespace-nowrap`}
+                className={`${activeTabIndex === idx && "!text-[#01C467] bg-[#E7FDF3] rounded-lg"} pt-2 pb-3 text-[#808084] px-3 md:px-4 text-xs md:text-sm leading-[19.6px] flex items-center whitespace-nowrap`}
                 onClick={() => {
                   setActiveTabIndex(idx)
                 //   useAuth.setState({ activeTab: idx })
@@ -58,9 +58,7 @@ const Tabs = ({ data, activeTab = 0, className }: Props) => {
               >
                 {tab.label}
 
-                {tab.badge && (
-                  <span className={`p-2 rounded-full w-3 h-3 bg-${tab.badgeColor} text-xs text-center flex items-center justify-center  border border-r text-${tab.badgeTextColor} ml-2`}>{tab.badge}</span>
-                )}
+                {tab.badge && (<span className={`p-2 rounded-full w-3 h-3 bg-${tab.badgeColor} text-xs text-center flex items-center justify-center  border border-r text-${tab.badgeTextColor} ml-2`}>{tab.badge}</span>)}
               </button>
             );
           })}
@@ -70,7 +68,7 @@ const Tabs = ({ data, activeTab = 0, className }: Props) => {
           style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
         />
       </div>
-      <div className="py-4 bg-[p-4 md:px-8">
+      <div className="py-4 bg-[ p-1 md:px-8">
         <Render />
       </div>
     </div>

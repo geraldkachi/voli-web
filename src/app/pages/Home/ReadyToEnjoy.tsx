@@ -1,5 +1,5 @@
-import { Button } from "@/app/components"
-import StarsCanvas from "../StarCanvas"
+import { Button } from "@/components"
+import StarsCanvas from "../../../components/StarCanvas/StarCanvas"
 
 const ReadyToEnjoy = () => {
   return (

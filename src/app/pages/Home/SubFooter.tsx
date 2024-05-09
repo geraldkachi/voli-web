@@ -1,4 +1,4 @@
-import { Button } from "@/app/components"
+import { Button } from "@/components"
 
 const SubFooter = () => {
   return (

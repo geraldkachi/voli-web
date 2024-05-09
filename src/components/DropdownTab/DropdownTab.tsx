@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+
 import {
   FiArrowRight,
   FiBarChart2,
@@ -7,6 +8,16 @@ import {
   FiPieChart,
 } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import PayableIcon from "@/assets/PayableIcon";
+import RecivableIcon from "@/assets/RecivableIcon";
+import FinancialAccountIcon from "@/assets/FinancialAccountIcon";
+import AboutIcon from "@/assets/AboutIcon";
+import PrivacyPolicyIcon from "@/assets/PrivacyPolicyIcon";
+import BlogIcon from "@/assets/BlogIcon";
+import CustomerStories from "@/assets/CustomerStories";
+import HelpCenterIcon from "@/assets/HelpCenterIcon";
 
 export const ShiftingDropDown = () => {
   return (
@@ -101,7 +112,7 @@ const Content = ({ selected, dir }: { selected: number | null, dir: null | "l" |
         y: 8,
       }}
     //   className="absolute left-0 top-[calc(100%_+_24px)] w-[450px] rounded-lg border border-neutral- bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
-      className="absolute left-0 top-[calc(100%_+_24px)] w-[450px] rounded-lg border border-neutral- bg-gradient-to-b from-white via-white to-neutral-50 p-4"
+      className="absolute left-0 top-[calc(100%_+_24px)] w-max rounded-lg border border-neutral- bg-gradient-to-b from-white via-white to-neutral-50 p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -170,78 +181,58 @@ const Nub = ({ selected }: { selected: number | null }) => {
 
 const Products = () => {
   return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Bookkeeping
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Invoicing
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Scaleup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Live Coaching
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Reviews
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Tax/VAT
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            White glove
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            SOX Compliance
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Staffing
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            More
-          </a>
-        </div>
+    <div className="flex items-start">
+      <div className="flex flex-col flex-1 gap-2">
+        {tiles.slice(0,3).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
+            {tile.icon()}
+          </div>
+          <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
+            <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
+            <span className="text-[#808084] font-bold text-xs">{tile.subtitle}</span>
+          </div>
+        </Link>)}
       </div>
 
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
+      <div className="flex flex-col flex-1 h-{300px]">
+         <Image src='payable-dropdown-img.svg' width={250} height={200} alt='payable-dropdown-img' />
+      </div>
     </div>
   );
 };
 
-const Pricing = () => {
+const Category = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Startup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Scaleup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Enterprise</span>
-      </a>
+    <div className="flex items-start">
+      <div className="flex flex-col flex-1 gap-2">
+        {tiles.slice(3,6).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
+            {tile.icon()}
+          </div>
+          <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
+            <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
+            <span className="text-[#808084] font-bold text-xs">{tile.subtitle}</span>
+          </div>
+        </Link>)}
+      </div>
+    </div>
+  );
+};
+
+const Resources = () => {
+  return (
+    <div className="flex items-start">
+      <div className="flex flex-col flex-1 gap-2">
+        {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
+            {tile.icon()}
+          </div>
+          <div className="flex flex-col flex-1 whitespace-nowrap">
+            <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
+            <span className="text-[#808084] font-bold text-sm">{tile.subtitle}</span>
+          </div>
+        </Link>)}
+      </div>
     </div>
   );
 };
@@ -290,14 +281,69 @@ const TABS = [
   },
   {
     title: "Category",
-    Component: Products,
+    Component: Category,
   },
   {
     title: "Resources",
-    Component: Pricing,
+    Component: Resources,
   },
-  // {
-  //   title: "Pricing",
-  //   Component: Blog,
-  // },
+
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
+
+const tiles = [
+  {
+    icon: () => <PayableIcon index />,
+    link: '/account-payable',
+    title: 'Account Payable',
+    subtitle: 'Setup Approvals on different levels.',
+  },
+  {
+    icon: () => <RecivableIcon index />,
+    link: '/account-receivable',
+    title: 'Account Recievable',
+    subtitle: 'Sync Bank Accounts seamlessy.',
+  },
+  {
+    icon: () => <FinancialAccountIcon index />,
+    link: '/financial-accounting',
+    title: 'Financial Accounting',
+    subtitle: 'Manage your expenses in a smart way',
+  },
+  {
+    icon: () => <AboutIcon index />,
+    link: '/about',
+    title: 'About Us',
+    subtitle: 'The team, Core values, Our Vision.',
+  },
+  {
+    icon: () => <PrivacyPolicyIcon index />,
+    link: '/privacy-policy',
+    title: 'Privacy Policy',
+    subtitle: 'Come Join us and make Magic!',
+  },
+  {
+    icon: () => <FinancialAccountIcon index />,
+    link: '/terms-of-use',
+    title: 'Terms of Use',
+    subtitle: 'Come Join us and make Magic!',
+  },
+  {
+    icon: () => <BlogIcon index />,
+    link: '/blog',
+    title: 'Blog',
+    subtitle: 'The team, Core values, Our Vision.',
+  },
+  {
+    icon: () => <CustomerStories index />,
+    link: '/customer-stories',
+    title: 'Customer Stories',
+    subtitle: 'Come Join us and make Magic!',
+  },
+  {
+    icon: () => <HelpCenterIcon index />,
+    link: '/help-center',
+    title: 'Help Center',
+    subtitle: 'The team, Core values, Our Vision..',
+  },
+]
+

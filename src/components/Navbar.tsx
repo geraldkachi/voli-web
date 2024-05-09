@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import Button from "./button/Button"
-import { navVariants } from "../utils/motion";
+import { navVariants } from "../app/utils/motion";
 import { motion } from "framer-motion";
 import { ShiftingDropDown } from "./DropdownTab/DropdownTab";
 import Image from "next/image";
@@ -14,7 +14,9 @@ const Navbar = () => {
         <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
             <div className="absolute w-[50%] inset-0 gradient-01" />
             <div className={`mx-auto flex justify-between gap-8`}>
-                <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" />
+                <Link href="/" >
+                     <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" onClick={() => {}} />
+                </Link>
 
 
                 <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">

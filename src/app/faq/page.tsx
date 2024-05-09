@@ -1,6 +1,6 @@
 "use client";
 import { Metadata } from "next";
-import { Accordion, NavBar, Tabs } from "../components"
+import { Accordion, NavBar, Tabs } from "../../components"
 import FooterTail from "../pages/Home/FooterTail";
 import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
 import Seamless from "../pages/Home/Seamless";
@@ -71,7 +71,7 @@ const Faq = () => {
                   content: (
                     <div className="">
                       {faqArr.map((item, index) => (
-                        <Accordion key={`faq_${index}`} heading={<h1 className="font-semibold my-4 text-base text-[#01C467]">{item.header}</h1>}>
+                        <Accordion key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
                           <p className="pb-4 text-[#676767]">{item?.content}</p>
                         </Accordion>
                       ))}
@@ -83,7 +83,7 @@ const Faq = () => {
                   content: (
                     <div className="">
                       {faqArr.map((item, index) => (
-                        <Accordion key={`faq_${index}`} heading={<h1 className="font-semibold my-4 text-base text-[#01C467]">{item.header}</h1>}>
+                        <Accordion key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
                           <p className="pb-4 text-[#676767]">{item?.content}</p>
                         </Accordion>
                       ))}
@@ -95,7 +95,7 @@ const Faq = () => {
                   content: (
                     <div className="">
                       {faqArr.map((item, index) => (
-                        <Accordion key={`faq_${index}`} heading={<h1 className="font-semibold my-4 text-base text-[#01C467]">{item.header}</h1>}>
+                        <Accordion key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
                           <p className="pb-4 text-[#676767]">{item?.content}</p>
                         </Accordion>
                       ))}
@@ -107,7 +107,7 @@ const Faq = () => {
                   content: (
                     <div className="">
                       {faqArr.map((item, index) => (
-                        <Accordion key={`faq_${index}`} heading={<h1 className="font-semibold my-4 text-base text-[#01C467]">{item.header}</h1>}>
+                        <Accordion key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
                           <p className="pb-4 text-[#676767]">{item?.content}</p>
                         </Accordion>
                       ))}

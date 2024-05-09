@@ -14,16 +14,16 @@ const FooterTail = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">PRODUCTS</h2>
             <ul className="text-[#666666] font-normal text-sm md:text-base">
                 <li className="mb-2">
-                    <a href="#" className=" hover:underline">Accounts Payable</a>
+                    <Link href="/account-payable" className=" hover:underline">Accounts Payable</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Accounts Receivable</a>
+                    <Link href="/account-receivable" className="hover:underline">Accounts Receivable</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Inventory Management</a>
+                    <Link href="/account-payable" className="hover:underline">Inventory Management</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Financial Accounting</a>
+                    <Link href="/financial-accounting" className="hover:underline">Financial Accounting</Link>
                 </li>
             </ul>
         </div>
@@ -71,13 +71,13 @@ const FooterTail = () => {
                     <a href="#" className="hover:underline">Privacy Policy</a>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Terms of Use</a>
+                    <Link href="/terms-of-use" className="hover:underline">Terms of Use</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Help Center</a>
+                    <Link href="/help-center" className="hover:underline">Help Center</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Blog</a>
+                    <Link href="/blog" className="hover:underline">Blog</Link>
                 </li>
             </ul>
         </div>
@@ -85,7 +85,7 @@ const FooterTail = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">SUPPORT</h2>
             <ul className="text-[#666666] font-normal text-sm md:text-base">
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Help Center</a>
+                    <Link href="/help-cent" className="hover:underline">Help Center</Link>
                 </li>
                 <li className="mb-2">
                     <a href="#" className="hover:underline">Contact Us</a>
