@@ -3,17 +3,17 @@ import Image from "next/image"
 
 const MakePayments = () => {
     return (
-        <div className="bg-[#24242C bg-[#09090B] px-3 md:p-20 relative z-0">
+        <div className="bg-[#24242C bg-[#09090B] py-10 px-3 md:p-20 relative z-0">
 
             <div className="mx-auto max-w-5xl">
 
                 <StarsCanvas />
-                <div className='text-2xl md:text-[48px] font-bold leading-9 md:leading-[60px] mt-6 text-white'>Make <span className="text-[">Payments</span> anyway you want.</div>
+                <div className='text-2xl md:text-[48px] font-bold leading-9 md:leading-[60px] my-6 text-white'>Make <span className="text-[#01C467]">Payments</span> <br className="block md:hidden" /> anyway <br className="hidden md:block" /> you want.</div>
 
                 <div className="flex flex-col sm:flex-row items-start gap-10">
                     {/* batch one */}
                     <div className="flex flex-col items-center gap-10">
-                        <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-80 sm:h-[450px] max-w">
+                        <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-[370px] sm:h-[450px] max-w">
                             <div>
                                 <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Pay multiple Bills all at once</p>
                                 <p className="text-[#AAAAAD] text-sm md:text-base">Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay</p>
@@ -30,7 +30,7 @@ const MakePayments = () => {
 
                         <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-[500px] sm:h-[572px] max-w">
                             <div>
-                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Pay multiple Bills all at once</p>
+                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Create & Manage Payment Approvals</p>
                                 <p className="text-[#AAAAAD] text-sm md:text-base">Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay</p>
                             </div>
 
@@ -43,24 +43,24 @@ const MakePayments = () => {
 
                     {/* batch two  */}
                     <div className="flex flex-col items-center gap-10">
-                        <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-[500px] sm:h-[550px] max-w">
+                        <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-[450px] sm:h-[550px] max-w">
                             <div>
-                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Pay multiple Bills all at once</p>
-                                <p className="text-[#AAAAAD] text-sm md:text-base">Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay</p>
+                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Make Payment Across Borders</p>
+                                <p className="text-[#AAAAAD] text-sm md:text-base">Facilitate seamless transactions and manage funds efficiently using Virtual Accounts on Vollie.</p>
                             </div>
 
                             <div className="absolute bottom-0 self-start left-0 w-full">
                                 <Image src="world-pay.svg" className="hidden sm:block rounded-b-2xl" width={400} height={300} alt="Pay" />
                             </div>
 
-                            <div className="absolute bottom-0 self-start">
-                                <Image src="world-pay2.svg" className="sm:hidden" width={300} height={300} alt="Pay" />
+                            <div className="absolute bottom-0 self-start left-0">
+                                <Image src="world-pay2.svg" className="sm:hidden rounded-b-2xl" width={300} height={300} alt="Pay" />
                             </div>
                         </div>
 
-                        <div className="flex flex-col justify-between relative !bg-[#222229] p-8 rounded-2xl h-80 sm:h-[450px] max-w">
+                        <div className="flex flex-col relative !bg-[#222229] p-8 rounded-2xl h-80 sm:h-[450px] max-w">
                             <div>
-                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Pay multiple Bills all at once</p>
+                                <p className="text-white font-semibold text-[22.35px] md:text-[32px]">Automated Payment Structure</p>
                                 <p className="text-[#AAAAAD] text-sm md:text-base">Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay</p>
                             </div>
                         </div>

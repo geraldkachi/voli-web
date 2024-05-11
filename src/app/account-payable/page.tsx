@@ -3,6 +3,10 @@ import Image from "next/image";
 import { NavBar } from "../../components";
 import MakePayments from "./MakePayments";
 import ScrollComponent from "./ScrollComponent/ScrollComponent";
+import StepPayable from "./StepPayable";
+import FooterTail from "../pages/Home/FooterTail";
+import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
+import Seamless from "../pages/Home/Seamless";
 
 const AccountPayable = () => {
   return (
@@ -26,6 +30,10 @@ const AccountPayable = () => {
       </div>
 
       <MakePayments />
+      <StepPayable />
+      <Seamless />
+      <ReadyToEnjoy />
+      <FooterTail />
     </div>
   )
 }

@@ -5,33 +5,12 @@ import FooterTail from "../pages/Home/FooterTail";
 import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
 import Seamless from "../pages/Home/Seamless";
 import SubFooter from "../pages/Home/SubFooter";
+import { faqArr } from "@/components/constants/faq-data";
 
 // export const metadata: Metadata = {
 //   title: 'Faq'
 // }
 
-const faqArr = [
-  {
-    header: 'What is the Expense Management feature on the B2B Fintech platform?',
-    content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
-  },
-  {
-    header: 'What is the Expense Management feature on the B2B Fintech platform?',
-    content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
-  },
-  {
-    header: 'What is the Expense Management feature on the B2B Fintech platform?',
-    content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
-  },
-  {
-    header: 'What is the Expense Management feature on the B2B Fintech platform?',
-    content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
-  },
-  {
-    header: 'What is the Expense Management feature on the B2B Fintech platform?',
-    content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
-  },
-]
 const Faq = () => {
   return (
     <div>

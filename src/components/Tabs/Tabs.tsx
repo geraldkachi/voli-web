@@ -42,7 +42,7 @@ const Tabs = ({ data, activeTab = 0, className }: Props) => {
 
   return (
     <div>
-      <div className={`${className} relative overflow-scroll no-scrollbar mr-4`}>
+      <div className={`${className} relative !overflow-scroll no-scrollbar mr-4`}>
         <div className="flex space-x- border-b border-[#E5E5E6] px-4 md:px-5">
           {data.map((tab, idx) => {
             return (
@@ -68,7 +68,7 @@ const Tabs = ({ data, activeTab = 0, className }: Props) => {
           style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
         />
       </div>
-      <div className="py-4 bg-[ p-1 md:px-8">
+      <div className="py-4">
         <Render />
       </div>
     </div>
