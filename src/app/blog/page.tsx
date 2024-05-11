@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Seamless from '../pages/Home/Seamless';
 import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy';
 import FooterTail from '../pages/Home/FooterTail';
+import ChipTabs from '@/components/Tabs/TabsFramer';
 
 
 const Blog = () => {
@@ -28,15 +29,56 @@ const Blog = () => {
               <div className=" w-full md:mr-3">
                 <input id="member_email" className="bg-gray-50 border text-sm rounded-lg outline-none focus:ring-0  focus:border-none w-full p-2.5" name="email_address" aria-label="Email Address" placeholder="Your email address..." required type="email" />
               </div>
-              <button data-element="submit" type='button' className="w-full sm:w-[unset] px-5 py-3 text-sm font-medium text-center text-white bg-[#01C467] rounded-lg cursor-pointer">Subscribe</button>
+              <button data-element="submit" type='button' className="w-full sm:w-[unset] px-5 py-3 text-sm font-medium text-center text-white bg-[#01C467] rounded-lg cursor-pointer mt-3 sm:mt-0">Subscribe</button>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-center">
+          <ChipTabs tabs={[
+            {title: 'All',content:( 
+              <div className="max-w-5xl mx-auto">
+              <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
 
-          <Tabs
-            className='flex items-center justify-center mt-10'
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card2.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card2.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card2.svg" alt="recent-card" />
+                </div>
+                <div className="items-center justify-center flex">
+                  <img src="recent-card1.svg" alt="recent-card" />
+                </div>
+              </div>
+            </div>
+            )},
+            {title: 'Search',content: <>Gerald you&apos;re a warrior</>},
+            {title: 'About',content: <>Life is hard with God</>},
+            {title: 'FAQ',content: <>God is Good</>},
+          ]} />
+
+          {/* <Tabs
+            className='flex items-center justify-center mt-10 overflow-x-scroll'
             data={[
               {
                 label: `All`,
@@ -117,7 +159,7 @@ const Blog = () => {
                   </div>
                 )
               },
-            ]} />
+            ]} /> */}
         </div>
             <Seamless />
             {/* <RecentArticle /> */}

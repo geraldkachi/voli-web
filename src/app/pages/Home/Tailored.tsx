@@ -1,4 +1,5 @@
 "use client";
+import { navVariants } from "@/app/utils/motion";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
@@ -109,7 +110,7 @@ const Tailored = () => {
         <div className="bg-[#F8FCFA]">
             <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
                 <div className="flex flex-col my-14">
-                    <p className={`text-center mt-2 text-[#00000A] text-[28px] md:text-[48px] font-bold leading-[37.8px] md:leading-[72px]`}>Tailored to fit your <br /> business financial Needs </p>
+                    <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[28px] md:text-[48px] font-bold leading-[37.8px] md:leading-[72px]`}>Tailored to fit your <br /> business financial Needs </motion.p>
                 </div>
             </div>
 

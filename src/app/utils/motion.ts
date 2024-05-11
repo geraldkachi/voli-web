@@ -1,4 +1,4 @@
-import { TargetAndTransition } from "framer-motion"
+import { TargetAndTransition, Variants } from "framer-motion"
 
 // interface Props {
 //   direction?: string
@@ -28,7 +28,7 @@ export const navVariants = {
           delay: .2,
       },
   },
-};
+} as Variants;
 
 export const textVariant = (delay?: string|number) => {
     return {
@@ -154,3 +154,23 @@ export const textContainer = {
     },
 });
   
+export const footerVariants = {
+  hidden: {
+      opacity: 0,
+      y: 50,
+      transition: {
+          type: 'spring',
+          stiffness: 300,
+          damping: 140,
+      },
+  },
+  show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+          type: 'spring',
+          stiffness: 80,
+          delay: 0.5,
+      },
+  },
+};

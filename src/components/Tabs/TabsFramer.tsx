@@ -1,45 +1,57 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 
-const tabs = ["Home", "Search", "About", "FAQ"];
+const tabs = [{title:"Home", content: <></>},{title: "Search"}, {title:"About"}, {title:"FAQ"}];
 interface ChipProps {
-    text: string 
-    selected: boolean
-    setSelected:  Dispatch<SetStateAction<string>>
+    text?: string 
+    selected?: boolean
+    setSelected?:  Dispatch<SetStateAction<string>>
+    tabs?: {
+      title: string,
+      content: JSX.Element
+    }[]
 }
-const ChipTabs = () => {
-  const [selected, setSelected] = useState(tabs[0]);
+const ChipTabs = ({tabs}: ChipProps) => {
+  const [selected, setSelected] = useState(tabs && tabs[0]);
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+
+  const Render = () => tabs && tabs[activeTabIndex].content;
 
   return (
-    <div className="px-4 py-14 bg-slate-900 flex items-center flex-wrap gap-2">
-      {tabs.map((tab) => (
+    <div  className="flex flex-col items-center">
+
+    <div className="px-0 py-5  flex items-center gap-2">
+      {tabs?.map((tab: {title: string}, idx: number) => (
         <Chip
-          text={tab}
-          selected={selected === tab}
-          setSelected={setSelected}
-          key={tab}
+        text={tab.title}
+        selected={activeTabIndex === idx}
+        setSelected={() => {setSelected(selected); setActiveTabIndex(idx)}}
+        key={idx}
         />
       ))}
     </div>
+      <Render />
+      </div>
   );
 };
 
 const Chip = ({ text, selected, setSelected}: ChipProps) => {
   return (
     <button
-      onClick={() => setSelected(text)}
+      onClick={() => setSelected && setSelected(text || '')} 
       className={`${
         selected
-          ? "text-white"
-          : "text-slate-300 hover:text-slate-200 hover:bg-slate-700"
-      } text-sm transition-colors px-2.5 py-0.5 rounded-md relative`}
+          ? "text-[#01C467] bg-[#E7FDF3] rounded-lg"
+          : "text-[#808084] hover:text-slate-200 hover:"
+      } text-sm transition-colors px-2. py-2 rounde relative px-4 md:px-5 overflow-x-scroll`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
-          className="absolute inset-0 z-0 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-md"
+          // className="absolute inset-0 z-0 bg-gradient-to- border-b border-[]  from-[#01C467] to-[#01C467] rounded-md"
+          className="absolute inset-0 z-0 bg-gradient-to- border-b-2 border-[#01C467]"
         ></motion.span>
       )}
     </button>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { navVariants } from '../../utils/motion'
+import { navVariants, planetVariants, staggerContainer } from '../../utils/motion'
 import Image from 'next/image'
 import StackedCard from './StackedCard'
 const cards = [
@@ -26,7 +26,7 @@ const Seamless = () => {
 
             <div className='grid md:grid-cols-2 gap- overflow-hidden'>
                 <div className=' bg-white py-20 px-3 md:px-0'>
-                    <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TESTIMONIALS</span>
+                    <motion.span variants={planetVariants('bottom')}  className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TESTIMONIALS</motion.span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-[40px] font-semibold leading-9 md:leading-[60px] mt-6'>
                         Facilitating seamless and <br /> into just three simple and <br /> straightforward steps
                     </motion.p>
@@ -49,37 +49,58 @@ const Seamless = () => {
 
                 <div className='flex overflow-hidden items-center justify-center'>
                     <div className="flex relative gap-4  overflow-scroll">
-                    {cards.map((item, i) => <StackedCard key={i} {...item} num={i} />)}
+                        {cards.map((item, i) => <StackedCard key={i} {...item} num={i} />)}
                     </div>
 
 
-                    {/* <div className="bg-white">
+                    <div className="bg-white">
                         <div className="flex justify-center items-center">
-                            <div className="flex relative">
-                                <div className="w-72 h-96 bg-green-400 transform transition-all absolute rounded-lg hover:-left-10">
+                            {/* <div className="flex relative flex-col justify-center py-20 pr-20">
+                                <div className="w-72 h-72 bg-green-400 transform transition-all  bottom-0 hover:-left-10 absolute rounded-lg">
+
+                                </div>
+                                <div className="w-72 h-72 bg-yellow-400 transform transition-all hover:-left-10 absolute -bottom-0 -left-4 rounded-lg">
+
+                                </div>
+                                <div className="w-72 h-72 bg-red-400 transform transition-all hover:-left-10 absolute -bottom-0 -left-8 rounded-lg">
+
+                                </div>
+                                <div className="w-72 h-72 bg-black transform transition-all hover:-left-10 absolute -bottom-0 -left-12 rounded-lg">
+
+                                </div>
+                                <div className="w-72 h-72 bg-purple-400 transform transition-all hover:-left-10 absolute -bottom-0 -left-16 rounded-lg">
+                                </div>
+                                <div className="w-72 h-72 bg-white flex justify-center items-center border-2 border-black transform transition-all hover:-lef absolute -bottom-0 -left-20 rounded-lg">
+                                    God is Awesome
+                                </div>
+                            </div> */}
+
+
+                            <div className="flex  flex-col justify-center relative py-20 pr-80">
+                                <div className="w-72 h-96 bg-green-400 transform transition-all absolute hover:-left-28  rounded-lg">
                                     
                                 </div>
-                                <div className="w-72 h-96 bg-yellow-400 transform transition-all absolute md:-left-8 hover:-left-10  rounded-lg">
+                                <div className="w-72 h-96 bg-yellow-400 transform transition-all absolute md:left-8 hover:-left-20  rounded-lg">
                                     
 
                                 </div>
-                                <div className="w-72 h-96 bg-red-400 transform transition-all absolute md:-left-12 hover:-left-10  rounded-lg">
+                                <div className="w-72 h-96 bg-red-400 transform transition-all absolute md:left-16 hover:-left-10  rounded-lg">
                                     
 
                                 </div>
-                                <div className="w-72 h-96 bg-black transform transition-all absolute md:-left-16 hover:-left-10  rounded-lg">
+                                <div className="w-72 h-96 bg-black transform transition-all absolute md:left-24 hover:-left-10  rounded-lg">
                                     
 
                                 </div>
-                                <div className="w-72 h-96 bg-purple-400 transform transition-all absolute md:-left-20 hover:-left-10 rounded-lg">
+                                <div className="w-72 h-96 bg-purple-400 transform transition-all absolute md:left-[130px] hover:-left-10 rounded-lg">
                                     
                                 </div>
-                                <div className="w-72 h-96 bg-white flex justify-center items-center border-2 border-black transform transition-all absolute md:-left-40 hover:-left-10  rounded-lg">                     
+                                <div className="w-72 h-96 bg-white flex justify-center items-center border-2 border-black transform transition-all absolute md:left-[162px] hover:-left-10 rounded-lg">                     
                                     Gerald you&apos;re a warrior
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
 
             </div>
