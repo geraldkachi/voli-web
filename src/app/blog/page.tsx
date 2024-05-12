@@ -72,9 +72,11 @@ const Blog = () => {
               </div>
             </div>
             )},
-            {title: 'Search',content: <>Gerald you&apos;re a warrior</>},
-            {title: 'About',content: <>Life is hard with God</>},
-            {title: 'FAQ',content: <>God is Good</>},
+            {title: 'Digital Marketing',content: <>Gerald you&apos;re a warrior</>},
+            {title: 'Budgeting',content: <>Life is hard with God</>},
+            {title: 'Financial Forecasting',content: <>God is Good</>},
+            {title: 'Tax',content: <>God is Good</>},
+            {title: 'Financial Risk',content: <>God is Good</>},
           ]} />
 
           {/* <Tabs

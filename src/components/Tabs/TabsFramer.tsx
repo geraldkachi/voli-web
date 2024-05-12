@@ -41,9 +41,9 @@ const Chip = ({ text, selected, setSelected}: ChipProps) => {
       onClick={() => setSelected && setSelected(text || '')} 
       className={`${
         selected
-          ? "text-[#01C467] bg-[#E7FDF3] rounded-lg"
-          : "text-[#808084] hover:text-slate-200 hover:"
-      } text-sm transition-colors px-2. py-2 rounde relative px-4 md:px-5 overflow-x-scroll`}
+          ? "text-[#01C467] bg-[#E7FDF3] rounded-t-lg"
+          : "text-[#808084] hover: hover:"
+      } text-sm transition-colors px-2. py-2 relative px-4 md:px-5 overflow-x-scroll whitespace-nowrap`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (
