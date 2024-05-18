@@ -13,17 +13,15 @@ const Blog = () => {
       <NavBar />
       <section className={` w-full h-scre mx-auto`}>
         <div
-          className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
+          className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-bottom-4 bg-[url('/blog-bg.svg')] pb-20`}
         >
           <div className="flex flex-col items-center my-7 md:my-14">
             <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">BLOG</span>
 
-            <p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
+            <motion.p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
               All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br /> everything Finance
-            </p>
+            </motion.p>
             <p className={`text-center mt-2 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
-
-
 
             <div data-element="fields" data-stacked="false" className="flex flex-col md:flex-row items-center w-full max-w-md px-3 md:px-0 my-4">
               <div className=" w-full md:mr-3">

@@ -54,7 +54,7 @@ const FooterTail = () => {
                     <Link href="/about" className="hover:underline">About Us</Link>
                 </li>
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Privacy Policy</a>
+                    <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
                 </li>
                 <li className="mb-2">
                     <a href="#" className="hover:underline">Careers</a>
@@ -68,7 +68,7 @@ const FooterTail = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">RESOURCES</h2>
             <ul className="text-[#666666] font-normal text-sm md:text-base">
                 <li className="mb-2">
-                    <a href="#" className="hover:underline">Privacy Policy</a>
+                    <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
                 </li>
                 <li className="mb-2">
                     <Link href="/terms-of-use" className="hover:underline">Terms of Use</Link>
