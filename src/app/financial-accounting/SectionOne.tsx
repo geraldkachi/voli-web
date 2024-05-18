@@ -31,7 +31,7 @@ const SectionOne = () => {
             </div>
 
             <div className='bg-[#FAFAFA] md:p-20 rounded-lg'>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 rounded-lg">
                 <div>
                     <p className='font-semibold text-2xl md:text-[32px] leading-[57px]'>Charts <br /> of Accounts</p>
                     <p className='text-[#808080]'>Vollie helps to organise assets, liabilities, and other financial categories, streamlining reporting, analysis, and for good audit trails.</p>

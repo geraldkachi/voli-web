@@ -21,6 +21,7 @@ const payroll = [
         subtitle: "Seamlessly secure approvals at multiple levels with our fintech B2B product's Multi-Level Approval feature.",
     },
 ]
+
 const technologies = [
     {
         title: "Complete Cashflow Visibility",
