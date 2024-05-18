@@ -77,33 +77,60 @@ const Seamless = () => {
 
 
                             <div className="flex  flex-col justify-center relative py-20 pr-80">
-                                <div className="w-72 h-96 bg-green-400 transform transition-all absolute hover:-left-28  rounded-lg">
-                                    
-                                </div>
-                                <div className="w-72 h-96 bg-yellow-400 transform transition-all absolute md:left-8 hover:-left-20  rounded-lg">
-                                    
+                                <div className="w-72 h-96 transform transition-all absolute hover:-left-28  rounded-lg">
+                                <a  className="block max-w-sm p-6  mt-10">
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
 
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    </a>
                                 </div>
-                                <div className="w-72 h-96 bg-red-400 transform transition-all absolute md:left-16 hover:-left-10  rounded-lg">
-                                    
+                                <div className="w-72 h-96 transform transition-all absolute md:left-8 hover:-left-20  rounded-lg">
+                                <a  className="block max-w-sm p-6  mt-10">
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
 
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    </a>
                                 </div>
-                                <div className="w-72 h-96 bg-black transform transition-all absolute md:left-24 hover:-left-10  rounded-lg">
-                                    
+                                <div className="w-72 h-96 transform transition-all absolute md:left-16 hover:-left-10  rounded-lg">
+                                <a  className="block max-w-sm p-6  mt-10">
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
 
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    </a>
                                 </div>
-                                <div className="w-72 h-96 bg-purple-400 transform transition-all absolute md:left-[130px] hover:-left-10 rounded-lg">
-                                    
+                                <div className="w-72 h-96 transform transition-all absolute md:left-24 hover:-left-10  rounded-lg">
+                                <a  className="block max-w-sm p-6  mt-10">
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
+
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    </a>
+                                </div>
+                                <div className="w-72 h-96 transform transition-all absolute md:left-[130px] hover:-left-10 rounded-lg">
+                                <a  className="block max-w-sm p-6  mt-10">
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
+
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    </a>
                                 </div>
                                 <div className="w-72 h-96 bg-white flex justify-center items-center border-2 border-black transform transition-all absolute md:left-[162px] hover:-left-10 rounded-lg">                     
                                    
 
                                     <a  className="block max-w-sm p-6  mt-10">
-                                        <span>John Brandson</span>
-                                        <span>CEO | Upworks</span>
+                                        <div>John Brandson</div>
+                                        <div>CEO | Upworks</div>
 
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-                                    <p className="font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </a>
                                 </div>
                             </div>
