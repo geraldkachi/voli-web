@@ -25,7 +25,7 @@ const Hero = () => {
                     <p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
                         All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br /> everything Finance
                     </p>
-                    <p className={`text-center mt-2 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
+                    <p className={`text-center mt-4 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
                 </div>
             </div>
             <div className='relative'></div>

@@ -6,9 +6,8 @@ interface Props {
     icon: string
     title: string
     subtitle: string
-    keyidx: number
 }
-const CardReceivable = ({icon, title, subtitle, keyidx}: Props) => {
+const CardAccounting = ({icon, title, subtitle}: Props) => {
     const variants = fadeIn("right", "spring", 0.5, 0.75)
 
   return (
@@ -18,9 +17,9 @@ const CardReceivable = ({icon, title, subtitle, keyidx}: Props) => {
         <motion.p variants={planetVariants('left')} className="text-[#808080] text-sm sm:text-base text-wrap">{subtitle}</motion.p>
       </motion.div>
      
-        <img src={icon} alt="payable" className={`mt-4 ${keyidx === 0  && '!-mt-20'}  ${keyidx === 3 && '!-mt-20'}`} />
+        <img src={icon} alt="payable" className={`mt-4`} />
     </motion.div>
   )
 }
 
-export default CardReceivable
+export default CardAccounting

@@ -6,7 +6,7 @@ import { Accordion } from "@/components"
 const StepPayable = () => {
     return (
         <>
-            <div className="pl-10 ml-40">
+            <div className="mx-3 md:mx-[unset] pl-3 md:ml-40">
                 <div className="my-10">
                     Facilitating seamless and <span className="text-[#01C467]">hassle-free payment</span> <br /> processes by breaking them down into just three <br /> simple and straightforward steps
                 </div>
@@ -18,7 +18,7 @@ const StepPayable = () => {
                             </span>
                             <div className="p-4 rounded-lg shadow-sm">
                                 <div className="items-center justify-between mb-3 sm:flex">
-                                    <div className="text-2xl font-normal">Add Vendors you would want to <br /> pay into your Business Account</div>
+                                    <div className="text-lg md:text-2xl font-normal">Add Vendors you would want to <br /> pay into your Business Account</div>
                                 </div>
                                 <div className="text-lg font-normal text-[#AAAAAA]">Enhance financial visibility and efficiency by effortlessly synchronizing bank accounts with our fintech B2B product&apos;s Bank Account Synchronization feature.</div>
                             </div>
@@ -29,7 +29,7 @@ const StepPayable = () => {
                             </span>
                             <div className="p-4 rounded-lg shadow-sm">
                                 <div className="items-center justify-between mb-3 sm:flex">
-                                    <div className="text-2xl font-normal ">Create a Bill to be paid and <br /> assign in to a vendor</div>
+                                    <div className="text-lg md:text-2xl font-normal ">Create a Bill to be paid and <br /> assign in to a vendor</div>
                                 </div>
                                 <div className="text-lg font-normal text-[#AAAAAA]">Enhance financial visibility and efficiency by effortlessly synchronizing bank accounts with our fintech B2B product&apos;s Bank Account Synchronization feature.</div>
                             </div>
@@ -40,7 +40,7 @@ const StepPayable = () => {
                             </span>
                             <div className="p-4 rounded-lg shadow-sm">
                                 <div className="items-center justify-between mb-3 sm:flex">
-                                    <div className="text-3xl 2xlt-normal ">Bills get paid automatically <br /> given it passes approval tiers</div>
+                                    <div className="text-lg md:text-2xl font-normal ">Bills get paid automatically <br /> given it passes approval tiers</div>
                                 </div>
                                 <div className="text-lg font-normal text-[#AAAAAA]">Enhance financial visibility and efficiency by effortlessly synchronizing bank accounts with our fintech B2B product&apos;s Bank Account Synchronization feature.</div>
                             </div>
@@ -52,7 +52,7 @@ const StepPayable = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-5xl mx-auto my-20">
+            <div className="max-w-5xl mx-auto my-20 mx-3">
                 <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">FAQs</span>
                 <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
                     We answered your questions so <br /> you don&apos;t have to ask again.
