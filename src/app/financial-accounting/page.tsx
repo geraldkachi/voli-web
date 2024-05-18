@@ -55,11 +55,12 @@ const FinancialAccounting = () => {
           <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[56px] lg:leading-[86.4px]`}>
             Transform finance with our <br className='hidden md:block' /> innovative  <span className="text-[#01C467]">Accounting</span> platform
           </motion.p>
-          <p className={`text-center mt-4 text-[#55555C] font-normal md:text-lg leading-8`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
+          <p className={`text-center mt-4 text-[#55555C] font-normal md:text-lg leading-8`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
         </div>
       </div>
       <div className="flex items-center justify-center w-full">
         <Image src="accounting-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
+        <Image src="account-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" />
       </div>
 
       <SectionOne />

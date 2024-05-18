@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="absolute w-[50%] inset-0 gradient-01" />
             <div className={`mx-auto flex justify-between gap-8`}>
                 <a href="/" className="cursor-pointer" >
-                     <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" onClick={() => {}} />
+                    <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" onClick={() => { }} />
                 </a>
 
 
@@ -33,9 +33,33 @@ const Navbar = () => {
 
                 <div className="md:hidden flex items-center justify-center gap-4">
                     <Button title="Book A Demo" />
-                    <img src="/mobile-nav.svg" alt="menu" className="w-[48px] h-[48px] object-contain cursor-pointer" width={20} height={20} />
+                    <img src="/mobile-nav.svg" alt="menu" onClick={() => setNav(!nav)} className="w-[48px] h-[48px] object-contain cursor-pointer" width={20} height={20} />
                 </div>
 
+
+                <ul className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-20 border-r bg-black ease-in-out duration-500 shadow-lg' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+                   <div className="flex flex-col justify-between h-full">
+                    <div>
+                    <h1 className='w-full text-3xl font-bold text-[#00df9a] p-4 flex items-center justify-between bg-[#2A2A33]'>
+                            <a href="/" className="cursor-pointer" >
+                                <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" onClick={() => { }} />
+                            </a>
+                            <Image src="nav-cancel.svg" width={14} height={56} alt="navx" onClick={() => setNav(!nav)} className="w-[56px] h-[56px] object-contain" />
+                        </h1>
+                        <li className='p-4 text-white '><Link href="/" >Company</Link></li>
+                        <li className='p-4 text-white ' onClick={() => setNav(!nav)}>Products</li>
+                        <li className='p-4 text-white '>Pricing</li>
+                        <li className='p-4 text-white '>FAQs</li>
+                        <li className='p-4 text-white '>Resources</li>
+                    </div>
+
+
+                   <div className='w-full grid grid-cols-2  gap-6 bg-[#2A2A33] p-4'>
+                        <Button title="SignIn" className="flex items-center justify-center !text-white !bg-transparent !border !border-white" />
+                        <Button title="Book A Demo" className="flex items-center justify-center" />
+                    </div> 
+                   </div>
+                </ul>
             </div>
         </motion.nav>
     )

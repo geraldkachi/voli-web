@@ -31,7 +31,7 @@ const SectionOne = () => {
                 </div>
             </div>
 
-            <div className='bg-[#FAFAFA] md:p-20 rounded-lg'>
+            <div className='bg-[#FAFAFA] p-4 rounded-[20px] md:p-20'>
             <div className="grid md:grid-cols-2 gap-4 px-3 rounded-lg">
                 <div>
                     <p className='font-semibold text-2xl md:text-[32px] md:leading-[57px] mb-3'>Charts <br className='hidden md:block' /> of Accounts</p>
