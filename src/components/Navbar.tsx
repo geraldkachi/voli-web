@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
 
                 <div onClick={() => setNav(prev => !prev)} className="hidden md:flex items-center relative gap-x-2">
-                    <Button variant="secondary" title="SignIn" />
+                    <Button variant="secondary" title="Sign In" />
                     <Button title="Book A Demo" />
                 </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
 
 
                    <div className='w-full grid grid-cols-2  gap-6 bg-[#2A2A33] p-4'>
-                        <Button title="SignIn" className="flex items-center justify-center !text-white !bg-transparent !border !border-white" />
+                        <Button title="Sign In" className="flex items-center justify-center !text-white !bg-transparent !border !border-white" />
                         <Button title="Book A Demo" className="flex items-center justify-center" />
                     </div> 
                    </div>

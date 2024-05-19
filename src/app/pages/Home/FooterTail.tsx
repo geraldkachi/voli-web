@@ -105,13 +105,13 @@ const FooterTail = () => {
                         <span className="text-sm text-[#808084] sm:text-lg sm:text-center">© {new Date().getFullYear()} Vollie Technologies LTD •  All rights reserved
                         </span>
                         <div className="hidden md:flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                            <a href="#" className="">
+                            <a href="https://www.facebook.com/volliefi" className="">
                                 <img src="footer-fb.svg" alt="" />
                             </a>
-                            <a href="#" className="">
+                            <a href="https://www.instagram.com/volliefi" className="">
                                 <img src="footer-ig.svg" alt="" />
                             </a>
-                            <a href="#" className="">
+                            <a href="https://www.linkedin.com/company/volliefi" className="">
                                 <img src="footer-in.svg" alt="" />
                             </a>
 
