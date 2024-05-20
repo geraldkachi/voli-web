@@ -23,7 +23,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
            <link rel="icon" href="next.svg" sizes="any" />
            {/* <link rel="icon" href="/favicon.ico" /> */}
-      <body className={inter.className}>{children}</body>
+      {/* <body className={inter.className}>{children}</body> */}
+      <body>{children}</body>
     </html>
   );
 }
