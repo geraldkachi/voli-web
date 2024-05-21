@@ -92,7 +92,7 @@ export const textVariant = (delay?: string|number) => {
   };
 
   // export const slideIn = ({ direction, type, delay, duration }: Props) => {
-    export const slideIn: any = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
+    export const slideIn: any = (direction?: string | number, type?: string, delay?: string | number, duration?: string | number) => {
       return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,

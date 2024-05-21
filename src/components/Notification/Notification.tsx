@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import { FiCheckSquare, FiX } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
-const SlideInNotifications = () => {
+interface Props {
+  name: string, 
+}
+const SlideInNotifications = ({name}: Props) => {
   const [notifications, setNotifications] = useState<NotificationType[]>([]);
 
   const removeNotif = (id: number) => {
@@ -15,7 +18,7 @@ const SlideInNotifications = () => {
         onClick={() => {
           setNotifications((pv) => [generateRandomNotif(), ...pv]);
         }}
-        className="text-sm text-white bg-indigo-500 hover:bg-indigo-600 active:scale-95 transition-all font-medium px-3 py-2 rounded"
+        className="text-sm text-white bg-[#01C467] hover:bg-[#01C467] active:scale-95 transition-all font-medium px-3 py-2 rounded"
       >
         Add notification
       </button>
@@ -52,7 +55,7 @@ const Notification = ({
       animate={{ y: 0, scale: 1 }}
       exit={{ x: "100%", opacity: 0 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
-      className="p-2 flex items-start rounded gap-2 text-xs font-medium shadow-lg text-white bg-indigo-500 pointer-events-auto"
+      className="p-2 flex items-start rounded gap-2 text-xs font-medium shadow-lg text-white bg-[#01C467] pointer-events-auto"
     >
       <FiCheckSquare className=" mt-0.5" />
       <span>{text}</span>
@@ -71,15 +74,16 @@ type NotificationType = {
 };
 
 const generateRandomNotif = (): NotificationType => {
-  const names = [
-    "John Anderson",
-    "Emily Peterson",
-    "Frank Daniels",
-    "Laura Williams",
-    "Donald Sanders",
-    "Tom Smith",
-    "Alexandra Black",
-  ];
+  const names = [name];
+  // const names = [
+  //   "John Anderson",
+  //   "Emily Peterson",
+  //   "Frank Daniels",
+  //   "Laura Williams",
+  //   "Donald Sanders",
+  //   "Tom Smith",
+  //   "Alexandra Black",
+  // ];
 
   const randomIndex = Math.floor(Math.random() * names.length);
 

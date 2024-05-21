@@ -11,6 +11,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     console.log(nav)
     return (
+        <>
         <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
             <div className="absolute w-[50%] inset-0 gradient-01" />
             <div className={`mx-auto flex justify-between gap-8`}>
@@ -37,7 +38,13 @@ const Navbar = () => {
                 </div>
 
 
-                <ul className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-20 border-r bg-black ease-in-out duration-500 shadow-lg' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+                
+            </div>
+        </motion.nav>
+
+
+
+        <ul className={nav ? 'fixed left-0 top-0 w-full h-svh z-20 border-r bg-black ease-in-out duration-500 shadow-lg' : 'ease-in-out duration-500 fixed left-[-100%]'}>
                    <div className="flex flex-col justify-between h-full">
                     <div>
                     <h1 className='w-full text-3xl font-bold text-[#00df9a] p-4 flex items-center justify-between bg-[#2A2A33]'>
@@ -60,8 +67,7 @@ const Navbar = () => {
                     </div> 
                    </div>
                 </ul>
-            </div>
-        </motion.nav>
+        </>
     )
 }
 

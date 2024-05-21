@@ -10,7 +10,7 @@ const ReadyToEnjoy = () => {
 
     <div className=" text-center pt-20 text-white animate-text whitespace-nowrap">
         <div className="flex flex-col items-center mb-10">
-            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-5xl font-bold py-10 leading-[83px]">Ready to <span className="text-[#01C467]">Enjoy</span> the Use <br /> of <span className="text-[#01C467]">Affordability</span> of Streamlined <br /> Business Payments</motion.p>
+            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-5xl font-bold py-10 leading-10 lg:leading-[83px]">Ready to <span className="text-[#01C467]">Enjoy</span> the Use <br /> of <span className="text-[#01C467]">Affordability</span> of Streamlined <br /> Business Payments</motion.p>
             <Button className="btn" title="Book a Demo"  />
         </div>
 

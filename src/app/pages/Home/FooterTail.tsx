@@ -88,7 +88,7 @@ const FooterTail = () => {
                                     <Link href="/help-cent" className="hover:underline">Help Center</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="#" className="hover:underline">Contact Us</a>
+                                    <Link href="/contact-us" className="hover:underline">Contact Us</Link>
                                 </li>
                                 <li className="mb-2">
                                     <Link href="/pricing" className="hover:underline">Pricing</Link>
