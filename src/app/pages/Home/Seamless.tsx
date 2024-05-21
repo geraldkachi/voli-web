@@ -20,6 +20,44 @@ const cards = [
         subtitle: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
     },
 ]
+
+const cardshiver = [
+    {
+        title: 'John Brandson',
+        subtitle: 'CEO | Upworks',
+        description: 'Our company&apos;s financial management transformed with Vollie Pay.',
+        desription1: 'Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier.'  
+
+    },
+    {
+        title: 'John Brandson',
+        subtitle: 'CEO | Upworks',
+        description: 'Our company&apos;s financial management transformed with Vollie Pay.',
+        desription1: 'Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier.'  
+
+    },
+    {
+        title: 'John Brandson',
+        subtitle: 'CEO | Upworks',
+        description: 'Our company&apos;s financial management transformed with Vollie Pay.',
+        desription1: 'Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier.'  
+
+    },
+    {
+        title: 'John Brandson',
+        subtitle: 'CEO | Upworks',
+        description: 'Our company&apos;s financial management transformed with Vollie Pay.',
+        desription1: 'Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier.'  
+
+    },
+    {
+        title: 'John Brandson',
+        subtitle: 'CEO | Upworks',
+        description: 'Our company&apos;s financial management transformed with Vollie Pay.',
+        desription1: 'Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier.'  
+
+    },
+]
 const Seamless = () => {
     return (
         <div className='max-w-5xl mx-auto'>
@@ -75,8 +113,23 @@ const Seamless = () => {
                                 </div>
                             </div> */}
 
+                            <div className="overflow-x-hidden">
+                            <div className="md:hidden flex items-center justify-center gap-4 py-4 mb-10 overflow-x-scroll text-[#909090]">
+                                {cardshiver.map(card => (
+                                    <div key={card.title} className="w-72 bg-white shadow-md transform transition-all rounded-lg mx-3">
+                                    <a  className="block max-w-sm p-6">
+                                            <div className='font-semibold text-[20px] mt-10 text-[#00000A]'>{card.title}</div>
+                                            <div className='mb-5'>{card.subtitle}</div>
+    
+                                            <p className="font-normal text-gray-700">{card.description}</p>
+                                            <p className="font-normal text-gray-700 mt-4">{card.desription1}</p>
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                                </div>
 
-                            <div className="flex  flex-col justify-center relative py-20 pr-80">
+                            <div className="hidden md:flex  flex-col justify-center relative py-20 pr-80">
                                 <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute hover:-left-28  rounded-lg">
                                 <a  className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
