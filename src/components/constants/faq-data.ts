@@ -20,3 +20,4 @@ export const faqArr = [
     content: `The Expense Management feature is a powerful tool within our B2B Fintech platform that helps businesses efficiently track, manage, and control their expenses in a streamlined manner.`
   },
 ]
+

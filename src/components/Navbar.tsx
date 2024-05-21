@@ -6,7 +6,79 @@ import { motion } from "framer-motion";
 import { ShiftingDropDown } from "./DropdownTab/DropdownTab";
 import Image from "next/image";
 import Link from "next/link";
+import AccordionNav from "./AccordionNav";
+// import { navArr } from "./constants/faq-data";
 
+const tiles = [
+    {
+      link: '/',
+      title: 'Expense Management',
+      subtitle: 'Manage your expenses in a smart way',
+    },
+    {
+      link: '/',
+      title: 'Account Payable',
+      subtitle: 'Manage your expenses in a smart way',
+    },
+    {
+      link: '/',
+      title: 'Account Recievable',
+      subtitle: 'Manage your expenses in a smart way',
+    },
+    {
+      link: '/about',
+      title: 'Corporate Cards',
+      subtitle: 'Manage your expenses in a smart way',
+    },
+    {
+      link: '/privacy-policy',
+      title: 'Privacy Policy',
+      subtitle: 'Come Join us and make Magic!',
+    },
+    {
+      link: '/terms-of-use',
+      title: 'Terms of Use',
+      subtitle: 'Come Join us and make Magic!',
+    },
+    {
+      link: '/blog',
+      title: 'Blog',
+      subtitle: 'The team, Core values, Our Vision.',
+    },
+    {
+      link: '/customer-stories',
+      title: 'Customer Stories',
+      subtitle: 'Come Join us and make Magic!',
+    },
+    {
+      link: '/help-center',
+      title: 'Help Center',
+      subtitle: 'The team, Core values, Our Vision..',
+    },
+  ]
+  
+
+export const navArr = [
+    {
+      header: 'Company',
+      content: (
+        <div className="flex items-start h-max">
+        <div className="flex flex-col flex-1 gap-2">
+          {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+            <div className="p-3 rounded-[10px] bg-[#55555C] flex items-center justify-center  w-9">
+              {/* {tile.icon()} */}
+              <span className="w-3 h-3 bg-white rounded-full"></span>
+            </div>
+            <div className="flex flex-col flex-1 whitespace-nowrap">
+              <span className="text-[#ffffff] font-bold text-sm">{tile.title}</span>
+              <span className="text-[#808084] font-bold text-xs">{tile.subtitle}</span>
+            </div>
+          </Link>)}
+        </div>
+      </div>
+      )
+    },
+  ]
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     console.log(nav)
@@ -53,7 +125,13 @@ const Navbar = () => {
                             </a>
                             <Image src="nav-cancel.svg" width={14} height={56} alt="navx" onClick={() => setNav(!nav)} className="w-[56px] h-[56px] object-contain" />
                         </h1>
-                        <li className='p-4 text-white '><Link href="/" >Company</Link></li>
+                        <li className='text-white'>
+                                {navArr.map((item, index) => (
+                                <AccordionNav key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
+                                <p className="pb-4 text-[#676767]">{item?.content}</p>
+                                </AccordionNav>
+                            ))}
+                            </li>
                         <li className='p-4 text-white ' onClick={() => setNav(!nav)}>Products</li>
                         <li className='p-4 text-white '>Pricing</li>
                         <li className='p-4 text-white '>FAQs</li>

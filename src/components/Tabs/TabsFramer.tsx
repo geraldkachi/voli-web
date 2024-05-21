@@ -20,7 +20,7 @@ const ChipTabs = ({tabs}: ChipProps) => {
   return (
     <div  className="flex flex-col items-center">
 
-    <div className="px-0 py-5  flex items-center gap-2">
+    <div className="px-0 py-5  flex items-center gap-2 !overflow-x-hidden">
       {tabs?.map((tab: {title: string}, idx: number) => (
         <Chip
         text={tab.title}
@@ -30,7 +30,9 @@ const ChipTabs = ({tabs}: ChipProps) => {
         />
       ))}
     </div>
+    <div className="overflow-x-scroll">
       <Render />
+    </div>
       </div>
   );
 };
@@ -43,7 +45,7 @@ const Chip = ({ text, selected, setSelected}: ChipProps) => {
         selected
           ? "text-[#01C467] bg-[#E7FDF3] rounded-t-lg"
           : "text-[#808084] hover: hover:"
-      } text-sm transition-colors px-2. py-2 relative px-4 md:px-5 overflow-x-scroll whitespace-nowrap`}
+      } text-sm transition-colors px-2. py-2 relative px-4 md:px-5 !overflow-x-scroll whitespace-nowrap`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (
