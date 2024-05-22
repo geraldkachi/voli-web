@@ -60,13 +60,13 @@ const tiles = [
 
 export const navArr = [
     {
-      header: 'Company',
+      header: 'Products',
       content: (
         <div className="flex items-start h-max">
         <div className="flex flex-col flex-1 gap-2">
-          {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          {tiles.map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          {/* {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]"> */}
             <div className="p-3 rounded-[10px] bg-[#55555C] flex items-center justify-center  w-9">
-              {/* {tile.icon()} */}
               <span className="w-3 h-3 bg-white rounded-full"></span>
             </div>
             <div className="flex flex-col flex-1 whitespace-nowrap">
@@ -117,7 +117,7 @@ const Navbar = () => {
 
 
         <ul className={nav ? 'fixed left-0 top-0 w-full h-svh z-20 border-r bg-black ease-in-out duration-500 shadow-lg' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-                   <div className="flex flex-col justify-between h-full">
+                   <div className="flex flex-col justify-between h-full overflow-scroll">
                     <div>
                     <h1 className='w-full text-3xl font-bold text-[#00df9a] p-4 flex items-center justify-between bg-[#2A2A33]'>
                             <a href="/" className="cursor-pointer" >
