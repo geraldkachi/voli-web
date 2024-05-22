@@ -89,7 +89,7 @@ const Seamless = () => {
                                 <div className=" flex items-start justify-s gap-4 py-4 mb-10  text-[#909090] cursor-grab active:cursor-grabbing">
                                     {cardshiver.map((card, i) => (
                                         <div key={i} className="w-72 bg-white shadow-md transform transition-all rounded-lg mx-3 ">
-                                            <div className="block max-w-sm p-6">
+                                            <div className="block max-w-sm py-6 px-3">
                                                 <div className='font-semibold text-[20px] mt-10 text-[#00000A]'>{card.title}</div>
                                                 <div className='mb-5'>{card.subtitle}</div>
 
