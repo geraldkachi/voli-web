@@ -43,7 +43,7 @@ function AccordionNav({
         >
           <div
             onClick={toggleAccordion}
-            className={`flex cursor-pointer items-center justify-between py-2 space-x-3 bg-transparent`}
+            className={`flex cursor-pointer items-center justify-between py-0 space-x-1 bg-transparent`}
           >
             <span style={{flexGrow: 2}} className={`font-semibold my-4 text-base text-[#ffffff] ${open || openAccordion && '!text-[#01C467]'}`}>
               {heading}{" "}
@@ -66,7 +66,7 @@ function AccordionNav({
         className={`relative transition-all
         } overflow-hidden transition-all duration-[0.7rem] bg-[#FAFAFA]`}
       >
-        <div className="px-5 bg-[#2A2A33] p-4">{children}</div>
+        <div className="px-3 bg-[#2A2A33] p-4">{children}</div>
       </div>
     </div>
   );
