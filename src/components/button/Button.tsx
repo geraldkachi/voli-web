@@ -19,7 +19,7 @@ type Props = DetailedHTMLProps<
 };
 
 const variants = {
-    primary: 'bg-[#01C467] text-white border-none hover:bg-[#01C467] text-xs md:text-sm py-3 md:py-4 px-2 md:px-6',
+    primary: 'bg-[#01C467] text-white border-non hover:bg-[#01C467] text-xs md:text-sm py-3 md:py-4 px-2 md:px-6',
     secondary: 'bg-white text-[#000024] hover:bg-red-1 border-none',
     link: 'bg-none text-blue hover:bg-white-azure border-none',
     outline:
@@ -52,7 +52,7 @@ const Button = ({
         <button {...rest}
             type={type}
             disabled={disabled || loading}
-            className={`flex items-center text-xs md:text-sm py-4 px-4 md:px-6 rounded-[10px] font-bold disabled:bg-gray-300 border disabled:text-gray-50 whitespace-nowrap ${variants[variant]} ${sizes[size]} ${className} ${(loading) && 'py-3 md:py-4 px-8 md:px-12 bg-[#EEF5FC] text-[#ABBED1]'}`}>
+            className={`flex items-center text-xs md:text-sm py-4 px-4 md:px-6 rounded-[10px] font-bold disabled:bg-gray-300 disabled:text-gray-50 whitespace-nowrap ${variants[variant]} ${sizes[size]} ${className} ${(loading) && 'py-3 md:py-4 px-8 md:px-12 bg-[#EEF5FC] text-[#ABBED1]'}`}>
             {prefixIcon && (<> {prefixIcon}&nbsp;&nbsp;</>)}
             {loading ? <Spinner /> : <>{title || children}</>}
             {suffixIcon && (<> &nbsp;&nbsp;{suffixIcon}</>)}

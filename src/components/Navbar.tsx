@@ -64,7 +64,7 @@ export const navArr = [
         content: (
             <div className="flex items-start h-max">
                 <div className="flex flex-col flex-1 gap-2">
-                    {tiles.map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+                    {tiles.slice(0,6).map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
                         {/* {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]"> */}
                         <div className="p-3 rounded-[10px] bg-[#55555C] flex items-center justify-center  w-9">
                             <span className="w-3 h-3 bg-white rounded-full"></span>
@@ -83,8 +83,8 @@ export const navArr = [
         content: (
             <div className="flex items-start h-max">
                 <div className="flex flex-col flex-1 gap-2">
-                    {tiles.map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-                        {/* {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]"> */}
+                    {/* {tiles.map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]"> */}
+                        {tiles.slice(6,9).map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
                         <div className="p-3 rounded-[10px] bg-[#55555C] flex items-center justify-center  w-9">
                             <span className="w-3 h-3 bg-white rounded-full"></span>
                         </div>
@@ -150,9 +150,9 @@ const Navbar = () => {
                                 </AccordionNav>
                             ))}
                         </li>
-                        <li className='p-4 text-white '><Link href="/pricing">Pricing</Link> </li>
-                        <li className='p-4 text-white '><Link href='/faq'>FAQs</Link> </li>
-                        <li className='p-4 text-white '><Link href="/">Resources</Link> </li>
+                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
+                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
+                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href="/">Resources</Link> </div>
                     </div>
 
 
