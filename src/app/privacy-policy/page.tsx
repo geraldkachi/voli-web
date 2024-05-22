@@ -61,13 +61,13 @@ const PrivacyPolicy = () => {
         <div className="flex flex-col items-center my-20">
           <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRIVACY POLICY</span>
 
-          <p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>  We care about your Privacy <br /> as much as you do</p>
+          <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[64px]`}>  We care about your Privacy <br /> as much as you do</p>
           <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-4 md:mt-10 leading-8`}>Last Updated • {formattedDate}</p>
 
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto p-4">
+      <div className="max-w-6xl mx-auto px-3">
         <div className="flex">
           <nav className="w-1/4 bg-white p-4 hidden md:block">
             <ul className="text-[#55555C] whitespace-nowrap">
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
             </ul>
           </nav>
 
-          <div className="md:w-3/4 bg-white p-8 ml-4">
+          <div className="md:w-3/4 bg-white p-3 sm:p-8 sm:ml-4">
             <section id="section1">
               <h2 className="text-2xl font-bold mb-4 text-black">Introduction</h2>
               <div className="text-[#808080]">

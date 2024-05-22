@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const MakePayments = () => {
     return (
-        <div className="bg-[#24242C bg-[#09090B] py-10 px-3 md:p-20 relative z-0">
+        <div className="bg-[#24242C bsg-[#09090B] py-10 px-3 md:p-20 relative z-0  bg-gradient-to-b from-[#24242C] from-10% via-black via-70% to-[#09090B] 10% to-90%">
 
             <div className="mx-auto max-w-5xl">
 

@@ -6,11 +6,11 @@ import { Accordion } from "@/components"
 const StepPayable = () => {
     return (
         <>
-            <div className="mx-3 md:mx-[unset] pl-3 md:ml-40">
-                <div className="my-10">
+            <div className="mx-3 md:mx-[unset] pl-3  max-sm:pl-3 max-lg:pl-10 lg:ml-40">
+                <div className="my-10 text-2xl md:text-[40px] leading-10 pt-20">
                     Facilitating seamless and <span className="text-[#01C467]">hassle-free payment</span> <br /> processes by breaking them down into just three <br /> simple and straightforward steps
                 </div>
-                <div className="grid sm:grid-cols-2 gap-4 py-10">
+                <div className="grid md:grid-cols-2 gap-4 py-5">
                     <ol className="relative border-s border-gray-200 ">
                         <li className="mb-20 ms-6">
                             <span className="absolute flex items-center justify-center w-8 md:w-14 h-8 md:h-14 bg-[#01C467] text-white border-2 border-[#AAAAAA]  rounded-full -start-[16px] md:-start-[28px]">
@@ -54,7 +54,7 @@ const StepPayable = () => {
             </div>
             <div className="max-w-5xl mx-auto my-20 px-3">
                 <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">FAQs</span>
-                <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
+                <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6 font-bold'>
                     We answered your questions so <br /> you don&apos;t have to ask again.
                 </motion.p>
 

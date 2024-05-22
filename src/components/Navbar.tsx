@@ -64,7 +64,7 @@ export const navArr = [
       content: (
         <div className="flex items-start h-max">
         <div className="flex flex-col flex-1 gap-2">
-          {tiles.map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          {tiles.map((tile, i) => <Link href={tile.link} key={i} className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
           {/* {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#55555C] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]"> */}
             <div className="p-3 rounded-[10px] bg-[#55555C] flex items-center justify-center  w-9">
               <span className="w-3 h-3 bg-white rounded-full"></span>
@@ -87,10 +87,9 @@ const Navbar = () => {
         <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
             <div className="absolute w-[50%] inset-0 gradient-01" />
             <div className={`mx-auto flex justify-between gap-8`}>
-                <a href="/" className="cursor-pointer" >
-                    <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain" onClick={() => { }} />
-                </a>
-
+                <Link href="/" className="cursor-pointer" >
+                    <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain cursor-pointer" onClick={() => console.log('hi')} />
+                </Link>
 
                 <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
                     <ShiftingDropDown />
@@ -99,7 +98,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div onClick={() => setNav(prev => !prev)} className="hidden md:flex items-center relative gap-x-2">
+                <div className="hidden md:flex items-center relative gap-x-2">
                     <Button variant="secondary" title="Sign In" />
                     <Button title="Book A Demo" />
                 </div>
