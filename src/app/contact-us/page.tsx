@@ -13,7 +13,7 @@ const Contact = () => {
     const [notify, setNotify] = useState(false);
     const [name, setName] = useState('');
     const formRef = useRef(null)
-   
+
     const onFinish = (e: FormEvent | any) => {
         e.preventDefault()
         const form = e.target;
@@ -45,16 +45,13 @@ const Contact = () => {
             {/* <SlideInNotifications {...{name, notify}} /> */}
             <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto justify-center">
                 <div>
-                    <motion.div
-                        variants={slideIn("left", "tween", 0.2, 1)}
-                        className='py-8 lg:py-16 px-4'
-                    >
+                    <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='pt-8 lg:py-16 px-4'>
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
-                            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 text-base">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know. <br /> Vollie is here to help.</p>
+                        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 text-base">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know. <br /> Vollie is here to help.</p>
 
-                            <div>
-                                <SwipeCarousel />
-                            </div>
+                        <div className="hidden md:block">
+                            <SwipeCarousel />
+                        </div>
                     </motion.div>
                 </div>
                 <div>
