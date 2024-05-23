@@ -7,6 +7,8 @@ import { ShiftingDropDown } from "./DropdownTab/DropdownTab";
 import Image from "next/image";
 import Link from "next/link";
 import AccordionNav from "./AccordionNav";
+import { useRouter } from 'next/navigation'
+
 // import { navArr } from "./constants/faq-data";
 
 const tiles = [
@@ -98,14 +100,14 @@ export const navArr = [
     },
 ]
 const Navbar = () => {
+    const router = useRouter()
     const [nav, setNav] = useState(false);
-    console.log(nav)
     return (
         <>
             <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
                 <div className="absolute w-[50%] inset-0 gradient-01" />
                 <div className={`mx-auto flex justify-between gap-8`}>
-                    <Link href="/" className="cursor-pointer" >
+                    <Link href="/" onClick={() => router.push('/', { scroll: false })} className="cursor-pointer" >
                         <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain cursor-pointer" onClick={() => console.log('hi')} />
                     </Link>
 
@@ -125,9 +127,6 @@ const Navbar = () => {
                         <Button title="Book A Demo" />
                         <img src="/mobile-nav.svg" alt="menu" onClick={() => setNav(!nav)} className="w-[48px] h-[48px] object-contain cursor-pointer" width={20} height={20} />
                     </div>
-
-
-
                 </div>
             </motion.nav>
 
