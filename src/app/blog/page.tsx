@@ -32,7 +32,7 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col md:items-center justify-center mx-3 overflow-x-scroll">
           <ChipTabs tabs={[
             {title: 'All',content:( 
               <div className="max-w-5xl mx-auto">
