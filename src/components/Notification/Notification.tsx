@@ -4,9 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 
 interface Props {
   name?: string, 
-  
+  notify?: boolean
 }
-const SlideInNotifications = ({name}: Props) => {
+const SlideInNotifications = ({name, notify}: Props) => {
   const [notifications, setNotifications] = useState<NotificationType[]>([]);
 
   const removeNotif = (id: number) => {
@@ -17,7 +17,7 @@ const SlideInNotifications = ({name}: Props) => {
     <div className="bg-white min-h-[200px] flex items-center justify-center">
       <button
         onClick={() => {
-          setNotifications((pv) => [generateRandomNotif(name || ''), ...pv]);
+          notify && setNotifications((pv) => [generateRandomNotif(name || ''), ...pv]);
         }}
         className="text-sm text-white bg-[#01C467] hover:bg-[#01C467] active:scale-95 transition-all font-medium px-3 py-2 rounded"
       >

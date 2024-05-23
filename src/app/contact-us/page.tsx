@@ -10,6 +10,7 @@ import { SwipeCarousel } from "@/components/Carousel/Carousel";
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
+    const [notify, setNotify] = useState(false);
     const [name, setName] = useState('');
     const formRef = useRef(null)
    
@@ -34,14 +35,14 @@ const Contact = () => {
 
         window.location.href = mailtoUrl;
 
-
         // Clear form input values
-        form.reset();
+        // form.reset();
+        form.reset() && setNotify(true)
     }
     return (
         <div>
             <NavBar />
-            {/* <SlideInNotifications {...{name}} /> */}
+            {/* <SlideInNotifications {...{name, notify}} /> */}
             <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto justify-center">
                 <div>
                     <motion.div
