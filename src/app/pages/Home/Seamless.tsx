@@ -84,9 +84,9 @@ const Seamless = () => {
                     </div> */}
 
 
-                    <div className="bg-white max-w overflow-x-scroll py-20">
-                        <div className="md:hidden flex justify-start overflow-x-scroll no-scrollbar">
-                                <div className=" flex items-start justify-s gap-4 py-4 mb-10  text-[#909090] cursor-grab active:cursor-grabbing">
+                    <div className="bg-white overflow-x-scroll">
+                        <div className="flex md:justify-start overflow-x-scroll no-scrollbar">
+                                <div className="md:hidden flex items-start justify-s gap-4 py-4 mb-10  text-[#909090] cursor-grab active:cursor-grabbing">
                                     {cardshiver.map((card, i) => (
                                         <div key={i} className="w-72 bg-white shadow-md transform transition-all rounded-lg mx-3 ">
                                             <div className="block max-w-sm py-6 px-3">
@@ -102,7 +102,7 @@ const Seamless = () => {
                                     ))}
                                 </div>
 
-                            <div className="hidden md:flex  flex-col justify-center relative py-20 pr-80">
+                            <div className="hidden md:flex  flex-col justify-center relative py-20 pr-80 h-full">
                                 <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute hover:-left-28  rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>

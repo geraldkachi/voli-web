@@ -41,7 +41,7 @@ const Contact = () => {
     return (
         <div>
             <NavBar />
-            <SlideInNotifications {...{name}} />
+            {/* <SlideInNotifications {...{name}} /> */}
             <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto justify-center">
                 <div>
                     <motion.div

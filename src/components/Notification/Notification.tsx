@@ -3,7 +3,8 @@ import { FiCheckSquare, FiX } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface Props {
-  name: string, 
+  name?: string, 
+  
 }
 const SlideInNotifications = ({name}: Props) => {
   const [notifications, setNotifications] = useState<NotificationType[]>([]);
@@ -16,7 +17,7 @@ const SlideInNotifications = ({name}: Props) => {
     <div className="bg-white min-h-[200px] flex items-center justify-center">
       <button
         onClick={() => {
-          setNotifications((pv) => [generateRandomNotif(), ...pv]);
+          setNotifications((pv) => [generateRandomNotif(name || ''), ...pv]);
         }}
         className="text-sm text-white bg-[#01C467] hover:bg-[#01C467] active:scale-95 transition-all font-medium px-3 py-2 rounded"
       >
@@ -73,7 +74,7 @@ type NotificationType = {
   text: string;
 };
 
-const generateRandomNotif = (): NotificationType => {
+const generateRandomNotif = (name: string): NotificationType => {
   const names = [name];
   // const names = [
   //   "John Anderson",
