@@ -18,18 +18,19 @@ const tiles = [
         subtitle: 'Manage your expenses in a smart way',
     },
     {
-        link: '/',
+        link: '/account-payable',
         title: 'Account Payable',
         subtitle: 'Manage your expenses in a smart way',
     },
     {
-        link: '/',
-        title: 'Account Recievable',
+        link: '/account-receivable',
+        title: 'Account Receivable',
         subtitle: 'Manage your expenses in a smart way',
     },
     {
         link: '/about',
-        title: 'Corporate Cards',
+        title: 'About',
+        // title: 'Corporate Cards',
         subtitle: 'Manage your expenses in a smart way',
     },
     {
