@@ -121,7 +121,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-10  rounded-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-36 rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
@@ -130,7 +130,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[130px] hover:-left-10  rounded-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[130px] hover:-left-32  rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
@@ -139,7 +139,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[162px] hover:-left-10 rounded-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[162px] hover:-left- rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
