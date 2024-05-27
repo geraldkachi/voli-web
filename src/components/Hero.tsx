@@ -35,8 +35,10 @@ const Hero = () => {
 
                 <motion.div ref={ref} className="flex items-center justify-center sticky top-0 -z-50">
                         <motion.div className="flex flex-col relative -z-50 top-0 w-full"  style={{transition: scale}}>
-                            <img src="folder.svg" className="md:h-[500px] w-max  top-1 absolute" alt="" />
-                            <img src="folder2.svg" className="md:h-[500px] w-max" alt="" />
+                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813073/folder_x998ky.svg" className="md:h-[500px] w-max  top-1 absolute" alt="" />
+                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813079/folder2_q70rpn.svg" className="md:h-[500px] w-max" alt="" />
+                            {/* <img src="folder.svg" className="md:h-[500px] w-max  top-1 absolute" alt="" />
+                            <img src="folder2.svg" className="md:h-[500px] w-max" alt="" /> */}
                             {/* {imageParallax.map((item, i) => {
                                 const targetScale = 1 - ( (imageParallax.length - i) * 0.05);
                                 return (
@@ -51,7 +53,8 @@ const Hero = () => {
                 </motion.div>
             </div>
             <div className="h-[30hv]">
-            <img src="payment-img.svg" alt="payment" className="h-[30hv] z-50 w-full sm:max-w-5xl max-h-md md:max-w-none mx-auto" />
+            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813252/payment-img_wfs1tl.svg" alt="payment" className="h-[30hv] z-50 w-full sm:max-w-5xl max-h-md md:max-w-none mx-auto" />
+            {/* <img src="payment-img.svg" alt="payment" className="h-[30hv] z-50 w-full sm:max-w-5xl max-h-md md:max-w-none mx-auto" /> */}
             </div>
         </section>
     );
