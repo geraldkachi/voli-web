@@ -108,9 +108,11 @@ const Navbar = () => {
             <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
                 <div className="absolute w-[50%] inset-0 gradient-01" />
                 <div className={`mx-auto flex justify-between gap-8`}>
-                    <Link href="/" onClick={() => router.push('/', { scroll: false })} className="cursor-pointer" >
+                    <div  className="cursor-pointer"  onClick={() => router.push('/', { scroll: false })}>
+                    <Link href="/">
                         <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain cursor-pointer" onClick={() => console.log('hi')} />
                     </Link>
+                    </div>
 
                     <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
                         <ShiftingDropDown />
