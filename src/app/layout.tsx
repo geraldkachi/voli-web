@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: {
@@ -21,10 +24,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-           <link rel="icon" href="next.svg" sizes="any" />
-           {/* <link rel="icon" href="/favicon.ico" /> */}
-      {/* <body className={inter.className}>{children}</body> */}
-      <body>{children}</body>
+      {/* <Head>
+        <link rel="preload" href={inter.className} as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href={plusJakartaSans.className} as="font" type="font/woff2" crossOrigin="anonymous" />
+      </Head> */}
+      <link rel="icon" href="next.svg" sizes="any" />
+      {/* <link rel="icon" href="/favicon.ico" /> */}
+      <body className={plusJakartaSans.className}>{children}</body>
     </html>
   );
 }

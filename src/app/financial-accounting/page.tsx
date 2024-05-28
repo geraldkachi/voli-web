@@ -59,8 +59,10 @@ const FinancialAccounting = () => {
         </div>
       </div>
       <div className="flex items-center justify-center w-full">
-        <Image src="accounting-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
-        <Image src="account-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" />
+        <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716900712/accounting-hero_nrgwgz.svg" className="hidden sm:block" width={1000} height={500} alt="" />
+        <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716900806/account-hero1_c75cc3.svg" className="sm:hidden" width={1000} height={500} alt="" />
+        {/* <Image src="accounting-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
+        <Image src="account-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" /> */}
       </div>
 
       <SectionOne />
