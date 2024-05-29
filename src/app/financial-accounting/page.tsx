@@ -82,7 +82,6 @@ const FinancialAccounting = () => {
       </div>
 
 
-
       <div className="max-w-5xl mx-auto my-20 px-3 sm:px-0">
         <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">FAQs</span>
         <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>

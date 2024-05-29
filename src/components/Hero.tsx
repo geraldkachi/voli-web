@@ -30,8 +30,8 @@ const Hero = () => {
             </div>
             <div className='relative'></div>
             <div className='relative w-full flex justify-center h-max  max-w-5xl mx-auto z-10'>
-                <img src="vite.svg" className="hidden md:block left-10 md:left-6 top-2 md:top-96 absolute z-10" alt="" />
-                <img src="vite.svg" className="hidden md:block right-5 md:right-6 top-24 absolute z-10" alt="" />
+                <img src="next1.svg" className="hidden md:block left-10 md:left-6 top-2 md:top-96 absolute z-10 cursor-pointer" alt="" />
+                <img src="next1.svg" className="hidden md:block right-5 md:right-6 top-24 absolute z-10 cursor-pointer" alt="" />
 
                 <motion.div ref={ref} className="flex items-center justify-center sticky top-0 -z-50">
                         <motion.div className="flex flex-col relative -z-50 top-0 w-full"  style={{transition: scale}}>

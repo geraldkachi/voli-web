@@ -24,7 +24,7 @@ const AccountRecievable = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center w-full">
-            <Image src="recievable-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
+            {/* <Image src="recievable-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" /> */}
             </div>
             <Image src="recievable-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" />
 

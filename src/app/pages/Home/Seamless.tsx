@@ -65,14 +65,15 @@ const Seamless = () => {
             <div className='grid md:grid-cols-7 gap- overflow-hidden'>
                 <div className='md:col-span-3 bg-white py-20 px-3 lg:px-0'>
                     <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TESTIMONIALS</motion.span>
-                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[30px] font-semibold leading-9 md:leading-[60px] mt-6'>
-                        Facilitating seamless and <br /> into just three simple and <br /> straightforward steps
+                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>
+                        Facilitating seamless and into just three simple and straightforward steps
                     </motion.p>
                     <div className="flex -space-x-4 rtl:space-x-reverse bg-[#F2F2F3] p-3 rounded-xl items-center w-max my-10">
-                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="next.svg" alt="" />
-                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="next.svg" alt="" />
-                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="next.svg" alt="" />
-                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="next.svg" alt="" />
+                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="circle01.svg" alt="" />
+                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="circle02.svg" alt="" />
+                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="circle03.svg" alt="" />
+                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="circle01.svg" alt="" />
+                        <Image className="w-10 h-10 border-2 border-white rounded-full" width={10} height={10} src="circle02.svg" alt="" />
 
                         <p className='font-extrabold text-[28px] md:text-[32px] pl-4'>+ 12</p>
                     </div>

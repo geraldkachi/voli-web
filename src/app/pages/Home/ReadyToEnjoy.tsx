@@ -16,7 +16,8 @@ const ReadyToEnjoy = () => {
 
 
         <div className="-mt-24 md:-mt-48 lg:-mt-[350px] xl:-mt-[400px] mb-20 flex items-center justify-center">
-            <img src="dash-ready.svg" className="skew- bg-center" alt="" />
+            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716901176/dash-ready_msbuey.svg" className="skew- bg-center" alt="" />
+            {/* <img src="dash-ready.svg" className="skew- bg-center" alt="" /> */}
         </div>
     </div>
     </div>

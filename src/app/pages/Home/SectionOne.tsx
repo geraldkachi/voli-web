@@ -76,8 +76,8 @@ const SectionOne = () => {
                     </motion.p>
 
                     <div className='grid md:grid-cols-2 justify-center gap-10 py-10'>
-                        {payroll.map((item) =>
-                            <Payrolls key={item.title} {...item} />
+                        {payroll.map((item, i) =>
+                            <Payrolls key={i} {...item} index={i} />
                         )}
                     </div>
                 </div>

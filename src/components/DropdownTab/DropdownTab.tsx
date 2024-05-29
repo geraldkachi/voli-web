@@ -86,7 +86,7 @@ const Tab = ({
       }`}
     >
       <span>{children}</span>
-      <FiChevronDown
+      <FiChevronDown  color="#2BEE91"
         className={`transition-transform ${
           selected === tab ? "rotate-180" : ""
         }`}
