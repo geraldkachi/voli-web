@@ -1,6 +1,6 @@
 import React, { SVGProps } from "react";
 type Props = {
-  index: boolean;
+  index?: boolean;
 } & SVGProps<SVGSVGElement>;
 
 const BlogIcon = ({ index, ...props }: Props) => (

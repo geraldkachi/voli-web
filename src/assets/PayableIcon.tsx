@@ -27,8 +27,8 @@ const PayableIcon = ({ index, ...props }: Props) => (
           gradientTransform="matrix(2.86266 21.09919 -16.93207 2.29728 11.563 3.312)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={index ? "#2BEE91" : '#2B2B33' }/>
-          <stop offset={1} stopColor={index ? "#01C467" : '#2B2B33'} />
+          <stop stopColor={index ? '#2B2B33' : "#2BEE91"  }/>
+          <stop offset={1} stopColor={index ? '#2B2B33' : "#01C467" } />
         </radialGradient>
       </defs>
     </svg>

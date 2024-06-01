@@ -180,12 +180,14 @@ const Nub = ({ selected }: { selected: number | null }) => {
 };
 
 const Products = () => {
+  const [selectedOption, setSelectedOption] = useState(0);
+
   return (
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
-        {tiles.slice(0,3).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
-            {tile.icon()}
+        {tiles.slice(0,3).map((tile, index) => <Link href={tile.link} key={tile.title} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)} className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+            {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
             <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
@@ -202,12 +204,14 @@ const Products = () => {
 };
 
 const Category = () => {
+  const [selectedOption, setSelectedOption] = useState(0);
+
   return (
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
-        {tiles.slice(3,6).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
-            {tile.icon()}
+        {tiles.slice(3,6).map((tile, index) => <Link href={tile.link} key={tile.link} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)}  className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+            {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
             <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
@@ -220,12 +224,14 @@ const Category = () => {
 };
 
 const Resources = () => {
+  const [selectedOption, setSelectedOption] = useState(0);
+
   return (
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
-        {tiles.slice(6,9).map((tile) => <Link href={tile.link} key="tile.title" className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className="p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center">
-            {tile.icon()}
+        {tiles.slice(6,9).map((tile, index) => <Link href={tile.link} key={tile.link} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)}  className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+            {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 whitespace-nowrap">
             <span className="text-[#022623] font-bold text-sm">{tile.title}</span>
@@ -247,10 +253,9 @@ const Blog = () => {
             src="/imgs/blog/4.png"
             alt="Placeholder image"
           />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
+          <h4 className="mb-0.5 text-sm font-medium">Blog</h4>
           <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
+            Blog Content
           </p>
         </a>
         <a href="#">
@@ -280,7 +285,7 @@ const TABS = [
     Component: Products,
   },
   {
-    title: "Category",
+    title: "Company",
     Component: Category,
   },
   {
@@ -292,55 +297,55 @@ const TABS = [
 
 const tiles = [
   {
-    icon: () => <PayableIcon index />,
+    icon: (index: boolean) => <PayableIcon index={index} />,
     link: '/account-payable',
     title: 'Account Payable',
     subtitle: 'Setup Approvals on different levels.',
   },
   {
-    icon: () => <RecivableIcon index />,
+    icon: (index: boolean) => <RecivableIcon index={index} />,
     link: '/account-receivable',
     title: 'Account Recievable',
     subtitle: 'Sync Bank Accounts seamlessy.',
   },
   {
-    icon: () => <FinancialAccountIcon index />,
+    icon: (index: boolean) => <FinancialAccountIcon index={index} />,
     link: '/financial-accounting',
     title: 'Financial Accounting',
     subtitle: 'Manage your expenses in a smart way',
   },
   {
-    icon: () => <AboutIcon index />,
+    icon: (index: boolean) => <AboutIcon index={index} />,
     link: '/about',
     title: 'About Us',
     subtitle: 'The team, Core values, Our Vision.',
   },
   {
-    icon: () => <PrivacyPolicyIcon index />,
+    icon: (index: boolean) => <PrivacyPolicyIcon index={index} />,
     link: '/privacy-policy',
     title: 'Privacy Policy',
     subtitle: 'Come Join us and make Magic!',
   },
   {
-    icon: () => <FinancialAccountIcon index />,
+    icon: (index: boolean) => <FinancialAccountIcon index={index} />,
     link: '/terms-of-use',
     title: 'Terms of Use',
     subtitle: 'Come Join us and make Magic!',
   },
   {
-    icon: () => <BlogIcon index />,
+    icon: (index?: boolean) => <BlogIcon index={index} />,
     link: '/blog',
     title: 'Blog',
     subtitle: 'The team, Core values, Our Vision.',
   },
   {
-    icon: () => <CustomerStories index />,
+    icon: (index: boolean) => <CustomerStories index={index} />,
     link: '/customer-stories',
     title: 'Customer Stories',
     subtitle: 'Come Join us and make Magic!',
   },
   {
-    icon: () => <HelpCenterIcon index />,
+    icon: (index: boolean) => <HelpCenterIcon index={index} />,
     link: '/help-center',
     title: 'Help Center',
     subtitle: 'The team, Core values, Our Vision..',

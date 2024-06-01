@@ -106,7 +106,7 @@ const Navbar = () => {
     return (
         <>
             <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
-                <div className="absolute w-[50%] inset-0 gradient-01" />
+                {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
                 <div className={`mx-auto flex justify-between gap-8`}>
                     <div  className="cursor-pointer"  onClick={() => router.push('/', { scroll: false })}>
                     <Link href="/">

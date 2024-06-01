@@ -18,7 +18,7 @@ const Payrolls = ({icon, title, subtitle, index}: Props) => {
     <motion.div  className="p-8 rounded-[20px] bg-white" onMouseEnter={() => setSelectedOption(index)} onMouseLeave={() => setSelectedOption(9)}>
       <motion.div variants={variants}>
         <motion.p className="text-[#00000A] text-lg sm:text-[32px] font-semibold text-wrap my-2 mb-5">{title}</motion.p>
-        <motion.p variants={planetVariants('left')} className="text-[#808080] text-sm sm:text-base text-wrap">{subtitle}</motion.p>
+        <motion.p variants={planetVariants('left')} className="text-[#808080]  text-sm sm:text-base text-wrap">{subtitle}</motion.p>
       </motion.div>
 
     <div>{index} key</div>
