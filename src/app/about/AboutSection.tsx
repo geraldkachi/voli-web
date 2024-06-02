@@ -12,7 +12,7 @@ const AboutSection = () => {
         <div className="flex flex-col items-center my-7 md:my-14">
           <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">ABOUT US</div>
 
-          <p className={`text-center mt-2 text-[#00000A] text-[28px] font-extrabold md:text-[64px] leading-9 xl:leading-[80px]`}>
+          <p className={`text-center mt-2 text-[#00000A] text-[28px] font-extrabold md:text-[64px] leading-9 md:leading-[80px]`}>
             Empowering <span className="text-[#01C467]">businesses</span> with <br className='hidden xl:block' /> cutting-edge fintech solutions <br className='hidden xl:block' /> and expertise
           </p>
         </div>

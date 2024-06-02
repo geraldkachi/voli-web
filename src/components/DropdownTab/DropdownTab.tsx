@@ -186,7 +186,7 @@ const Products = () => {
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
         {tiles.slice(0,3).map((tile, index) => <Link href={tile.link} key={tile.title} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)} className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && '!bg-[#CCFBE5]'}`}>
             {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
@@ -210,7 +210,7 @@ const Category = () => {
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
         {tiles.slice(3,6).map((tile, index) => <Link href={tile.link} key={tile.link} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)}  className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && '!bg-[#CCFBE5]'}`}>
             {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 justify-center whitespace-nowrap">
@@ -230,7 +230,7 @@ const Resources = () => {
     <div className="flex items-start">
       <div className="flex flex-col flex-1 gap-2">
         {tiles.slice(6,9).map((tile, index) => <Link href={tile.link} key={tile.link} onMouseEnter={()=> setSelectedOption(index)} onMouseLeave={() => setSelectedOption(-index)}  className="flex gap-2 border border-[#F2F2F3] rounded-xl p-2 hover:border-[#2BEE91] hover:bg-[#E7FDF3]">
-          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && 'bg-[#CCFBE5]'}`}>
+          <div className={`p-3 rounded-[10px] bg-[#FAFAFA] hover:bg-[#CCFBE5] flex items-center justify-center ${selectedOption == index && '!bg-[#CCFBE5]'}`}>
             {tile.icon(selectedOption == index ? false : true)}
           </div>
           <div className="flex flex-col flex-1 whitespace-nowrap">

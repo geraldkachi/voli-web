@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components"
 import { motion } from 'framer-motion'
 import StarsCanvas from "../../../components/StarCanvas/StarCanvas"
