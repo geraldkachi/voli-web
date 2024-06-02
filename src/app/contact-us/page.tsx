@@ -31,7 +31,8 @@ const Contact = () => {
 
         const subject = `${name} ${email} ${phone}`
 
-        const mailtoUrl = `mailto:${process.env.NEXT_PUBLIC_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        const mailtoUrl = `mailto:${'volliefinance@gmail.com'}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        // const mailtoUrl = `mailto:${process.env.NEXT_PUBLIC_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
         window.location.href = mailtoUrl;
 
