@@ -17,7 +17,7 @@ const PriceCards = () => {
             </div>
 
                 <div
-                    className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3 md:p-3 bg-[#FCFCFD]">
+                    className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 md:max-w-6xl md:mx-auto xl:grid-cols-3 md:p-3 bg-[#FCFCFD]">
                     {/* Card One */}
                     <div className="bg-white rounded-lg shadow-sm">
                         <div className="p-6">

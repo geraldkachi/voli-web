@@ -60,10 +60,11 @@ const cardshiver = [
 ]
 const Seamless = () => {
     return (
-        <div className='max-w-5xl mx-auto'>
+        <div className='bg-[#F8FCFA]'>
+        <div className='max-w-6xl mx-auto'>
 
             <div className='grid md:grid-cols-7 gap- overflow-hidden'>
-                <div className='md:col-span-3 bg-white py-20 px-3 lg:px-0'>
+                <div className='md:col-span-3 bg- py-20 px-3 lg:px-0'>
                     <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TESTIMONIALS</motion.span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>
                         Facilitating seamless and into just three simple and straightforward steps
@@ -91,12 +92,12 @@ const Seamless = () => {
                                     {cardshiver.map((card, i) => (
                                         <div key={i} className="w-72 bg-white shadow-md transform transition-all rounded-lg mx-3 ">
                                             <div className="block max-w-sm py-6 px-3">
-                                                <div className='font-semibold text-[20px] mt-10 text-[#00000A]'>{card.title}</div>
-                                                <div className='mb-5'>{card.subtitle}</div>
+                                                <div className='font-bold md:font-bold text-[20px] mt-20 text-[#00000A] tracking-[-1%] leading-[28px]'>{card.title}</div>
+                                                <div className='mb-5 text-[#AAAAAD] font-medium tracking-[-1%] text-sm leading-[19.6px]'>{card.subtitle}</div>
 
-                                                <div>
-                                                    <p className="font-normal text-gray-700">{card.description}</p>
-                                                    <p className="font-normal text-gray-700 mt-4">{card.desription1}</p>
+                                                <div className='text-[#AAAAAD] font-medium tracking-[-1%] text-sm leading-[19.6px]'>
+                                                    <p className="">{card.description}</p>
+                                                    <p className=" mt-4">{card.desription1}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,9 +107,9 @@ const Seamless = () => {
                             <div className="hidden md:flex  flex-col justify-center relative py-20 pr-80 h-full !z-50">
                                 {/* <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute hover:-left-28  rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
-
+                                    <div className='font-semibold text-[20px]'>John Brandson</div>
+                                    <div>CEO | Upworks</div>
+                                    
                                         <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
@@ -151,11 +152,11 @@ const Seamless = () => {
                                 </div>
                                 {/* <div className="w-72 h-96 bg-white shadow-md flex justify-center items-center transform transition-all absolute md:left-[262px] hover:-left-10 rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
-
-                                        <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                    <div className='font-semibold text-[20px]'>John Brandson</div>
+                                    <div>CEO | Upworks</div>
+                                    
+                                    <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                    <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div> */}
                             </div>
@@ -165,6 +166,7 @@ const Seamless = () => {
 
             </div>
 
+        </div>
         </div>
     )
 }

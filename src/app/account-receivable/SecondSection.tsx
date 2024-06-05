@@ -27,7 +27,7 @@ const SecondSection = () => {
     <div className="bg-[#FAFAFA] md:p-20">
         
         <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
-                <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] py-20 px-3 md:px-0'>
+                <div className='max-w-6xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] py-20 px-3 md:px-0'>
                 
                     <div className='grid md:grid-cols-2 justify-center gap-10 py-10'>
                         {payroll.map((item, key) =>

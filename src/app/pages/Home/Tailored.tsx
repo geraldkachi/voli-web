@@ -110,7 +110,7 @@ const Tailored = () => {
         <div className="bg-[#F8FCFA]">
             <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
                 <div className="flex flex-col my-14">
-                    <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[28px] md:text-[48px] font-bold leading-[37.8px] md:leading-[72px]`}>Tailored to fit your <br /> business financial Needs </motion.p>
+                    <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[28px] md:text-[48px] font-bold leading-[37.8px] md:leading-[72px]`}>Tailored to fit <br className="sm:hidden block" /> your <br className="hidden sm:block" /> business financial Needs </motion.p>
                 </div>
             </div>
 

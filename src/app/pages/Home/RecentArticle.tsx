@@ -1,8 +1,9 @@
 const RecentArticle = () => {
     return (
-        <div className="max-w-5xl mx-auto">
+        <div className="bg-[#F8FCFA]">
+        <div className="max-w-6xl mx-auto">
             <div className='py-10 md:py-20 px-3'>
-                <p className='text-center text-[#808084] text-lg leading-[22.5px] mb-10'>Recently Published Articles</p>
+                <p className='text-center text-[#808084] font-semibold text-lg leading-[22.5px] mb-10 tracking-[18%]'>Recently Published Articles</p>
 
                 <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
                     <div className="items-center justify-center flex">
@@ -17,6 +18,7 @@ const RecentArticle = () => {
                 </div>
 
             </div>
+        </div>
         </div>
     )
 }

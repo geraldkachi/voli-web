@@ -3,7 +3,7 @@ const AboutStepper = () => {
     return (
         <div className="bg-[#FAFAFA] py-20">
 
-            <div className="max-w-5xl mx-auto px-3">
+            <div className="max-w-6xl mx-auto px-3">
 
                 <ol className="border-l-2 border-primary dark:border-primary-500">
                     {/* <!--First item--> */}

@@ -116,7 +116,7 @@ const Navbar = () => {
 
                     <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
                         <ShiftingDropDown />
-                        <Link href="/pricing" className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors bg-transparent text-[#55555C] `}>
+                        <Link href="/pricing" className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
                             <span>Pricing</span>
                         </Link>
                     </div>
@@ -147,7 +147,7 @@ const Navbar = () => {
                         <li className='text-white'>
                             {navArr.map((item, index) => (
                                 <AccordionNav key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
-                                    <p className="pb-4 text-[#676767]">{item?.content}</p>
+                                    <p className="pb- text-[#676767]">{item?.content}</p>
                                 </AccordionNav>
                             ))}
                         </li>
@@ -168,3 +168,7 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+// Ezekiel 28:11-19 
+// 2 Corinthians 11:14

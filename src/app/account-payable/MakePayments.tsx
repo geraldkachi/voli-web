@@ -5,7 +5,7 @@ const MakePayments = () => {
     return (
         <div className="bg-[#24242C bsg-[#09090B] py-10 px-3 md:p-20 relative z-0  bg-gradient-to-b from-[#24242C] from-10% via-black via-70% to-[#09090B] 10% to-90%">
 
-            <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-6xl">
 
                 <StarsCanvas />
                 <div className='text-2xl md:text-[48px] font-bold leading-9 md:leading-[60px] my-6 text-white'>Make <span className="text-[#01C467]">Payments</span> <br className="block md:hidden" /> anyway <br className="hidden md:block" /> you want.</div>

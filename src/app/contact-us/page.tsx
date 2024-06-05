@@ -44,7 +44,7 @@ const Contact = () => {
         <div>
             <NavBar />
             {/* <SlideInNotifications {...{name, notify}} /> */}
-            <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto justify-center">
+            <div className="grid md:grid-cols-2 gap-4 max-w-6xl mx-auto justify-center">
                 <div>
                     <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='pt-8 lg:py-16 px-4'>
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>

@@ -65,3 +65,20 @@ body {
 
   }
 }
+
+
+@keyframes flip {
+  0% {
+    transform: translateY(0deg);
+  }
+  50% {
+    transform: translateY(180deg);
+  }
+  100% {
+    transform: translateY(360deg);
+  }
+}
+
+.animate-flip {
+  animation: flip 6s infinite;
+}

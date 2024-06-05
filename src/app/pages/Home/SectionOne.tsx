@@ -54,11 +54,11 @@ const SectionOne = () => {
     return (
         <>
             <div className='bg-white'>
-                <div className='max-w-5xl mx-auto bg-white py-20 px-3 xl:px-0'>
-                    <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRODUCTS</span>
+                <div className='max-w-6xl mx-auto bg-white py-20 px-3 xl:px-0'>
+                    {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRODUCTS</span> */}
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>Experience the convenience of streamlining your expense
-                        <br /> management, payrolls, multi-level approvals, and more,
-                        <br /> making your financial tasks a breeze!</motion.p>
+                        <br className='hidden md:block' /> management, payrolls, multi-level approvals, and more,
+                        <br className='hidden md:block' /> making your financial tasks a breeze!</motion.p>
 
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center gap-10 py-10'>
                         {technologies.map((item) =>
@@ -69,10 +69,10 @@ const SectionOne = () => {
             </div>
 
             <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
-                <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] py-20 px-3 md:px-0'>
-                    <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRODUCTS</span>
-                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
-                        Experience the convenience of streamlining <br /> your expense management, payrolls,
+                <div className='max-w-6xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] py-20 px-3 md:px-0'>
+                    {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRODUCTS</span> */}
+                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-[38.4px] md:leading-[57.6px] mt-6 font-medium md:font-semibold'>
+                        Experience the convenience of streamlining <br className='hidden md:block' /> your expense management, payrolls,
                     </motion.p>
 
                     <div className='grid md:grid-cols-2 justify-center gap-10 py-10'>
