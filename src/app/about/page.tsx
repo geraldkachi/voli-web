@@ -30,8 +30,10 @@ const About = () => {
             <title>Vollie About Website</title>
             <meta name="description" content="Welcome to Vollie About website" />
             </Head>
+            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
             <NavBar />
             <AboutSection />
+            </div>
             <ReadyToEnjoy />
             <FooterTail />
         </>

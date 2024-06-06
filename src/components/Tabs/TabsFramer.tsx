@@ -43,11 +43,11 @@ const Chip = ({ text, selected, setSelected}: ChipProps) => {
       onClick={() => setSelected && setSelected(text || '')} 
       className={`${
         selected
-          ? " rounded-lg"
+          ? "p-3  rounded-lg"
           : "text-[#808084] hover: hover: w-full h-full"
-      } text-sm transition-colors px-2. py-2 relative px-0 whitespace-nowrap mx-2`}
+      } text-sm transition-colors p-3 py-2 relative px-0 whitespace-nowrap mx-1 md:mx-2 w-full`}
     >
-      <span className={`relative w-full z-10 ${selected && 'text-[#01C467] bg-[#E7FDF3] block p-3 rounded-lg !w-full '}`}>{text}</span>
+      <span className={`relative block w-full z-10 ${selected ? 'text-[#01C467] bg-[#E7FDF3] block p-3 rounded-lg !w-full ' : 'p-3'}`}>{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"

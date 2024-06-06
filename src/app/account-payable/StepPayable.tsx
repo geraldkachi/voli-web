@@ -6,7 +6,7 @@ import { Accordion, Button } from "@/components"
 const StepPayable = () => {
     return (
         <>
-            <div className="mx-3 md:mx-[unset] pl-3  max-sm:pl-3 max-lg:pl-10 lg:ml-40">
+            <div className="mx-3 md:mx-[unset] px-3  max-sm:pl-3 max-lg:pl-10 lg:ml-40">
                 <div className="my-10 text-2xl md:text-[40px] leading-[36px] md:leading-[64px] tracking-[-3%] pt-20 md:font-medium font-bold">
                     Facilitating seamless and <span className="md:text-[#01C467]">hassle-free payment</span> <br className="hidden lg:block" /> processes by breaking them down into just three <br className="hidden lg:block" /> simple and straightforward steps
                 </div>

@@ -12,19 +12,21 @@ import Seamless from "../pages/Home/Seamless";
 const AccountRecievable = () => {
     return (
         <div>
-            <NavBar />
-            <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
-                <div className="flex flex-col items-center my-7 md:my-14">
-                    <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max"> RECEIVABLE</div>
+            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
+                <NavBar />
+                <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
+                    <div className="flex flex-col items-center my-7 md:my-14">
+                        <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max"> RECEIVABLE</div>
 
-                    <motion.p variants={navVariants}  className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:font-bold md:text-[56px] leading-[39.2px] lg:leading-[70px] tracking-[-6%]`}>
-                        Get Paid and Manage Payments <br className='hidden md:block'  /> from Customers
-                    </motion.p>
-                    <p className={`text-center mt-2 text-[#808084] font-normal text-sm md:text-lg md:leading-[29.7px] leading-[25.2px] md:`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>   
+                        <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:font-bold md:text-[56px] leading-[39.2px] lg:leading-[70px] tracking-[-6%]`}>
+                            Get Paid and Manage Payments <br className='hidden md:block' /> from Customers
+                        </motion.p>
+                        <p className={`text-center mt-2 text-[#808084] font-normal text-sm md:text-lg md:leading-[29.7px] leading-[25.2px] md:`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
+                    </div>
                 </div>
             </div>
             <div className="flex items-center justify-center w-full">
-            {/* <Image src="recievable-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" /> */}
+                <Image src="recievable-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
             </div>
             <Image src="recievable-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" />
 

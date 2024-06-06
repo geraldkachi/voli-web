@@ -72,8 +72,8 @@ export const navArr = [
                             <span className="w-3 h-3 bg-white rounded-full"></span>
                         </div>
                         <div className="flex flex-col flex-1 whitespace-nowrap">
-                            <span className="text-[#ffffff] font-bold text-sm">{tile.title}</span>
-                            <span className="text-[#808084] font-bold text-xs">{tile.subtitle}</span>
+                            <span className="text-[#ffffff] font-medium text-sm leading-[19.6px] tracking-[-3%]">{tile.title}</span>
+                            <span className="text-[#808084] font-normal text-xs leading-[21.6px]">{tile.subtitle}</span>
                         </div>
                     </Link>)}
                 </div>
@@ -146,13 +146,13 @@ const Navbar = () => {
                         </h1>
                         <li className='text-white'>
                             {navArr.map((item, index) => (
-                                <AccordionNav key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
+                                <AccordionNav key={`faq_${index}`} heading={<h1 className="text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium">{item.header}</h1>}>
                                     <p className="pb- text-[#676767]">{item?.content}</p>
                                 </AccordionNav>
                             ))}
                         </li>
-                        <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/pricing', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
-                        <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/faq', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
+                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer' onClick={() => router.push('/pricing', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
+                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer' onClick={() => router.push('/faq', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
                         {/* <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/">Resources</Link> </div> */}
                     </div>
 

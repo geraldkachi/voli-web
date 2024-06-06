@@ -10,11 +10,13 @@ import ChipTabs from '@/components/Tabs/TabsFramer';
 const Blog = () => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <section className={` w-full h-scre mx-auto`}>
+        <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">  
+        <NavBar />
         <div
-          className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-bottom-4 bg-[url('/blog-bg.svg')] pb-20`}
-        >
+          className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5 pb-20`}
+          >
           <div className="flex flex-col items-center my-7 md:my-14">
             <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">BLOG</span>
 
@@ -31,8 +33,9 @@ const Blog = () => {
             </div>
           </div>
         </div>
+          </div>
 
-        <div className="flex flex-col md:items-center justify-center mx-3 overflow-x-scroll">
+        <div className="flex flex-col md:items-center justify-center bg-[#F8FCFA] mx-3 overflow-x-scroll py-10 md:py-20">
           <ChipTabs tabs={[
             {
               title: 'All', content: (

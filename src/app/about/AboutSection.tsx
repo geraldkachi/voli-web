@@ -17,11 +17,14 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div className='flex items-center gap-4 overflow-x-scroll my-10 no-scrollbar'>
+      <div className='hidden sm:flex items-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48'>
         <img src="abt-hero.svg" alt="" />
         <img src="abt-hero1.svg" alt="" />
         <img src="abt-hero3.svg" alt="" />
         <img src="abt-hero2.svg" alt="" />
+      </div>
+      <div className='sm:hidden flex items-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48 bg-contain w-full'>
+        <img src="abt-sub.svg" className=' w-full' alt="" />
       </div>
 
       <AboutStepper />
