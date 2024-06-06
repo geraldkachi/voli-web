@@ -7,7 +7,7 @@ const StepPayable = () => {
     return (
         <>
             <div className="mx-3 md:mx-[unset] pl-3  max-sm:pl-3 max-lg:pl-10 lg:ml-40">
-                <div className="my-10 text-2xl md:text-[40px] leading-[36px] md:leading-[64px] tracking-[-3%] pt-20 font-medium md:font-bold">
+                <div className="my-10 text-2xl md:text-[40px] leading-[36px] md:leading-[64px] tracking-[-3%] pt-20 md:font-medium font-bold">
                     Facilitating seamless and <span className="md:text-[#01C467]">hassle-free payment</span> <br className="hidden lg:block" /> processes by breaking them down into just three <br className="hidden lg:block" /> simple and straightforward steps
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 py-5">
@@ -29,7 +29,7 @@ const StepPayable = () => {
                             </span>
                             <div className="p-4 rounded-lg shadow-sm">
                                 <div className="items-center justify-between mb-3 sm:flex">
-                                    <div className="text-[20px] md:text-[32px] font-semibold leading-[32px] md:leading-[51.2px] tracking-[-2%] md:tracking-[]">Create a Bill to be paid and <br className="hidden lg:block" /> assign in to a vendor</div>
+                                    <div className="text-[20px] md:text-[32px] font-semibold leading-[32px] md:leading-[51.2px] tracking-[-2%] md:tracking-[-3%]">Create a Bill to be paid and <br className="hidden lg:block" /> assign in to a vendor</div>
                                 </div>
                                 <div className="text-base md:text-lg font-normal text-[#AAAAAA] leading-[30.4px] md:leading-[34.2px] md:tracking-[-1%]">Enhance financial visibility and efficiency by effortlessly synchronizing bank accounts with our fintech B2B product&apos;s Bank Account Synchronization feature.</div>
                             </div>
@@ -40,7 +40,7 @@ const StepPayable = () => {
                             </span>
                             <div className="p-4 rounded-lg shadow-sm">
                                 <div className="items-center justify-between mb-3 sm:flex">
-                                    <div className="text-[20px] md:text-[32px] font-semibold leading-[32px] md:leading-[51.2px] tracking-[-2%] md:tracking-[]">Bills get paid automatically <br className="hidden lg:block" /> given it passes approval tiers</div>
+                                    <div className="text-[20px] md:text-[32px] font-semibold leading-[32px] md:leading-[51.2px] tracking-[-2%] md:tracking-[-3%]">Bills get paid automatically <br className="hidden lg:block" /> given it passes approval tiers</div>
                                 </div>
                                 <div className="text-base md:text-lg font-normal text-[#AAAAAA] leading-[30.4px] md:leading-[34.2px] md:tracking-[-1%]">Enhance financial visibility and efficiency by effortlessly synchronizing bank accounts with our fintech B2B product&apos;s Bank Account Synchronization feature.</div>
                             </div>
