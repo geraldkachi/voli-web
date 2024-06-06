@@ -18,7 +18,7 @@ const AccountRecievable = () => {
                     <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max"> RECEIVABLE</div>
 
                     <motion.p variants={navVariants}  className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[56px] lg:leading-[86.4px]`}>
-                    Get Paid and Manage Payments <br /> from Customers
+                    Get Paid and Manage Payments <br className='hidden md:block'  /> from Customers
                     </motion.p>
                     <p className={`text-center mt-2 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>   
                 </div>

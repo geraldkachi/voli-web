@@ -19,7 +19,7 @@ const Blog = () => {
             <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">BLOG</span>
 
             <motion.p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
-              All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br /> everything Finance
+              All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br className='hidden md:block'  /> everything Finance
             </motion.p>
             <p className={`text-center mt-2 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
 
