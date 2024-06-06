@@ -37,8 +37,10 @@ const Hero = () => {
                 <motion.div ref={ref} className="flex items-center justify-center sticky top-0 -z-50">
                 
                         <motion.div className="flex flex-col relative -z-50 w-full overflow-hidden"  style={{transition: scale}}>
-                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813079/folder2_q70rpn.svg" className="md:h-[672.8px] w-max transform transition-transform duration-1000 hover:-rotate-180 animate-fli" alt="" />
-                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813073/folder_x998ky.svg" className="md:h-[672.8px] w-max transform transition-transform duration-1000 hover:-rotate-180  top-1 absolute animate-fli" alt="" />
+                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813079/folder2_q70rpn.svg" className="md:h-[672.8px] w-max animate-fli" alt="" />
+                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813073/folder_x998ky.svg" className="md:h-[672.8px] w-max  top-1 absolute animate-fli" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813079/folder2_q70rpn.svg" className="md:h-[672.8px] w-max transform transition- duration-1000 hover:-rotate-180 animate-fli" alt="" />
+                            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813073/folder_x998ky.svg" className="md:h-[672.8px] w-max transform transition-transform duration-1000 hover:-rotate-180  top-1 absolute animate-fli" alt="" /> */}
 
                             
                             {/* <img src="folder.svg" className="md:h-[500px] w-max  top-1 absolute" alt="" />
