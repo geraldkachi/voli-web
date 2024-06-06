@@ -86,7 +86,7 @@ const Seamless = () => {
                     </div> */}
 
 
-                    <div className="bg-white overflow-x-scroll md:!overflow-visible no-scrollbar -z-5">
+                    <div className="overflow-x-scroll md:!overflow-visible no-scrollbar -z-5">
                         <div className="flex md:justify-center">
                                 <div className="md:hidden flex items-start justify-s gap-4 py-4 mb-10  text-[#909090] cursor-grab active:cursor-grabbing">
                                     {cardshiver.map((card, i) => (
