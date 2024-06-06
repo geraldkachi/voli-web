@@ -18,10 +18,10 @@ const Blog = () => {
           <div className="flex flex-col items-center my-7 md:my-14">
             <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">BLOG</span>
 
-            <motion.p className={`text-center mt-2 text-[#00000A] text-5xl font-extrabold md:text-7xl`}>
-              All-in-one <span className="text-[#01C467] leading-{93.6px]">Platform</span> for <br className='hidden md:block'  /> everything Finance
-            </motion.p>
-            <p className={`text-center mt-2 text-[#55555C] font-normal md:text-lg leading-8`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
+            <p className={`text-center mt-2 text-[#00000A] text-[36px] font-extrabold md:text-7xl leading-[48.96px] md:leading-[93.6px] tracking-[-4%] md:tracking-[-5%]`}>
+              All-in-one <span className="text-[#01C467] ">Platform</span> for <br className="hidden md:block" /> everything Finance
+            </p>
+            <p className={`text-center mt-4 text-[#55555C] font-normal text-base md:text-lg leading-[28.8px] md:leading-[32.4px]`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
 
             <div data-element="fields" data-stacked="false" className="flex flex-col md:flex-row items-center w-full max-w-md px-3 md:px-0 my-4">
               <div className=" w-full md:mr-3">
@@ -34,47 +34,224 @@ const Blog = () => {
 
         <div className="flex flex-col md:items-center justify-center mx-3 overflow-x-scroll">
           <ChipTabs tabs={[
-            {title: 'All',content:( 
+            {
+              title: 'All', content: (
+                <div className="max-w-5xl mx-auto">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
+                </div>
+              )
+            },
+            { title: 'Digital Marketing', content: 
               <div className="max-w-5xl mx-auto">
-              <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
 
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
-                </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card2.svg" alt="recent-card" />
-                </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
-                </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
 
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
-                </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card2.svg" alt="recent-card" />
-                </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
-                </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
 
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
                 </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card2.svg" alt="recent-card" />
+             },
+            { title: 'Budgeting', content: 
+              <div className="max-w-5xl mx-auto">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
                 </div>
-                <div className="items-center justify-center flex">
-                  <img src="recent-card1.svg" alt="recent-card" />
+            },
+            { title: 'Financial Forecasting', content: 
+              <div className="max-w-5xl mx-auto">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            )},
-            {title: 'Digital Marketing',content: <>Gerald you&apos;re a warrior</>},
-            {title: 'Budgeting',content: <>Life is hard without God</>},
-            {title: 'Financial Forecasting',content: <>God is Good</>},
-            {title: 'Tax',content: <>Stay Hard and know that God is Good</>},
-            {title: 'Financial Risk',content: <>Never complain. God is Good</>},
+            },
+            { title: 'Tax', content: 
+              <div className="max-w-5xl mx-auto">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
+                </div>
+            },
+            { title: 'Financial Risk', content: 
+              <div className="max-w-5xl mx-auto">
+                  <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card2.svg" alt="recent-card" />
+                    </div>
+                    <div className="items-center justify-center flex">
+                      <img src="recent-card1.svg" alt="recent-card" />
+                    </div>
+                  </div>
+                </div>
+            },
           ]} />
 
           {/* <Tabs
@@ -161,10 +338,10 @@ const Blog = () => {
               },
             ]} /> */}
         </div>
-            <Seamless />
-            {/* <RecentArticle /> */}
-            <ReadyToEnjoy />
-            <FooterTail />
+        <Seamless />
+        {/* <RecentArticle /> */}
+        <ReadyToEnjoy />
+        <FooterTail />
       </section>
 
 

@@ -20,7 +20,7 @@ const ChipTabs = ({tabs}: ChipProps) => {
   return (
     <div  className="flex flex-col md:items-center">
 
-    <div className="px-0 py-5  flex items-center gap-2 !overflow-x-scroll no-scrollbar">
+    <div className="px-0 my-5  flex items-center gap-x-2 !overflow-x-scroll no-scrollbar border-b border-">
       {tabs?.map((tab: {title: string}, idx: number) => (
         <Chip
         text={tab.title}
@@ -43,11 +43,11 @@ const Chip = ({ text, selected, setSelected}: ChipProps) => {
       onClick={() => setSelected && setSelected(text || '')} 
       className={`${
         selected
-          ? "text-[#01C467] bg-[#E7FDF3] rounded-t-lg"
-          : "text-[#808084] hover: hover:"
-      } text-sm transition-colors px-2. py-2 relative px-4 md:px-5 whitespace-nowrap`}
+          ? " rounded-lg"
+          : "text-[#808084] hover: hover: w-full h-full"
+      } text-sm transition-colors px-2. py-2 relative px-0 whitespace-nowrap mx-2`}
     >
-      <span className="relative z-10">{text}</span>
+      <span className={`relative w-full z-10 ${selected && 'text-[#01C467] bg-[#E7FDF3] block p-3 rounded-lg !w-full '}`}>{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"
