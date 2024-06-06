@@ -35,7 +35,7 @@ const Blog = () => {
         <div className="flex flex-col md:items-center justify-center mx-3 overflow-x-scroll">
           <ChipTabs tabs={[
             {title: 'All',content:( 
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-5xl mx-auto">
               <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
 
                 <div className="items-center justify-center flex">
@@ -83,7 +83,7 @@ const Blog = () => {
               {
                 label: `All`,
                 content: (
-                  <div className="max-w-6xl mx-auto">
+                  <div className="max-w-5xl mx-auto">
                     <div className="grid sm:grid-cols-3 gap-5 items-center justify-center">
 
                       <div className="items-center justify-center flex">

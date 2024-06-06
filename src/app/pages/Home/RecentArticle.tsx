@@ -1,7 +1,7 @@
 const RecentArticle = () => {
     return (
         <div className="bg-[#F8FCFA]">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
             <div className='py-10 md:py-20 px-3'>
                 <p className='text-center text-[#808084] font-semibold text-lg leading-[22.5px] mb-10 tracking-[18%]'>Recently Published Articles</p>
 

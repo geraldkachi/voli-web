@@ -2,8 +2,8 @@ import { Button } from "@/components"
 
 const FinancialAccount = () => {
   return (
-    <section className="bg-[#FAFAFA] md:pt-20 md:pb-10">
-      <section className={` w-full h-scre bg-white max-w-6xl px-3 md:mx-auto rounded-[20px]`}>
+    <section className="bg-[#FAFAFA] md:pt-0 md:pb-10">
+      <section className={` w-full h-scre bg-white max-w-5xl px-3 md:mx-auto rounded-[20px]`}>
         <div className={`flex flex-row items-center justify-center gap-5`}>
           <div className="flex flex-col my-14">
             <p className={`md:text-center mt-2 text-[#00000A] text-2xl md:text-[32px] font-semibold leading-[38.4px] md:leading-[51.2px]`}>Financial Accounting</p>

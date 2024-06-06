@@ -105,7 +105,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     return (
         <>
-            <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-6xl mx-auto`}>
+            <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-5xl mx-auto`}>
                 {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
                 <div className={`mx-auto flex justify-between gap-8`}>
                     <div  className="cursor-pointer"  onClick={() => router.push('/', { scroll: false })}>
@@ -114,7 +114,7 @@ const Navbar = () => {
                     </Link>
                     </div>
 
-                    <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C]">
+                    <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C] border-r border-l border-[#CCFBE5] px-4">
                         <ShiftingDropDown />
                         <Link href="/pricing" className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
                             <span>Pricing</span>
@@ -151,9 +151,9 @@ const Navbar = () => {
                                 </AccordionNav>
                             ))}
                         </li>
-                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
-                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
-                        <div className='p-4 text-white w-full'><Link className="w-full h-full whitespace-nowrap" href="/">Resources</Link> </div>
+                        <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/pricing', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
+                        <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/faq', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
+                        {/* <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/">Resources</Link> </div> */}
                     </div>
 
 

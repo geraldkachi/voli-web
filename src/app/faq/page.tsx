@@ -17,7 +17,7 @@ const Faq = () => {
 
       <div className="bg-[#F8FEFB]">
         <NavBar />
-        <div className={`max-w-6xl mx-auto flex flex-col items-center justify-center`}>
+        <div className={`max-w-5xl mx-auto flex flex-col items-center justify-center`}>
           <div className="flex flex-col items-center my-7 md:my-14">
             <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">FAQ</div>
             <p className={`text-center mt-2 text-[#011311] text-2xl leading-[38.08px] md:leading-[89.6px] font-extrabold md:text-[64px]`}>

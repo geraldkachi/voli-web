@@ -36,7 +36,7 @@ const Hero = () => {
 
                 <motion.div ref={ref} className="flex items-center justify-center sticky top-0 -z-50">
                 
-                        <motion.div className="flex flex-col relative -z-50 top-0 w-full"  style={{transition: scale}}>
+                        <motion.div className="flex flex-col relative -z-50 w-full overflow-hidden"  style={{transition: scale}}>
                             <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813079/folder2_q70rpn.svg" className="md:h-[672.8px] w-max transform transition-transform duration-1000 hover:-rotate-180 animate-flip" alt="" />
                             <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813073/folder_x998ky.svg" className="md:h-[672.8px] w-max transform transition-transform duration-1000 hover:-rotate-180  top-1 absolute animate-flip" alt="" />
 
@@ -56,7 +56,7 @@ const Hero = () => {
                         </motion.div>
                 </motion.div>
             </div>
-            <div className="h-[30hv]">
+            <div className="h-[30hv] overflow-hidden">
             <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716813252/payment-img_wfs1tl.svg" alt="payment" className="h-[30hv] z-50 w-full sm:max-w-5xl max-h-md md:max-w-none mx-auto" />
             {/* <img src="payment-img.svg" alt="payment" className="h-[30hv] z-50 w-full sm:max-w-5xl max-h-md md:max-w-none mx-auto" /> */}
             </div>

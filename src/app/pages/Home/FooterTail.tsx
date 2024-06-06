@@ -8,7 +8,7 @@ const FooterTail = () => {
 
             <footer className="bg-white">
                 <SubFooter />
-                <div className="mx-auto w-full max-w-6xl">
+                <div className="mx-auto w-full max-w-5xl">
                     <div className="grid grid-cols-2 gap-8 md:gap-20 px-3 md:px-0 py-6 lg:py-8 md:grid-cols-5 whitespace-nowrap">
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[21.6px] md:leading-[25.2px] tracking-[-1%] md:tracking-[-2%]">PRODUCTS</h2>
@@ -97,7 +97,7 @@ const FooterTail = () => {
                         </div>
                     </div>
 
-                    <div className="max-auto max-w-6xl text-center text-xs md:text-lg leading-[36px] text-[#808080] bg-[#FAFAFA] rounded-xl px-5 py-10">
+                    <div className="max-auto max-w-5xl text-center text-xs md:text-lg leading-[36px] text-[#808080] bg-[#FAFAFA] rounded-xl px-5 py-10">
                         To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank.
                     </div>
 

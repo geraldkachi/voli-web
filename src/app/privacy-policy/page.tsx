@@ -62,12 +62,12 @@ const PrivacyPolicy = () => {
           <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRIVACY POLICY</span>
 
           <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[64px] leading-[46.4px] md:leading-[83.2px] tracking-[-4%] md:tracking-[-5%]`}>  We care about your Privacy <br className='hidden md:block'  /> as much as you do</p>
-          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-4 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
+          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-2 py-4 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
 
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-3">
+      <div className="max-w-5xl mx-auto px-3">
         <div className="flex">
           <nav className="w-1/4 bg-white p-4 hidden md:block">
             <ul className="text-[#55555C] text-lg leading-[22.68px] font-normal whitespace-nowrap">

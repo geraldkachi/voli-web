@@ -61,7 +61,7 @@ const cardshiver = [
 const Seamless = () => {
     return (
         <div className='bg-[#F8FCFA]'>
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-5xl mx-auto'>
 
             <div className='grid md:grid-cols-7 gap- overflow-hidden'>
                 <div className='md:col-span-3 bg- py-20 px-3 lg:px-0'>
