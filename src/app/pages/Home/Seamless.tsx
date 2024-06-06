@@ -64,7 +64,7 @@ const Seamless = () => {
         <div className='max-w-5xl mx-auto'>
 
             <div className='grid md:grid-cols-7 gap- overflow-hidden'>
-                <div className='md:col-span-3 bg- py-20 px-3 lg:px-0'>
+                <div className='md:col-span-3 bg- md:py-20 px-3 lg:px-0'>
                     <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TESTIMONIALS</motion.span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>
                         Facilitating seamless and into just three simple and straightforward steps

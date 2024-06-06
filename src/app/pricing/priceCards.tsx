@@ -3,21 +3,9 @@ import { Button } from "../../components"
 
 const PriceCards = () => {
     return (
-        <div className="px-3">
-                  <div
-                className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
-            >
-                <div className="flex flex-col items-center my-7 md:my-14">
-                <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">PRICING</div>
-
-                    <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-7xl lg:leading-[86.4px]`}>
-                    Just the right price to <br /> suit any Business
-                    </p>
-                </div>
-            </div>
-
+        <div className="px-3 md:px-0 bg-white">
                 <div
-                    className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3 md:p-3 bg-[#FCFCFD]">
+                    className="mt-1 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3 md:p-3 bg-[#FCFCFD]">
                     {/* Card One */}
                     <div className="bg-white rounded-lg shadow-sm">
                         <div className="p-6">
@@ -62,8 +50,8 @@ const PriceCards = () => {
                                 </li>
                             </ul>
 
-                            <Button title="Subscribe Now~" className="!bg-[#F2F2F3] !text-[#2B2B33] w-full flex items-center justify-center" />
                         </div>
+                            <Button title="Subscribe Now~" className="!bg-[#F2F2F3] !text-[#2B2B33] w-full flex items-center justify-center" />
                     </div>
                     {/* Card 2 */}
                     <div className="bg-white rounded-lg shadow-sm bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90%">
@@ -104,8 +92,8 @@ const PriceCards = () => {
                                     <span className="text-sm text-[#AAAAAD]">1% payment commission</span>
                                 </li>
                             </ul>
-                            <Button title="Get Started" className="w-full flex items-center justify-center" />
                         </div>
+                            <Button title="Get Started" className="w-full flex items-center justify-center" />
                     </div>
 
                     <div className="bg-white rounded-lg shadow-sm">
@@ -146,8 +134,8 @@ const PriceCards = () => {
                                     <span className="text-sm text-[#666666]">No payment commission</span>
                                 </li>
                             </ul>
-                            <Button title="Get Started" className="!bg-[#F2F2F3] !text-[#2B2B33] w-full flex items-center justify-center" />
                         </div>
+                            <Button title="Get Started" className="!bg-[#F2F2F3] !text-[#2B2B33] w-full flex items-center justify-center" />
                     </div>
                 </div>
         </div>
