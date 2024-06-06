@@ -1,6 +1,9 @@
 import React from 'react'
 import CardAccounting from './Card'
 import { Button } from '@/components'
+import { motion } from "framer-motion"
+import { navVariants, planetVariants } from '../utils/motion'
+
 const payroll = [
     {
         icon: 'account-card.svg',
@@ -20,29 +23,38 @@ const SectionOne = () => {
             <div className="bg-[#FAFAFA] md:p-20 rounded-lg">
 
                 <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
-                    <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] py-20 px-3 md:px-0'>
+                    <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 md:py-20 px-3 md:px-0'>
 
-                        <div className='grid md:grid-cols-2 justify-center gap-10 py-10'>
+                        <div className='grid lg:grid-cols-2 justify-center gap-5 space-y-3 pb-6 md:py-10'>
                             {payroll.map((item, key) =>
-                                <CardAccounting key={item.title}  {...item} />
+                                <CardAccounting key={item.title} {...item} index={key} />
                             )}
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='bg-[#FAFAFA] p-4 rounded-[20px] md:p-20'>
-            <div className="grid md:grid-cols-2 gap-4 px-3 rounded-lg">
-                <div>
-                    <p className='font-semibold text-2xl md:text-[32px] md:leading-[57px] mb-3'>Charts <br className='hidden md:block' /> of Accounts</p>
-                    <p className='text-[#808080]'>Vollie helps to organise assets, liabilities, and other financial categories, streamlining reporting, analysis, and for good audit trails.</p>
+            <div className='px-3 md:px-0 bg-[#FAFAFA] md:pb-20'>
+            <div className="hidden md:grid md:grid-cols-5 gap-4 px-3 md:px-0 pl-5 rounded- bg-[#FAFAFA] md:bg-[#E7FDF3] md:pt-20 rounded-[20px] max-w-5xl mx-auto">
+                <div className='col-span-2 md:pl-10'>
+                    <p className='font-semibold text-xl md:text-[32px] leading-[38.4px] md:leading-[51.2px] tracking-[-3%] mb-3'>Charts of Accounts</p>
+                    <p className='text-[#808080] text-sm md:text-lg leading-[23.8px] tracking-[-1%]'>Vollie helps to organise assets, liabilities, and other financial categories, streamlining reporting, analysis, and for good audit trails.</p>
 
-                    <Button title="Learn More" className="!bg-[#F2F2F3] !text-[#00000A] mt-5 hidden sm:block" />
+                    <Button title="Learn More" className="!bg-[#F2F2F3] !text-[#00000A] mt-5 block sm:hidden" />
                 </div>
-                <div>
-                    <img src="chart-account.svg" alt="" />
+                <div className='col-span-3'>
+                    <img src="chart-account.svg" alt="h-[630px]" />
                 </div>
             </div>
+
+            <motion.div className={`block md:hidden bg-[#FAFAFA] rounded-[20px] overflow-hidden border`}>
+                <motion.div variants={navVariants} className="p-4 md:p-8">
+                    <motion.p className="text-[#00000A] text-lg sm:text-[28px] font-semibold leading-[38.4px] md:leading-[51.2px] text-wrap my-2 mb-3 tracking-[-3%]">Charts of Accounts</motion.p>
+                    <motion.p variants={planetVariants('left')} className="text-[#808080] text-sm sm:text-base text-wrap">Vollie helps to organise assets, liabilities, and other financial categories, streamlining reporting, analysis, and for good audit trails.</motion.p>
+                </motion.div>
+                
+                <img src='chart-account.svg' alt="payable" className={`pt-4`} />
+            </motion.div>
             </div>
 
         </div>

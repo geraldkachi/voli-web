@@ -12,9 +12,9 @@ const CardReceivable = ({icon, title, subtitle, keyidx}: Props) => {
     const variants = fadeIn("right", "spring", 0.5, 0.75)
 
   return (
-    <motion.div  className="p-8 rounded-[20px] bg-[#F8F8F8]">
-      <motion.div variants={variants}>
-        <motion.p className="text-[#00000A] text-lg sm:text-[28px] font-semibold text-wrap my-2 mb-5">{title}</motion.p>
+    <motion.div  className=" rounded-[20px] bg-[#F8F8F8]">
+      <motion.div variants={variants} className='p-8'>
+        <motion.p className="text-[#00000A] text-[22px] sm:text-[28px] font-semibold leading-[35.2px] md:leading-[44.8px] md:tracking-[-3%] text-wrap my-2 mb-5">{title}</motion.p>
         <motion.p variants={planetVariants('left')} className="text-[#808080] text-sm sm:text-base text-wrap">{subtitle}</motion.p>
       </motion.div>
      

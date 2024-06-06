@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
 
   return (
     <div>
-      <NavBar />1``
+      <NavBar />
 
       <div
         className={`max-w-7xl mx-auto flex justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-bottom-4 bg-[url('/policy-bg.svg')] md:h-screen pb-20`}
@@ -62,25 +62,25 @@ const PrivacyPolicy = () => {
           <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRIVACY POLICY</span>
 
           <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[64px] leading-[46.4px] md:leading-[83.2px] tracking-[-4%] md:tracking-[-5%]`}>  We care about your Privacy <br className='hidden md:block'  /> as much as you do</p>
-          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-2 py-4 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
+          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-4 py-3 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
 
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-3">
+      <div className="max-w-7xl mx-auto px-3 lg:px-0">
         <div className="flex">
           <nav className="w-1/4 bg-white p-4 hidden md:block">
             <ul className="text-[#55555C] text-lg leading-[22.68px] font-normal whitespace-nowrap">
-              <li><a href="#section1" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Introduction</a></li>
-              <li><a href="#section2" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Information We Collect</a></li>
-              <li><a href="#section3" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">How We Use Your Information</a></li>
-              <li><a href="#section4" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">How We Share Your Information</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Data Retention</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467"> Data Security</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Your Choices</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Children's Privacy</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467"> Updates to this Privacy Policy</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Contact Us</a></li>
+              <li><a href="#section1" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Introduction</a></li>
+              <li><a href="#section2" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Information We Collect</a></li>
+              <li><a href="#section3" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">How We Use Your Information</a></li>
+              <li><a href="#section4" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">How We Share Your Information</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Data Retention</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467"> Data Security</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Your Choices</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Children's Privacy</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467"> Updates to this Privacy Policy</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Contact Us</a></li>
             </ul>
           </nav>
 

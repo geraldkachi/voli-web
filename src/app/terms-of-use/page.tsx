@@ -61,25 +61,25 @@ const TermsOfUse = () => {
           <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">TERMS AND CONDITIONS</span>
 
           <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[64px] leading-[46.4px] md:leading-[83.2px] tracking-[-4%] md:tracking-[-5%]`}>Take a look into our <br className='hidden md:block' /> Terms and Conditions</p>
-          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-2 py-4 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
+          <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-4 py-3 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
 
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-3">
+      <div className="max-w-7xl mx-auto px-3 lg:px-0">
         <div className="flex">
           <nav className="w-1/4 bg-white p-4 hidden md:block">
             <ul className="text-[#55555C] text-lg leading-[22.68px] font-normal">
-              <li><a href="#section1" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Introduction</a></li>
-              <li><a href="#section2" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Account Registration</a></li>
-              <li><a href="#section3" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Invoicing and Billing</a></li>
-              <li><a href="#section4" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Expense Management</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Automatic Bill Payment</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Privacy and Data Security</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Limitation of Liability</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Amendments and Modifications</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Governing Law and Jurisdiction</a></li>
-              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:bg-[#E7FDF3] text-[#01C467">Contact Us</a></li>
+              <li><a href="#section1" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Introduction</a></li>
+              <li><a href="#section2" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Account Registration</a></li>
+              <li><a href="#section3" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Invoicing and Billing</a></li>
+              <li><a href="#section4" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Expense Management</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Automatic Bill Payment</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Privacy and Data Security</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Limitation of Liability</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Amendments and Modifications</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Governing Law and Jurisdiction</a></li>
+              <li><a href="#section5" className="block py-2 px-4  mb-4 rounded hover:text-[#01C467] hover:bg-[#E7FDF3] text-[#01C467">Contact Us</a></li>
             </ul>
           </nav>
 

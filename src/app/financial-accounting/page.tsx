@@ -52,10 +52,10 @@ const FinancialAccounting = () => {
         <div className="flex flex-col items-center my-7 md:my-14 px-3 sm:px-0">
           <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">ACCOUNTING</div>
 
-          <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[56px] lg:leading-[86.4px]`}>
+          <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[56px] leading-[44.8px] lg:leading-[72.8px] tracking-[-5%] md:tracking-[-6%]`}>
             Transform finance with our <br className='hidden md:block' /> innovative  <span className="text-[#01C467]">Accounting</span> platform
           </motion.p>
-          <p className={`text-center mt-4 text-[#55555C] font-normal md:text-lg leading-8`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
+          <p className={`text-center mt-4 text-[#55555C] font-normal text-sm md:text-lg leading-[25.2px] md:leading-[29.7px]`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
         </div>
       </div>
       <div className="flex items-center justify-center w-full">
@@ -67,7 +67,7 @@ const FinancialAccounting = () => {
 
       <SectionOne />
       <div className='bg-white'>
-        <div className='max-w-5xl mx-auto bg-white py-20 px-3 md:px-0'>
+        <div className='max-w-5xl mx-auto bg-white py-20 px-3 lg:px-0'>
           {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRODUCTS</span> */}
           <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-[38.4px] md:leading-[57.6px] mt-6 font-medium md:font-semibold tracking-[-4%]'>Experience the convenience of streamlining your expense
             <br className='hidden md:block' /> management, payrolls, multi-level approvals, and more,
@@ -82,7 +82,7 @@ const FinancialAccounting = () => {
       </div>
 
 
-      <div className="max-w-5xl mx-auto my-20 px-3 sm:px-0">
+      <div className="max-w-5xl mx-auto my-20 px-3 lg:px-0">
         <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">FAQs</span>
         <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
           We answered your questions so <br className='hidden md:block' /> you don&apos;t have to ask again.
