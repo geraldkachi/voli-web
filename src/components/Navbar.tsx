@@ -7,7 +7,7 @@ import { ShiftingDropDown } from "./DropdownTab/DropdownTab";
 import Image from "next/image";
 import Link from "next/link";
 import AccordionNav from "./AccordionNav";
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 // import { navArr } from "./constants/faq-data";
 
@@ -103,12 +103,13 @@ export const navArr = [
 const Navbar = () => {
     const router = useRouter()
     const [nav, setNav] = useState(false);
+    const location =usePathname()
     return (
         <>
             <motion.nav variants={navVariants} initial="hidden" whileInView="show" className={`py-4 px-3 relative max-w-5xl mx-auto`}>
                 {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
                 <div className={`mx-auto flex justify-between gap-8`}>
-                    <div  className="cursor-pointer"  onClick={() => router.push('/', { scroll: false })}>
+                    <div  className="cursor-pointer w-[56px] h-[56px]"  onClick={() => router.push('/', { scroll: false })}>
                     <Link href="/">
                         <Image src="next.svg" width={14} height={56} alt="logo" className="w-[56px] h-[56px] object-contain cursor-pointer" onClick={() => console.log('hi')} />
                     </Link>
@@ -116,7 +117,7 @@ const Navbar = () => {
 
                     <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C] border-r border-l border-[#CCFBE5] px-4">
                         <ShiftingDropDown />
-                        <Link href="/pricing" className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
+                        <Link href="/pricing" className={`${location && '!text-[#01C467] !bg-[#E7FDF3]'} flex items-center gap-1 rounded-full px-3 py-2 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
                             <span>Pricing</span>
                         </Link>
                     </div>

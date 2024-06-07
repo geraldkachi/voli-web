@@ -79,7 +79,7 @@ const Tab = ({
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}
-      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors leading-[17.64px] tracking-[-2%] ${
+      className={`flex items-center gap-1 rounded-full px-3 py-2 text-sm transition-colors leading-[17.64px] tracking-[-2%] ${
         selected === tab
           ? " bg-transparent text-[#55555C]"
           : "text-[#55555C]"

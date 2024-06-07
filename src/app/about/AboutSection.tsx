@@ -31,16 +31,18 @@ const AboutSection = () => {
       </div>
 
       <AboutStepper />
-      <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
-        <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 px-3 md:px-0'>
+      <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20">
+
+        <div className='max-w-5xl mx-auto px-3 md:px-0'>
           <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">PARTNERS</span>
           <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
             Experience the convenience of streamlining <br /> your expense management, payrolls,
           </motion.p>
         </div>
 
-        <div className='md:max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] sm:px-3 md:px-0'>
-          <div className='flex items-center md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-1 md:gap-10 py-10'>
+        {/* <div className='md:max-w-5xl mx-auto sm:px-3 md:px-0'> */}
+        <div className='md:max-w-5xl mx-auto px-0'>
+          <div className='flex items-center md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-6 md:gap-10 py-10'>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, i) =>
               <div className="p-6 text-[#FAFAFA] w-40 border rounded-2xl bg-[#FAFAFA]" key={i}>{_}</div>
             )}
