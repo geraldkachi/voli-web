@@ -11,8 +11,8 @@ const Blog = () => {
   return (
     <div>
       <section className={` w-full h-scre mx-auto`}>
-      <div className="bg-[#FAFAFA] md:bg-transparent">
       <NavBar />
+      <div className="bg-[#FAFAFA] md:bg-transparent">
         <div
           className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-center bg-[url('/blog-bg.svg')] mb:pb-20`}
         >
