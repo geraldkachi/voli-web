@@ -33,9 +33,6 @@ const Hero = () => {
             <div className='relative'></div>
      
             <div className='relative w-full flex justify-center h-max mx-auto z-10'>
-                {/* <img src="next1.svg" className="hidden md:block left-10 md:left-24 top-2 md:top-96 absolute z-10 cursor-pointer" alt="" />
-                <img src="next1.svg" className="hidden md:block right-5 md:right-24 top-24 absolute z-10 cursor-pointer" alt="" /> */}
-
                 <motion.div ref={ref} className="flex items-center justify-center sticky top-0 -z-50">
                 <img src="next1.svg" className="hidden md:block left-10 md:-left-5 top-2 md:top-96 absolute z-10 cursor-pointer" alt="" />
                 <img src="next1.svg" className="hidden md:block right-5 md:-right-5 top-24 absolute z-10 cursor-pointer" alt="" />

@@ -44,6 +44,7 @@ const Contact = () => {
         <div>
             <NavBar />
             {/* <SlideInNotifications {...{name, notify}} /> */}
+            <div className="bg-[#FAFAFA] md:bg-transparent">
             <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto justify-center">
                 <div>
                     <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='pt-8 lg:py-16 px-4'>
@@ -84,6 +85,7 @@ const Contact = () => {
                         </div>
                     </section>
                 </div>
+            </div>
             </div>
 
             <FooterTail />
