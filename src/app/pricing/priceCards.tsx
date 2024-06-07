@@ -11,7 +11,7 @@ const PriceCards = () => {
                     <div className="p-6">
                         <p className="mt-8">
                             <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-[-6%] leading-[89.6px]">$0.00</span>
-                            <div className="mt-4 bg-[#F2F2F3] p-3 my-2 text-base rounded-lg text-[#808080] font-bold w-max tracking-[-2%] leading-[27.2px]">Free Plan</div>
+                            <div className=" bg-[#F2F2F3] p-3 my-2 text-base rounded-lg text-[#808080] font-bold w-max tracking-[-2%] leading-[27.2px]">Free Plan</div>
                             {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                         </p>
                     </div>
@@ -59,7 +59,7 @@ const PriceCards = () => {
                     <div className="p-6">
                         <p className="mt-8">
                             <span className="text-4xl md:text-[56px] font-bold text-white tracking-[-6%] leading-[89.6px]">$32.00</span>
-                            <div className="mt-4 bg-[#F2F2F31F] p-3 my-2 text-base rounded-lg text-white font-bold w-max tracking-[-2%] leading-[27.2px]">Pro Plan</div>
+                            <div className=" bg-[#F2F2F31F] p-3 my-2 text-base rounded-lg text-white font-bold w-max tracking-[-2%] leading-[27.2px]">Pro Plan</div>
                             {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                         </p>
                     </div>
@@ -103,7 +103,7 @@ const PriceCards = () => {
                             <span className="text-4xl md:text-[56px] font-bold text-[#00000A] tracking-[-6%] leading-[89.6px]">$128.00</span>
 
                             {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
-                            <div className="mt-4 bg-[#E7FDF3] p-3 my-2 text-base rounded-lg text-[#01C467] font-bold w-max tracking-[-2%] leading-[27.2px]">Enterprise Plan</div>
+                            <div className=" bg-[#E7FDF3] p-3 my-2 text-base rounded-lg text-[#01C467] font-bold w-max tracking-[-2%] leading-[27.2px]">Enterprise Plan</div>
                         </p>
                     </div>
                     <hr className="mx-6" />
