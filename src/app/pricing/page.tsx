@@ -28,7 +28,7 @@ const Pricing = () => {
             </div>
             <PriceCards />
             <div className="max-w-5xl mx-auto my-20 px-3">
-                <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">FAQs</span>
+                <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-xs md:text-sm font-bold leading-[19.2px] md:leading-[22.4px] tracking-[-1%]">FAQs</span>
                 <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-[48px] leading-[67.2px] tracking-[-3%] mt-6 font-bold'>
                     We answered your questions so <br className="hidden lg:block" /> you don&apos;t have to ask again.
                 </motion.p>

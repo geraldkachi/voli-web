@@ -17,20 +17,20 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div className='hidden sm:flex items-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48'>
+      <div className='hidden sm:flex items-center justify-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48'>
         <img src="abt-hero.svg" alt="" />
         <img src="abt-hero1.svg" alt="" />
         <img src="abt-hero3.svg" alt="" />
         <img src="abt-hero2.svg" alt="" />
       </div>
-      <div className='sm:hidden flex items-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48 bg-contain w-full'>
+      <div className='sm:hidden flex items-center justify-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48 bg-contain w-full'>
         <img src="abt-sub.svg" className=' w-full' alt="" />
       </div>
 
       <AboutStepper />
       <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
         <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 px-3 md:px-0'>
-          <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PARTNERS</span>
+          <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">PARTNERS</span>
           <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>
             Experience the convenience of streamlining <br /> your expense management, payrolls,
           </motion.p>
@@ -45,7 +45,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="flex items-center justify-center">
         <Image src="about-bg-play.svg" className='cursor-pointer' width={1440} height={360} objectFit='cover' alt="" />
       </div>
     </div>

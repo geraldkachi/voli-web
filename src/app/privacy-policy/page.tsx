@@ -54,17 +54,16 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <NavBar />
-
-      <div
-        className={`max-w-7xl mx-auto flex justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-bottom-4 bg-[url('/policy-bg.svg')] md:h-screen pb-20`}
-      >
+      <div className="bg-[#FAFAFA] md:bg-transparent">
+      <div className={`max-w-7xl mx-auto flex justify-center gap-5 object-cover w-full bg-no-repeat bg-contain bg-bottom-4 bg-[url('/policy-bg.svg')] md:h-screen pb-20`}>
         <div className="flex flex-col items-center my-20">
-          <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm">PRIVACY POLICY</span>
+          <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[19.2px] tracking-[-1%]">PRIVACY POLICY</span>
 
           <p className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[64px] leading-[46.4px] md:leading-[83.2px] tracking-[-4%] md:tracking-[-5%]`}>  We care about your Privacy <br className='hidden md:block'  /> as much as you do</p>
           <p className={`text-center mt-2 text-[#000000] bg-white rounded-full font-normal text-sm px-4 py-3 md:mt-10 leading-[19.6px]`}>Last Updated • {formattedDate}</p>
 
         </div>
+      </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-3 lg:px-0">

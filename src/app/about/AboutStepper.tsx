@@ -15,7 +15,7 @@ const AboutStepper = () => {
                             {/* <h4 className="-mt-2 text-xl font-semibold">Title of section 1</h4> */}
                         </div>
                         <div className="mb-6 ml-6 pb-6">
-                    <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">ABOUT US</div>
+                    <div className="mb-5 w-max  rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">ABOUT US</div>
                            
                             <p className="mb-4 mt-2 text-[22px] md:text-[36px] tracking-[-4%] leading-[35.2px] md:leading-[57.6px] font-semibold text-[#00000A]">
                                 Welcome to Vollie, the leading fintech B2B solution provider at the forefront of revolutionizing the financial landscape.
