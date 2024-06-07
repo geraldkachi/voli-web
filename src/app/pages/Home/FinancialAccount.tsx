@@ -2,7 +2,7 @@ import { Button } from "@/components"
 
 const FinancialAccount = () => {
   return (
-    <section className="bg-[#FAFAFA] md:pt-0 md:pb-10">
+    <section className="bg-[#FAFAFA] pt-0 md:pt-5 md:pb-10">
       <section className={` w-full h-scre bg-white max-w-5xl px-3 md:mx-auto rounded-[20px]`}>
         <div className={`flex flex-row items-center justify-center gap-5`}>
           <div className="flex flex-col mb-4 mt-10 md:my-14">

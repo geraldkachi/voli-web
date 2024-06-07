@@ -16,7 +16,7 @@ const Faq = () => {
     <div>
 
       <div className="bg-[#F8FEFB]">
-      <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
+      <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
         <NavBar />
         <div className={`max-w-5xl mx-auto flex flex-col items-center justify-center`}>
           <div className="flex flex-col items-center my-7 md:my-14">

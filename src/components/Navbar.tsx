@@ -123,7 +123,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:flex items-center relative gap-x-2">
-                        <Button variant="secondary" title="Sign In" />
+                        <Button variant="secondary" title="Sign In" className="!bg-transparent" />
                         <Button title="Book A Demo" />
                     </div>
 

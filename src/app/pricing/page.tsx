@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 const Pricing = () => {
     return (
         <div>
-            <div className="bg-[#F8FEFB] object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
+            <div className="bg-[#F8FEFB] object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
                 <NavBar />
                 <div
                 className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}

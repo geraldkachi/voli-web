@@ -56,7 +56,7 @@ const FinancialAccounting = () => {
           <motion.p variants={navVariants} className={`text-center mt-2 text-[#00000A] text-[32px] font-extrabold md:text-[56px] leading-[44.8px] lg:leading-[72.8px] tracking-[-5%] md:tracking-[-6%]`}>
             Transform finance with our <br className='hidden md:block' /> innovative  <span className="text-[#01C467]">Accounting</span> platform
           </motion.p>
-          <p className={`text-center mt-4 text-[#55555C] font-normal text-sm md:text-lg leading-[25.2px] md:leading-[29.7px]`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
+          <p className={`text-center mt-4 text-[#808084] font-normal text-sm md:text-lg leading-[25.2px] md:leading-[29.7px]`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
         </div>
       </div>
       </div>

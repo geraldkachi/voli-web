@@ -5,12 +5,13 @@ import { faqArr } from "@/components/constants/faq-data"
 import { Accordion, Button } from "@/components"
 const StepPayable = () => {
     return (
-        <>
+        <>           
+          <div className="object-cover w-full h-full bg-contain bg-center mx-auto bg-[url('/bg-lining.svg')] bg-inherit">
             <div className="mx-3 md:mx-[unset] px-3  max-sm:pl-3 max-lg:pl-10 lg:ml-40">
                 <div className="my-10 text-2xl md:text-[40px] leading-[36px] md:leading-[64px] tracking-[-3%] pt-20 md:font-medium font-bold">
                     Facilitating seamless and <span className="md:text-[#01C467]">hassle-free payment</span> <br className="hidden lg:block" /> processes by breaking them down into just three <br className="hidden lg:block" /> simple and straightforward steps
                 </div>
-                <div className="grid md:grid-cols-2 gap-4 py-5">
+                <div className="grid md:grid-cols-2 gap-4 py-5 relative">
                     <ol className="relative border-s border-gray-200 ">
                         <li className="mb-20 ms-6">
                             <span className="absolute flex items-center justify-center w-8 md:w-14 h-8 md:h-14 bg-[#01C467] text-white border-2 border-[#01C467]  rounded-full -start-[16px] md:-start-[28px]">
@@ -47,10 +48,14 @@ const StepPayable = () => {
                         </li>
                     </ol>
 
+                    <img src="payble-stepball.svg" className="hidden lg:block absolute top-0 right-32 z-50" alt="ball" />
+
                     <div className="rounded-lg bg-[#F7F7F7] w-full h-[750px] overflow-hidden hidden sm:block">
+
                         <img src="step-img-payable.svg" className="mt-20 ml-" width={650} height={700} alt="" />
                     </div>
                 </div>
+            </div>
             </div>
             <div className="max-w-5xl mx-auto my-20 px-3">
                 <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-xs md:text-sm font-bold leading-[19.2px] md:leading-[22.4px] tracking-[-1%]">FAQs</span>

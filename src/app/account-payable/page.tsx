@@ -11,7 +11,7 @@ import Seamless from "../pages/Home/Seamless";
 const AccountPayable = () => {
   return (
     <div>
-      <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
+      <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
         <NavBar />
         <div className="bg-[#FAFAFA] md:bg-transparent">
         <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
