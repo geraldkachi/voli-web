@@ -7,14 +7,24 @@ import { navVariants, planetVariants } from '../utils/motion'
 const payroll = [
     {
         icon: 'account-card.svg',
-        title: 'Give your Customers Flexibility to Choose Payment Method',
-        subtitle: 'Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay',
+        title: 'Journals',
+        subtitle: 'Empower your team with the ability to track transactions, maintain accuracy within books, provide audit trails, and assist in decision-making.',
     },
     {
         icon: 'account-card1.svg',
-        title: 'Easily Import your Invoices In bulk to recieve payments',
-        subtitle: "Facilitate seamless transactions and manage funds efficiently using Virtual Accounts on Vollie.",
+        title: 'Financial Reports',
+        subtitle: "Vollie provides enhances accuracy and ensures compliance with regulatory requirements, optimising financial management processes efficiently.",
     },
+    // {
+    //     icon: 'account-card.svg',
+    //     title: 'Give your Customers Flexibility to Choose Payment Method',
+    //     subtitle: 'Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay',
+    // },
+    // {
+    //     icon: 'account-card1.svg',
+    //     title: 'Easily Import your Invoices In bulk to recieve payments',
+    //     subtitle: "Facilitate seamless transactions and manage funds efficiently using Virtual Accounts on Vollie.",
+    // },
 ]
 const SectionOne = () => {
     return (

@@ -55,7 +55,8 @@ const PriceCards = () => {
                     </div>
                 </div>
                 {/* Card 2 */}
-                <div className="bg-white rounded-lg shadow-sm bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90% flex flex-col">
+                <div className="bg-white rounded-lg shadow-sm bg-gradient-to-b from-[#1E3C33] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90% flex flex-col">
+                {/* <div className="bg-white rounded-lg shadow-sm bg-gradient-to-b from-[#19392E] from-30% via-[#1B2522] via-90% to-[#1B2522] 10% to-90% flex flex-col"> */}
                     <div className="p-6">
                         <p className="mt-8">
                             <span className="text-4xl md:text-[56px] font-bold text-white tracking-[-6%] leading-[89.6px]">$32.00</span>
