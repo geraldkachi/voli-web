@@ -6,6 +6,7 @@ import { navVariants } from '../utils/motion';
 const AboutSection = () => {
   return (
     <div>
+      <div className="bg-[#FAFAFA] md:bg-transparent">
       <div
         className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5 px-3`}
       >
@@ -17,6 +18,8 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
+      </div>
+
       <div className='hidden sm:flex items-center justify-center gap-4 overflow-x-scroll my-10 no-scrollbar min-w-48'>
         <img src="abt-hero.svg" alt="" />
         <img src="abt-hero1.svg" alt="" />

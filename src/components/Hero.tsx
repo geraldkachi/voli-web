@@ -18,6 +18,7 @@ const Hero = () => {
     const scale = useTransform(scrollYProgress, [0,1], [2,1])
     return (
         <section className={` w-full h-scre mx-auto`}>
+            <div className="bg-[#FAFAFA] md:bg-transparent">
             <div
                 className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
             >
@@ -27,6 +28,7 @@ const Hero = () => {
                     </p>
                     <p className={`text-center mt-4 text-[#55555C] font-normal text-base md:text-lg leading-[28.8px] md:leading-[32.4px]`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
                 </div>
+            </div>
             </div>
             <div className='relative'></div>
      

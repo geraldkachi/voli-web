@@ -48,6 +48,7 @@ const FinancialAccounting = () => {
   return (
     <div>
       <NavBar />
+      <div className="bg-[#FAFAFA] md:bg-transparent">
       <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
         <div className="flex flex-col items-center my-7 md:my-14 px-3 sm:px-0">
           <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">ACCOUNTING</div>
@@ -57,6 +58,7 @@ const FinancialAccounting = () => {
           </motion.p>
           <p className={`text-center mt-4 text-[#55555C] font-normal text-sm md:text-lg leading-[25.2px] md:leading-[29.7px]`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
         </div>
+      </div>
       </div>
       <div className="flex items-center justify-center w-full">
         <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716900712/accounting-hero_nrgwgz.svg" className="hidden sm:block" width={1000} height={500} alt="" />

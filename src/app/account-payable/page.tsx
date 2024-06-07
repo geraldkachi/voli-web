@@ -13,6 +13,7 @@ const AccountPayable = () => {
     <div>
       <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] bg-opacity-100">
         <NavBar />
+        <div className="bg-[#FAFAFA] md:bg-transparent">
         <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
           <div className="flex flex-col items-center my-7 md:my-14">
             <div className="bg-[#01C467] text-white text-sm font-bold leading-[22.4px] rounded-3xl px-4 py-2 mb-5 w-max tracking-[-1%]">PAYABLE</div>
@@ -21,6 +22,7 @@ const AccountPayable = () => {
               Simplify Payments and <br className="hidden md:block" /> <span className="text-[#01C467]">Manage</span> Vendor  Effortlessly.
             </p>
           </div>
+        </div>
         </div>
       </div>
 
