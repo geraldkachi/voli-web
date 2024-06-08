@@ -60,13 +60,13 @@ const FinancialAccounting = () => {
           <p className={`text-center mt-4 text-[#808084] font-normal text-sm md:text-lg leading-[25.2px] md:leading-[29.7px]`}>Revolutionize your financial management with our cutting-edge accounting software. Seamlessly <br className='hidden md:block' /> record journal entries, manage ledgers, and master charts of accounts effortlessly.</p>
         </div>
       </div>
-      </div>
       <div className="flex items-center justify-center w-full">
         <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716900712/accounting-hero_nrgwgz.svg" className="hidden sm:block" width={1000} height={500} alt="" />
         <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716900806/account-hero1_c75cc3.svg" className="sm:hidden" width={1000} height={500} alt="" />
         {/* <Image src="accounting-hero.svg" className="hidden sm:block" width={1000} height={500} alt="" />
         <Image src="account-hero1.svg" className="sm:hidden" width={1000} height={500} alt="" /> */}
       </div>
+        </div>
 
       <SectionOne />
       <div className="object-cover w-full h-full bg-no-repeat bg-contain bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20">
