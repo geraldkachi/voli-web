@@ -80,7 +80,7 @@ const Seamless = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center justify-center md:col-span-4'>
+                <div className='flex overflow-hidden items-center justify-center md:col-span-4'>
                     {/* <div className="flex relative gap-4">
                         {cards.map((item, i) => <StackedCard key={i} {...item} num={i} />)}
                     </div> */}
@@ -114,7 +114,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div> */}
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-16 hover:-left-36 rounded-lg drop-shadow-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-16 hover:-left-36 rounded-lg drop-shadow-2xl">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
@@ -123,7 +123,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-36 rounded-lg drop-shadow-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-36 rounded-lg drop-shadow-2xl">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
@@ -132,7 +132,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[130px] hover:-left-32  rounded-lg drop-shadow-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[130px] hover:-left-32  rounded-lg drop-shadow-2xl">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>
@@ -141,7 +141,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[162px] hover:-left- rounded-lg drop-shadow-lg">
+                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[162px] hover:-left- rounded-lg drop-shadow-2xl">
                                     <div className="block max-w-sm p-6  mt-10">
                                         <div className='font-semibold text-[20px]'>John Brandson</div>
                                         <div>CEO | Upworks</div>

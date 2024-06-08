@@ -17,8 +17,8 @@ const Payrolls = ({icon, title, subtitle, index}: Props) => {
   return (
     <motion.div  className="flex flex-col justify-between  rounded-[20px] bg-white overflow-hidden" onMouseEnter={() => setSelectedOption(index)} onMouseLeave={() => setSelectedOption(9)}>
       <motion.div variants={variants} className="p-4 md:p-8">
-        <motion.p className="text-[#00000A] text-lg sm:text-[32px] font-semibold text-wrap my-2 mb-5">{title}</motion.p>
-        <motion.p variants={planetVariants('left')} className="text-[#808080]  text-sm sm:text-base text-wrap">{subtitle}</motion.p>
+        <motion.p className="text-wrap mt-2 text-[#00000A] text-2xl md:text-[32px] font-semibold leading-[38.4px] md:leading-[51.2px] tracking-[-3%] md:tracking-[-4%]">{title}</motion.p>
+        <motion.p variants={planetVariants('left')} className="text-[#808080] font-normal text-sm sm:text-base text-wrap md:tracking-[-1%] leading-[23.8px] md:leading-[27.2px]">{subtitle}</motion.p>
         <Button title="Get Started" className={`${selectedOption == index && '!bg-black !text-white'} !bg-[#F2F2F3] !text-[#00000A] mt-5`} />
       </motion.div>
 
