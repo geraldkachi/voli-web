@@ -5,7 +5,7 @@ import ChipTabs from "@/components/Tabs/TabsFramer"
 const PriceCards = () => {
     return (<>
         <div className="px-3 md:px-0 bg-white">
-            <div className="sm:hidden flex flex-col md:items-center justify-center bg-[#F8FCFA] mx-3 overflow-x-scroll py-10 md:py-20">
+            <div className="sm:hidden flex flex-col md:items-center justify-center md:bg-[#F8FCFA] mx-3 overflow-x-scroll py-10 md:py-20">
                 <ChipTabs tabs={[
                     {
                         title: 'Free Plan', content:
