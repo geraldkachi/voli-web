@@ -18,9 +18,11 @@ const ReadyToEnjoy = () => {
 
         <div className="-mt-24 md:-mt-48 lg:-mt-[350px] xl:-mt-[400px] mb-20 flex items-center justify-center">
             <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716901176/dash-ready_msbuey.svg" className="hidden sm:block skew- bg-center" alt="" />
-            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1717748181/dash-ready1_drg2pu.svg" className="sm:hidden block skew- bg-center" alt="" />
             {/* <img src="dash-ready1.svg" className="sm:hidden block skew- bg-center" alt="" /> */}
             {/* <img src="dash-ready.svg" className="skew- bg-center" alt="" /> */}
+        </div>
+        <div className=" mb-20 flex items-center justify-center">
+            <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1717748181/dash-ready1_drg2pu.svg" className="sm:hidden block skew- bg-center mt-5" alt="" />
         </div>
     </div>
 
