@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { navVariants, planetVariants, staggerContainer } from '../../utils/motion'
 import Image from 'next/image'
 import StackedCard from './StackedCard'
+import { useState } from 'react'
 const cards = [
     {
         title: 'Noteworthy technology acquisitions 2021',
@@ -59,12 +60,22 @@ const cardshiver = [
     },
 ]
 const Seamless = () => {
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+      };
+    
+      const handleMouseLeave = () => {
+        setIsHovered(false);
+      };
+
     return (
-        <div className="bg-[#F8FCFA] object-cover h-full bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20">
-        <div className='max-w-5xl mx-auto h-full'>
+        <div className="relative bg-[#F8FCFA] object-cover h-full bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20 bg-opacity-100">
+        {/* <div className="absolute bg-[#F8FCFA] object-cover h-full w-full " /> */}
+        <div className='max-w-6xl mx-auto h-full'>
 
             <div className='grid md:grid-cols-7 gap- overflow-hidden h-full'>
-                <div className='md:col-span-3 bg- md:py-20 px-3 lg:px-0 pt-5'>
+                <div className='md:col-span-3 bg- md:py-20 px-3 lg:px-0 pt-5 !z-50'>
                     <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">TESTIMONIALS</motion.span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>
                         Facilitating seamless and into just three simple and straightforward steps
@@ -80,7 +91,7 @@ const Seamless = () => {
                     </div>
                 </div>
 
-                <div className='flex overflow-hidden items-center justify-center md:col-span-4'>
+                <div className='flex overflow-hidden md:overflow-visible items-center justify-center md:col-span-4'>
                     {/* <div className="flex relative gap-4">
                         {cards.map((item, i) => <StackedCard key={i} {...item} num={i} />)}
                     </div> */}
@@ -114,45 +125,53 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div> */}
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-16 hover:-left-36 rounded-lg drop-shadow-2xl">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)} className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:-left-32 hover:-left-60 rounded-lg drop-shadow-2xl`}>
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
+                                        <div>
+                                        <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
+                                        <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
+                                        </div>
 
-                                        <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-36 rounded-lg drop-shadow-2xl">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:-left-4 hover:-left-36 rounded-lg drop-shadow-2xl`}>
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
+                                        <div>
+                                        <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
+                                        <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
+                                        </div>
 
-                                        <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[130px] hover:-left-32  rounded-lg drop-shadow-2xl">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-32  rounded-lg drop-shadow-2xl`}>
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
+                                        <div>
+                                        <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
+                                        <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
+                                        </div>
 
-                                        <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-[162px] hover:-left- rounded-lg drop-shadow-2xl">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-52 hover:-left- rounded-lg drop-shadow-2xl`}>
                                     <div className="block max-w-sm p-6  mt-10">
-                                        <div className='font-semibold text-[20px]'>John Brandson</div>
-                                        <div>CEO | Upworks</div>
+                                        <div>
+                                        <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
+                                        <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
+                                        </div>
 
-                                        <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div>
-                                {/* <div className="w-72 h-96 bg-white shadow-md flex justify-center items-center transform transition-all absolute md:left-[262px] hover:-left-10 rounded-lg">
+                                {/* <div className="w-72 h-96 bg-white text-[20px] font-bold leading-[28px] tracking-[-1%] shadow-md flex justify-center items-center transform transition-all absolute md:left-[262px] hover:-left-10 rounded-lg">
                                     <div className="block max-w-sm p-6  mt-10">
-                                    <div className='font-semibold text-[20px]'>John Brandson</div>
+                                    <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                     <div>CEO | Upworks</div>
                                     
                                     <p className="font-normal text-gray-700">Our company&apos;s financial management transformed with Vollie Pay. </p>
