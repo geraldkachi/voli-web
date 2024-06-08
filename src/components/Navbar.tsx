@@ -117,7 +117,7 @@ const Navbar = () => {
 
                     <div className="hidden md:flex items-center gap-6 lg:ml-36 text-[#55555C] border-r border-l border-[#CCFBE5] px-4">
                         <ShiftingDropDown />
-                        <Link href="/pricing" className={`${location && '!text-[#01C467] !bg-[#E7FDF3]'} flex items-center gap-1 rounded-full px-3 py-2 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
+                        <Link href="/pricing" className={`${location == '/pricing' && '!text-[#01C467] !bg-[#E7FDF3]'} flex items-center gap-1 rounded-full px-3 py-2 text-sm transition-colors bg-transparent text-[#55555C] leading-[17.64px] tracking-[-2%]`}>
                             <span>Pricing</span>
                         </Link>
                     </div>

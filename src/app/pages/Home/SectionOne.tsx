@@ -53,7 +53,7 @@ const technologies = [
 const SectionOne = () => {
     return (
         <>
-            <div className='bg-white'>
+            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
                 <div className='max-w-5xl mx-auto bg-white py-20 px-3 xl:px-0'>
                     <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-10 mt-6'>Experience the convenience of streamlining your expense

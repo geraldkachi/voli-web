@@ -68,8 +68,9 @@ const FinancialAccounting = () => {
       </div>
 
       <SectionOne />
-      <div className='bg-white'>
-        <div className='max-w-5xl mx-auto bg-white py-20 px-3 lg:px-0'>
+      <div className="object-cover w-full h-full bg-no-repeat bg-contain bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20">
+
+        <div className='max-w-5xl mx-auto py-20 px-3 lg:px-0 z-50'>
           {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-xs md:text-sm font-bold leading-[19.2px] md:leading-[22.4px] tracking-[-1%]">PRODUCTS</span> */}
           <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-[38.4px] md:leading-[57.6px] mt-6 font-medium md:font-semibold tracking-[-4%]'>Experience the convenience of streamlining your expense
             <br className='hidden md:block' /> management, payrolls, multi-level approvals, and more,
