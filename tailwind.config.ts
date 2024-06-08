@@ -39,6 +39,15 @@ const config: Config = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
+      },
+
+      dropShadow: {
+        '2xl': '0 0 0.55rem rgba(0, 0, 0, 0.25)',
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
       }
     },
   },
