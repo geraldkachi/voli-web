@@ -117,7 +117,7 @@ const Seamless = () => {
 
                             <div className="hidden md:flex  flex-col justify-center relative py-20 pr-80 h-full !z-50">
                                 {/* <div className="w-72 h-96 bg-white shadow-md transform transition-all absolute hover:-left-28  rounded-lg">
-                                    <div className="block max-w-sm p-6  mt-10">
+                                    <div className="block max-w-sm p-6  mt-28">
                                     <div className='font-semibold text-[20px]'>John Brandson</div>
                                     <div>CEO | Upworks</div>
                                     
@@ -125,52 +125,60 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div> */}
-                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)} className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:-left-32 hover:-left-60 rounded-lg drop-shadow-2xl`}>
-                                    <div className="block max-w-sm p-6  mt-10">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)} className={`${isHovered && 'transform transition-all hover:-left-60'} w-72 pb-5 bg-white shadow-md absolute md:-left-32 hover:-lef-60 rounded-lg drop-shadow-2xl`}>
+                                    <div className="block max-w-sm p-6  mt-28">
                                         <div>
                                         <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                         <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
                                         </div>
 
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <div className="mt-4 text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">
+                                        <p className="">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:-left-4 hover:-left-36 rounded-lg drop-shadow-2xl`}>
-                                    <div className="block max-w-sm p-6  mt-10">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:-left-36'} w-72 pb-5 bg-white shadow-md absolute md:-left-4 hover:-left36 rounded-lg drop-shadow-2xl`}>
+                                    <div className="block max-w-sm p-6  mt-28">
                                         <div>
                                         <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                         <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
                                         </div>
 
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <div className="mt-4 text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">
+                                        <p className="">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-24 hover:-left-32  rounded-lg drop-shadow-2xl`}>
-                                    <div className="block max-w-sm p-6  mt-10">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:-left-28'} w-72 pb-5 bg-white shadow-md absolute md:left-24 hover:-lef-32  rounded-lg drop-shadow-2xl`}>
+                                    <div className="block max-w-sm p-6  mt-28">
                                         <div>
                                         <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                         <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
                                         </div>
 
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <div className="mt-4 text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">
+                                        <p className="">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered} w-72 h-96 bg-white shadow-md transform transition-all absolute md:left-52 hover:-left- rounded-lg drop-shadow-2xl`}>
-                                    <div className="block max-w-sm p-6  mt-10">
+                                <div onMouseEnter={() => setIsHovered(false)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:-left-60'} w-72 pb-5 bg-white shadow-md absolute md:left-52 hover:-lef- rounded-lg drop-shadow-2xl`}>
+                                    <div className="block max-w-sm p-6  mt-28">
                                         <div>
                                         <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                         <div className='font-medium text-sm leading-[19.6px] tracking-[-1%]'> CEO | Upworks</div>
                                         </div>
 
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">Our company&apos;s financial management transformed with Vollie Pay. </p>
-                                        <p className="text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%] mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        <div className="mt-4 text-[#808080] font-normal text-sm leading-[25.2px] tracking-[-1%]">
+                                        <p className="">Our company&apos;s financial management transformed with Vollie Pay. </p>
+                                        <p className="mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
+                                        </div>
                                     </div>
                                 </div>
                                 {/* <div className="w-72 h-96 bg-white text-[20px] font-bold leading-[28px] tracking-[-1%] shadow-md flex justify-center items-center transform transition-all absolute md:left-[262px] hover:-left-10 rounded-lg">
-                                    <div className="block max-w-sm p-6  mt-10">
+                                    <div className="block max-w-sm p-6  mt-28">
                                     <div className='text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
                                     <div>CEO | Upworks</div>
                                     
