@@ -125,7 +125,7 @@ const Seamless = () => {
                                         <p className="font-normal text-gray-700 mt-4">Streamlining payroll, tracking expenses, and ensuring smooth transactions has never been easier. </p>
                                     </div>
                                 </div> */}
-                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)} className={`${isHovered && 'transform transition-all hover:right-60'} w-72 pb-3 bg-white shadow-md absolute md:-left-32 hover:-lef-60 rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)} className={`${isHovered && 'transform transition-all duration-75 hover:-right-60'} w-72 pb-3 bg-white shadow-md absolute md:-left-32 hover:-lef-60 rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
                                     <div className="block max-w-sm p-6  mt-40">
                                         <div>
                                         <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
@@ -138,7 +138,7 @@ const Seamless = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:right-36'} w-72 pb-3 bg-white shadow-md absolute md:-left-4 hover:right rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all duration-75 hover:-right-36'} w-72 pb-3 bg-white shadow-md absolute md:-left-4 duration-75 hover:-right rounded-lg dr3p-shadow-2xl backdrop-blur-sm`}>
                                     <div className="block max-w-sm p-6  mt-40">
                                         <div>
                                         <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
@@ -151,7 +151,7 @@ const Seamless = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:right-28'} w-72 pb-3 bg-white shadow-md absolute md:left-24 hover:-lef-32  rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all duration-75 hover:-right-28'} w-72 pb-3 bg-white shadow-md absolute md:left-24 hover:-lef-32  rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
                                     <div className="block max-w-sm p-6  mt-40">
                                         <div>
                                         <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
@@ -164,7 +164,7 @@ const Seamless = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all hover:right-60'} w-72 pb-3 bg-white shadow-md absolute md:left-52 hover:-lef- rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(true)}  className={`${isHovered && 'transform transition-all duration-75 hover:-right-60'} w-72 pb-3 bg-white shadow-md absolute md:left-52 hover:-lef- rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
                                     <div className="block max-w-sm p-6  mt-40">
                                         <div>
                                         <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
