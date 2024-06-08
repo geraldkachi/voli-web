@@ -17,7 +17,7 @@ const PriceCards = () => {
                                         {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                                     </p>
                                 </div>
-                                <hr className="mx-6" />
+                                <hr className="mx-6 border-[.6px]" />
                                 <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
 
                                     <ul role="list" className="mt-4 space-y-3">
@@ -68,7 +68,7 @@ const PriceCards = () => {
                                         {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                                     </p>
                                 </div>
-                                <hr className="mx-6" />
+                                <hr className="mx-6 border-[.6px]" />
 
                                 <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
                                     <ul role="list" className="mt-4 space-y-3">
@@ -113,7 +113,7 @@ const PriceCards = () => {
                                         <div className=" bg-[#E7FDF3] p-3 my-2 text-base rounded-lg text-[#01C467] font-bold w-max tracking-[-2%] leading-[27.2px]">Enterprise Plan</div>
                                     </p>
                                 </div>
-                                <hr className="mx-6" />
+                                <hr className="mx-6 border-[.6px]" />
                                 <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
                                     <ul role="list" className="mt-4 space-y-3">
                                         <li className="flex items-center space-x-3">
@@ -166,7 +166,7 @@ const PriceCards = () => {
                             {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                         </p>
                     </div>
-                    <hr className="mx-6" />
+                    <hr className="mx-6 border-[.6px]" />
                     <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
 
                         <ul role="list" className="mt-4 space-y-3">
@@ -215,7 +215,7 @@ const PriceCards = () => {
                             {/* <span className="text-base font-medium text-slate-500">/mo</span> */}
                         </p>
                     </div>
-                    <hr className="mx-6" />
+                    <hr className="mx-6 border-[.6px] border-[#2B2B33]" />
 
                     <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
                         <ul role="list" className="mt-4 space-y-3">
@@ -258,7 +258,7 @@ const PriceCards = () => {
                             <div className=" bg-[#E7FDF3] p-3 my-2 text-base rounded-lg text-[#01C467] font-bold w-max tracking-[-2%] leading-[27.2px]">Enterprise Plan</div>
                         </p>
                     </div>
-                    <hr className="mx-6" />
+                    <hr className="mx-6 border-[.6px]" />
                     <div className="flex flex-col flex-1 justify-between gap-y-10 pt-6 pb-8 px-6">
                         <ul role="list" className="mt-4 space-y-3">
                             <li className="flex items-center space-x-3">
