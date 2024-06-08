@@ -47,8 +47,9 @@ const technologies = [
 const FinancialAccounting = () => {
   return (
     <div>
+      <div className="bg-[#FAFAFA] md:bg-transparent object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
       <NavBar />
-      <div className="bg-[#FAFAFA] md:bg-transparent">
+        
       <div className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}>
         <div className="flex flex-col items-center my-7 md:my-14 px-3 sm:px-0">
           <div className="bg-[#01C467] text-white text-sm font-bold leading-5 rounded-3xl px-4 py-2 mb-5 w-max">ACCOUNTING</div>
