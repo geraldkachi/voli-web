@@ -59,7 +59,7 @@ const MakePayments = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col relative !bg-[#222229] p-8 rounded-2xl h-80 sm:h-[450px] max-w">
+                        <div className="flex flex-col relative !bg-[#222229] p-8 rounded-2xl h-80 sm:h-[473px] max-w">
                             <div>
                                 <p className="text-white font-semibold text-[22.35px] md:text-[32px] leading-[35.76px] md:leading-[51.2px] tracking-[-3%]">Automated Payment Structure</p>
                                 <p className="text-[#AAAAAD] text-sm md:text-base">Empower your team with convenient spending and expense tracking through Corporate Cards with VolliePay</p>
