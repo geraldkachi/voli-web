@@ -36,7 +36,7 @@ const cardsItems = [
 ]
 
 const Card = ({ index, onHover, isHovered, item }:CardProps ) => (
-<div className="hidden md:flex  flex-col justify-center relative py-20 pr-32 h-full !z-50">
+<div className="hidden md:flex  flex-col justify-center relative py-20 pr-28 h-full !z-50">
   <div
     // className={`card relative p-4 m-2 bg-white border rounded-md shadow-lg transition-transform duration-500 ${isHovered ? 'hovered' : ''}`}
     className={` w-72 pb-3 bg-white shadow-md absolute md:-left-0 hover:-lef-60 rounded-lg drop-shadow-[0_122.96px_307.39px_rgba(233,233,233,0.1)] card transition-transform duration-500 ${isHovered ? 'hovered transform transition-all duration-75 hover:-right-60' : ''}`}

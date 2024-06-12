@@ -93,5 +93,5 @@ body {
 }
 
 .card.hovered {
-  transform: translateX(130px);
+  transform: translateX(160px);
 }
