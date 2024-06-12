@@ -5,7 +5,7 @@ import Transactions from '/public/transactions.svg'
 import Comprehensive from '/public/comprehensive.svg'
 import Experience from './Experience'
 import { motion } from "framer-motion";
-import { navVariants } from "../../utils/motion";
+import { navVariants } from "../utils/motion";
 import Payrolls from './Payrolls'
 
 

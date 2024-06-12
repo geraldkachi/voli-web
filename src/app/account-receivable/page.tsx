@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { NavBar } from "../../components"
 import Image from "next/image";
 import { navVariants } from "../utils/motion";
-import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
-import FooterTail from "../pages/Home/FooterTail";
+import ReadyToEnjoy from "../Home/ReadyToEnjoy";
+import FooterTail from "../Home/FooterTail";
 import SecondSection from "./SecondSection";
 import StepPayable from "../account-payable/StepPayable";
-import Seamless from "../pages/Home/Seamless";
+import Seamless from "../Home/Seamless";
 
 const AccountRecievable = () => {
     return (

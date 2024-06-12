@@ -1,5 +1,5 @@
 "use client"
-import HomeStart from "./pages/Home/Home";
+import HomeStart from "./Home/Home";
 
 export default function Home() {
   return (

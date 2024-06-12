@@ -1,8 +1,8 @@
 "use client"
 import type { Metadata } from "next";
 import React from 'react'
-import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy'
-import FooterTail from '../pages/Home/FooterTail'
+import ReadyToEnjoy from '../Home/ReadyToEnjoy'
+import FooterTail from '../Home/FooterTail'
 import { NavBar } from '../../components'
 import AboutSection from './AboutSection'
 import Head from "next/head";

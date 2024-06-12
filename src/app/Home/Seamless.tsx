@@ -1,8 +1,10 @@
-import { motion } from 'framer-motion'
-import { navVariants, planetVariants, staggerContainer } from '../../utils/motion'
+// import { motion } from 'framer-motion'
+import { navVariants, planetVariants, staggerContainer } from '../utils/motion'
 import Image from 'next/image'
 import StackedCard from './StackedCard'
 import { useState } from 'react'
+import { motion, useAnimation, AnimatePresence } from 'framer-motion';
+
 const cards = [
     {
         title: 'Noteworthy technology acquisitions 2021',
@@ -65,12 +67,55 @@ const Seamless = () => {
     const [isHoveredThree, setIsHoveredThree] = useState(false);
     const [isHoveredFour, setIsHoveredFour] = useState(false);
 
+    const controls = useAnimation();
+
+    const handleHover = () => {
+      controls.start({
+        x: '-100%', // Adjust the value to control the distance of the animation
+        transition: { duration: 0.3 }, // Adjust the duration of the animation
+      });
+    };
+
+    const handleHoverEnd = () => {
+        controls.start({ x: 0, transition: { duration: 0.3 } });
+      };
+    
+
     return (
         <div className="relative bg-[#F8FCFA] object-cover h-full bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20 bg-opacity-100">
+
+
             <div className="absolute bg-[#F8FCFA] object-cover h-full w-full top-0 bg-opacity-10" />
             <div className='max-w-6xl mx-auto h-full'>
 
+
+
+
                 <div className='grid md:grid-cols-7 gap- overflow-hidden h-full'>
+                  {/* <div className='md:col-span-3'>
+      <motion.div
+        initial={{ x: 0 }}
+        animate={controls}
+        onHoverStart={handleHover}
+        onHoverEnd={handleHoverEnd}
+        style={{ position: 'relative', zIndex: 1 }}
+      >
+        <Card />
+      </motion.div>
+      <AnimatePresence>
+        {[1, 2, 3,4,5,6].map((index) => (
+          <motion.div
+            key={index}
+            initial={{ x: 0 }}
+            animate={controls}
+            exit={{ x: 0 }}
+            style={{ position: 'absolute', top: 0, left: 0 }}
+          >
+            <Card />
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </div> */}
                     <div className='md:col-span-3 bg- md:py-20 px-3 lg:px-0 pt-5 !z-50'>
                         <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">TESTIMONIALS</motion.span>
                         <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>
@@ -119,7 +164,7 @@ const Seamless = () => {
                                         onMouseLeave={() => {
                                             setIsHoveredOne(false)
                                             // setIsHoveredTwo(false)
-                                        }} className={`${isHoveredOne && 'transform transition-all duration-75 hover:-right-60'} w-72 pb-3 bg-white shadow-md absolute md:-left-36 hover:-lef-60 rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                        }} className={`${isHoveredOne && 'transform transition-all duration-75 hover:-right-60'} w-72 pb-3 bg-white shadow-md absolute md:-left-36 hover:-lef-60 rounded-lg drop-shadow-[0_122.96px_307.39px_rgba(233,233,233,0.1)]`}>
                                         <div className="block max-w-sm p-6  mt-40">
                                             <div>
                                                 <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>Emily Roberts</div>
@@ -159,7 +204,7 @@ const Seamless = () => {
                                         onMouseLeave={() => {
                                             setIsHoveredOne(false)
                                             // setIsHoveredTwo(false)
-                                        }} className={`${isHoveredThree && 'transform transition-all duration-75 hover:left-28'} w-72 pb-3 bg-white shadow-md absolute md:left-20 hover:-lef-32  rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                        }} className={`${isHoveredThree && 'transform transition-all duration-75 hover:left-28'} w-72 pb-3 bg-white shadow-md absolute md:left-20 hover:-lef-32  rounded-lg drop-shadow-[0_122.96px_307.39px_rgba(233,233,233,0.1)]`}>
                                         <div className="block max-w-sm p-6  mt-40">
                                             <div>
                                                 <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
@@ -179,7 +224,7 @@ const Seamless = () => {
                                         onMouseLeave={() => {
                                             setIsHoveredOne(false)
                                             // setIsHoveredTwo(false)
-                                        }} className={`${isHoveredFour && 'transform transition-all duration-75 hover:left-60'} w-72 pb-3 bg-white shadow-md absolute md:left-48 hover:-lef- rounded-lg drop-shadow-2xl backdrop-blur-sm`}>
+                                        }} className={`${isHoveredFour && 'transform transition-all duration-75 hover:left-60'} w-72 pb-3 bg-white shadow-md absolute md:left-48 hover:-lef- rounded-lg drop-shadow-[0_122.96px_307.39px_rgba(233,233,233,0.1)]`}>
                                         <div className="block max-w-sm p-6  mt-40">
                                             <div>
                                                 <div className='text-[#00000A] text-[20px] font-bold leading-[28px] tracking-[-1%]'>John Brandson</div>
@@ -214,3 +259,7 @@ const Seamless = () => {
 }
 
 export default Seamless
+
+const Card = () => {
+    return <div style={{ width: 200, height: 300, backgroundColor: 'gray' }} />;
+  };

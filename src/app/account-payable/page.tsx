@@ -4,9 +4,9 @@ import { NavBar } from "../../components";
 import MakePayments from "./MakePayments";
 import ScrollComponent from "./ScrollComponent/ScrollComponent";
 import StepPayable from "./StepPayable";
-import FooterTail from "../pages/Home/FooterTail";
-import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
-import Seamless from "../pages/Home/Seamless";
+import FooterTail from "../Home/FooterTail";
+import ReadyToEnjoy from "../Home/ReadyToEnjoy";
+import Seamless from "../Home/Seamless";
 
 const AccountPayable = () => {
   return (

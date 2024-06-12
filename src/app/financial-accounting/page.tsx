@@ -11,8 +11,8 @@ import { navVariants } from "../utils/motion";
 import SectionOne from "./SectionOne";
 import Experience from './Experince'
 import { faqArr } from '@/components/constants/faq-data'
-import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy'
-import FooterTail from '../pages/Home/FooterTail'
+import ReadyToEnjoy from '../Home/ReadyToEnjoy'
+import FooterTail from '../Home/FooterTail'
 
 
 const technologies = [

@@ -1,9 +1,9 @@
 "use client";
 import { faqArr } from '@/components/constants/faq-data';
 import { Accordion, Button, NavBar } from '../../components'
-import FooterTail from '../pages/Home/FooterTail'
-import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy'
-import Seamless from '../pages/Home/Seamless'
+import FooterTail from '../Home/FooterTail'
+import ReadyToEnjoy from '../Home/ReadyToEnjoy'
+import Seamless from '../Home/Seamless'
 import { navVariants } from '../utils/motion';
 import PriceCards from './priceCards'
 import { motion } from "framer-motion"

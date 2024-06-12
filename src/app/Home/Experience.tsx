@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { navVariants } from "../../utils/motion";
+import { navVariants } from "../utils/motion";
 import { motion } from "framer-motion";
 
 interface Props {

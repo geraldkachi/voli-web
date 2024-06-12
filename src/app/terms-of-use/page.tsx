@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import { NavBar } from "@/components"
-import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
-import FooterTail from "../pages/Home/FooterTail";
+import ReadyToEnjoy from "../Home/ReadyToEnjoy";
+import FooterTail from "../Home/FooterTail";
 
 const TermsOfUse = () => {
   // const sidebarLinks = document && document.querySelectorAll('#sidebar a');

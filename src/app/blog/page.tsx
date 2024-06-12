@@ -1,9 +1,9 @@
 'use client'
 import { NavBar, Tabs } from '@/components'
 import { motion } from 'framer-motion';
-import Seamless from '../pages/Home/Seamless';
-import ReadyToEnjoy from '../pages/Home/ReadyToEnjoy';
-import FooterTail from '../pages/Home/FooterTail';
+import Seamless from '../Home/Seamless';
+import ReadyToEnjoy from '../Home/ReadyToEnjoy';
+import FooterTail from '../Home/FooterTail';
 import ChipTabs from '@/components/Tabs/TabsFramer';
 import BlogCards from './BlogCards';
 

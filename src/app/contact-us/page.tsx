@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FormEvent, useRef, useState } from "react";
 import { slideIn } from "../utils/motion";
 import { NavBar } from "@/components";
-import FooterTail from "../pages/Home/FooterTail";
+import FooterTail from "../Home/FooterTail";
 import SlideInNotifications from "@/components/Notification/Notification";
 import { SwipeCarousel } from "@/components/Carousel/Carousel";
 

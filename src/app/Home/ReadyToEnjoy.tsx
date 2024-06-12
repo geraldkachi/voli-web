@@ -1,7 +1,7 @@
 "use client"
 import { Button } from "@/components"
 import { motion } from 'framer-motion'
-import StarsCanvas from "../../../components/StarCanvas/StarCanvas"
+import StarsCanvas from "../../components/StarCanvas/StarCanvas"
 import { slideIn } from "@/app/utils/motion"
 
 const ReadyToEnjoy = () => {

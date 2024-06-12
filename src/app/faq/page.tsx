@@ -1,10 +1,10 @@
 "use client";
 import { Metadata } from "next";
 import { Accordion, NavBar, Tabs } from "../../components"
-import FooterTail from "../pages/Home/FooterTail";
-import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
-import Seamless from "../pages/Home/Seamless";
-import SubFooter from "../pages/Home/SubFooter";
+import FooterTail from "../Home/FooterTail";
+import ReadyToEnjoy from "../Home/ReadyToEnjoy";
+import Seamless from "../Home/Seamless";
+import SubFooter from "../Home/SubFooter";
 import { faqArr } from "@/components/constants/faq-data";
 
 // export const metadata: Metadata = {

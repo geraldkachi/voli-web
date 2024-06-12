@@ -2,8 +2,8 @@
 'use client'
 import { NavBar } from "@/components"
 import { useEffect, useState } from "react";
-import ReadyToEnjoy from "../pages/Home/ReadyToEnjoy";
-import FooterTail from "../pages/Home/FooterTail";
+import ReadyToEnjoy from "../Home/ReadyToEnjoy";
+import FooterTail from "../Home/FooterTail";
 
 const PrivacyPolicy = () => {
   // const sidebarLinks = document && document.querySelectorAll('#sidebar a');

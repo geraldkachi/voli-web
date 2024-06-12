@@ -1,6 +1,6 @@
 'use client'
-import { Hero, NavBar } from "../../../components"
-import StarsCanvas from "../../../components/StarCanvas/StarCanvas"
+import { Hero, NavBar } from "../../components"
+import StarsCanvas from "../../components/StarCanvas/StarCanvas"
 import FinancialAccount from "./FinancialAccount"
 import FooterTail from "./FooterTail"
 import ReadyToEnjoy from "./ReadyToEnjoy"
