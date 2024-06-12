@@ -87,6 +87,11 @@ body {
 }
 
 
-.bg-lining {
-  
+/* Custom CSS for Card Animations */
+.card {
+  transition: transform 0.5s ease;
+}
+
+.card.hovered {
+  transform: translateX(130px);
 }
