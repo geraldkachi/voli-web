@@ -27,9 +27,11 @@ const AccountPayable = () => {
       </div>
 
       <div className="flex items-center justify-center w-full">
-        <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716901030/payable-hero_ugnc6r.svg" width={1000} height={500} alt="" />
+        <Image src="https://res.cloudinary.com/dejquibd1/image/upload/v1716901030/payable-hero_ugnc6r.svg" className="hidden sm:block"  width={1000} height={500} alt="" />
         {/* <Image src="payable-hero.svg" width={1000} height={500} alt="" /> */}
       </div>
+      <Image src="payable-md.svg" className="sm:hidden" width={1000} height={500} alt="" />
+
 
       <MakePayments />
       <StepPayable />
