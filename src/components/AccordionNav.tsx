@@ -29,7 +29,7 @@ function AccordionNav({
 
   return (
     <div
-      className={`relative bg-transparent rounded-lg max-w-full mx-auto border-y  border-[#2b332d] ${
+      className={`relative bg-transparent rounded-lg max-w-full mx-auto border-y border-[#2b332d] ${
         openAccordion ? activeClass : ""
       } ${otherClasses || ""}`}
     >
@@ -37,7 +37,7 @@ function AccordionNav({
         <div
           className={`w-full rounded-lg px-5 ${
             open || openAccordion
-              ? ""
+              ? " bg-[#2A2A33]"
               : ""
           }`}
         >
@@ -64,7 +64,7 @@ function AccordionNav({
           maxHeight: open || openAccordion ? ref.current.scrollHeight : 0,
         }}
         className={`relative transition-all
-        } overflow-hidden transition-all duration-[0.7rem] bg-[#FAFAFA]  border-[#2B2B33]`}
+        } overflow-hidden transition-all duration-[0.7rem] bg-[#1b8e36]`}
       >
         <div className="px-3 bg-[#2A2A33] p-4">{children}</div>
       </div>
