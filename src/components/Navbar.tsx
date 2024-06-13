@@ -152,8 +152,8 @@ const Navbar = () => {
                                 </AccordionNav>
                             ))}
                         </li>
-                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer' onClick={() => router.push('/pricing', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
-                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer' onClick={() => router.push('/faq', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
+                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer border-y border-[#2B2B33]' onClick={() => router.push('/pricing', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/pricing">Pricing</Link> </div>
+                        <div className='py-4 px-5 text-[#CCCCCE] leading-[38.08px] text-[28px] font-medium w-full h-max cursor-pointer border-y border-[#2B2B33]' onClick={() => router.push('/faq', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href='/faq'>FAQs</Link> </div>
                         {/* <div className='p-4 text-white w-full h-max cursor-pointer' onClick={() => router.push('/', { scroll: false })}><Link className="w-full h-full whitespace-nowrap" href="/">Resources</Link> </div> */}
                     </div>
 

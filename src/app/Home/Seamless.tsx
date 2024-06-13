@@ -96,11 +96,8 @@ const Seamless = () => {
                         </div>
                     </div>
 
-                   
-
-
+                
                     <CardStack />
-
                 </div>
 
             </div>
