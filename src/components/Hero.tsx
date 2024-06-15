@@ -22,8 +22,8 @@ const Hero = () => {
             <div
                 className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
             >
-                <div className="flex flex-col my-7 md:my-14">
-                    <p className={`text-center mt-2 text-[#00000A] text-[36px] font-extrabold md:text-7xl leading-[48.96px] md:leading-[93.6px] tracking-[-4%] md:tracking-[-5%]`}>
+                <div className="flex flex-col my-7 md:my-16">
+                    <p className={`text-center text-[#00000A] text-[36px] font-extrabold md:text-7xl leading-[48.96px] md:leading-[93.6px] tracking-[-4%] md:tracking-[-5%]`}>
                         All-in-one <span className="text-[#01C467] ">Platform</span> for <br className="hidden md:block" /> everything Finance
                     </p>
                     <p className={`text-center mt-4 text-[#55555C] font-normal text-base md:text-lg leading-[28.8px] md:leading-[32.4px]`}>Empowering Your Financial Success Unleashing <br />the Power of Numbers</p>
