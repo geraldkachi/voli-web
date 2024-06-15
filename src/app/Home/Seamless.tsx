@@ -71,7 +71,6 @@ const Seamless = () => {
     return (
         <div className="relative bg-[#F8FCFA] object-cover h-full bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')] py-10 md:py-20 bg-opacity-100">
 
-
             <div className="absolute bg-[#F8FCFA] object-cover h-full w-full top-0 bg-opacity-10" />
             <div className='max-w-6xl mx-auto h-full'>
 
