@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { faqArr } from '@/components/constants/faq-data'
+import { faqArr1 } from '@/components/constants/faq-data'
 import { navVariants } from "../utils/motion";
 import { Accordion, Button } from "@/components";
 
@@ -39,7 +39,7 @@ const RecentArticle = () => {
 
 
                 <div className="my-10">
-                    {faqArr.map((item, index) => (
+                    {faqArr1.map((item, index) => (
                         <Accordion key={`faq_${index}`} heading={<h1>{item.header}</h1>}>
                             <p className="pb-4 text-[#676767]">{item?.content}</p>
                         </Accordion>
