@@ -12,7 +12,7 @@ const FooterTail = () => {
                     <div className="grid grid-cols-2 gap-8 md:gap-20 px-3 md:px-0 py-6 lg:py-8 md:grid-cols-5 whitespace-nowrap">
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[21.6px] md:leading-[25.2px] tracking-[-1%] md:tracking-[-2%]">PRODUCTS</h2>
-                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-6">
+                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-5">
                                 <li className="mb-2">
                                     <Link href="/account-payable" className=" hover:underline">Accounts Payable</Link>
                                 </li>
@@ -29,7 +29,7 @@ const FooterTail = () => {
                         </div>
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[21.6px] md:leading-[25.2px] tracking-[-1%] md:tracking-[-2%]">FEATURES</h2>
-                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-6">
+                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-5">
                                 <li className="mb-2">
                                     <a href="#" className="hover:underline">Financial Reports</a>
                                 </li>
@@ -49,7 +49,7 @@ const FooterTail = () => {
                         </div>
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[25.2px] tracking-[-2%]">COMPANY</h2>
-                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-6">
+                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-5">
                                 <li className="mb-2">
                                     <Link href="/about" className="hover:underline">About Us</Link>
                                 </li>
@@ -66,7 +66,7 @@ const FooterTail = () => {
                         </div>
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[25.2px] tracking-[-2%]">RESOURCES</h2>
-                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-6">
+                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-5">
                                 <li className="mb-2">
                                     <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
                                 </li>
@@ -83,7 +83,7 @@ const FooterTail = () => {
                         </div>
                         <div>
                             <h2 className="mb-3 md:mb-6 text-xs md:text-sm font-extrabold text-[#000024] uppercase leading-[25.2px] tracking-[-2%]">SUPPORT</h2>
-                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-6">
+                            <ul className="text-[#808084] font-normal text-sm md:text-base leading-[17.64px] md:leading-[20.16px] tracking-[-1%] space-y-4 md:space-y-5">
                                 <li className="mb-2">
                                     <Link href="/help-cent" className="hover:underline">Help Center</Link>
                                 </li>
