@@ -55,7 +55,7 @@ const SectionOne = () => {
     return (
         <>
         <div className="bg-black pt-40 sm:pt-80">
-            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.sv')]">
+            <div className="object-cover w-full h-full mx-auto">
                 <div className='max-w-5xl mx-auto bg-whit py-20 px-3 xl:px-0'>
 
                     <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span>

@@ -26,7 +26,7 @@ const gridarr = [
 
 const FinancialAccount = () => {
   return (
-    <section className="bg-[#FFFFFF] pt-0 md:pt-5 md:pb-10 mx-3 md:mx-0">
+    <section className="bg-[#FFFFFF] pt-20 md:pb-10 mx-3 md:mx-0">
       {/* <section className={` w-full h-scre bg-white max-w-5xl md:mx-auto rounded-[20px]`}>
         <div className="l">
 
@@ -60,7 +60,7 @@ const FinancialAccount = () => {
           
           <div className="">
             <div className="md:col-span-2 grid sm:grid-cols-2 gap-6 h-max">
-              <motion.div variants={navVariants} initial="hidden" whileInView="show" className={`p-4 md:p-8 rounded-[14px] bg-[#FAFAFA]`}>
+              <motion.div variants={navVariants} initial="hidden" whileInView="show" className={`p-4 px-4 sm:px-8 py-8 rounded-[14px] bg-[#FAFAFA]`}>
                 <div>
                   <p className="text-[#00000A] mt-3 text-2xl font-medium md:font-semibold text-wrap my-2 mb-3 leading-[135%] md:tracking-[-4%]">Save Countless hours of work </p>
                   <p className="text-[#808084] text-base text-wrap font-normal leading-[180%] tracking-[-2%] md:tracking-[-1%]">Settle financial transactions in one click and go about your business as usual. No time wasted. </p>
