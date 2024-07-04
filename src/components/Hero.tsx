@@ -34,7 +34,7 @@ const Hero = () => {
                         <p className={`text-center mt-4 text-[#55555C] font-normal text-base md:text-lg leading-[28.8px] md:leading-[32.4px]`}>With Vollie, you can create timely invoices, get paid faster, make easy <br /> payments, and organise your finances— all in one place.</p>
 
                         <div className="mt-5">
-                            <Button title="Book A Demo" />
+                            <Button title="Book A Demo" className="!px-10" />
                         </div>
                     </div>
                 </div>

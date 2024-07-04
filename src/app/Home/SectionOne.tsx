@@ -58,7 +58,7 @@ const SectionOne = () => {
             <div className="object-cover w-full h-full mx-auto">
                 <div className='max-w-5xl mx-auto bg-whit py-20 px-3 xl:px-0'>
 
-                    <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span>
+                    {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span> */}
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-center text-white font-semibold  text-[32px] md:text-[40px] !leading-[160%] tracking-[-4%]'>Your Business Bookkeeping,
                         <br className='hidden md:block' /> Made Easier Than Ever.
                     </motion.p>
