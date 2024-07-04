@@ -6,6 +6,7 @@ const SubFooter = () => {
 
     <div className="flex flex-col md:flex-row justify-between">
         <div className="my-4">
+            <img src="fotico.svg" alt="sg" className="mb-2 sm:hidden" />
             <p className="text-[26px] font-bold md:font-extrabold leading-[36.4px] text-[#00000A]">Vollie</p>
             <p className="text-base font-normal leading-[28.8px] text-[#808084] tracking-[-2%]">Create timely invoices, get paid faster,<br /> make easy payments, and organise your <br /> expense and finances</p>
         </div>

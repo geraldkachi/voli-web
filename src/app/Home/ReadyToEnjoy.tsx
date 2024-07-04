@@ -9,7 +9,7 @@ const ReadyToEnjoy = () => {
     <div className="relative z-0 bg-gradient-to-b from-[#23232B] from-10% via-black via-70% to-[#0A0A0B] 10% to-90%">
     <StarsCanvas />
 
-    <div className=" text-center pt-20 text-white animate-text whitespace-nowrap mx-3 md:mx-0">
+    <div className=" text-center pt-20 text-white animate-text whitespace- mx-3 md:mx-0">
         <div className="flex flex-col items-center mb-10">
             {/* <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-5xl font-bold py-10 leading-10 lg:leading-[63px]">Ready to <span className="text-[#01C467]">Enjoy</span> the Use <br /> of <span className="text-[#01C467]">Affordability</span> of Streamlined <br /> Business Payments</motion.p> */}
             <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-[56px] font-bold pt-10 tracking-[-3%] leading-10 lg:leading-[125%]">Get Started with Vollie</motion.p>
