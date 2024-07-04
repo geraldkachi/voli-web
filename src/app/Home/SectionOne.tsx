@@ -73,7 +73,7 @@ const SectionOne = () => {
         </div>
 
             <div className='bg-[rgb(248,252,250)] md:bg-[#FAFAFA]'>
-                <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 px-3 md:px-0'>
+                <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 px-3 lg:px-0'>
                     <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm tracking-[-1%] leading-[160%]">PRODUCTS</span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl leading-[38.4px] md:leading-[57.6px] mt-6 font-medium md:font-semibold'>
                     Manage Your Financial Inflows, Outflows,<br className='hidden md:block' />  And Paperworks, All In One Place
@@ -95,7 +95,11 @@ const SectionOne = () => {
                     <p className='font-semibold text-xl md:text-[32px] leading-[38.4px] md:leading-[51.2px] tracking-[-3%] mb-3'>Charts of Accounts</p>
                     <p className='text-[#808080] text-sm md:text-lg leading-[23.8px] tracking-[-1%]'>See what’s going on in your finances at a glance, organize your cash flow, and face tax season confidently, like the boss that you are.</p>
 
-                    <Button title="Learn More" className="!bg-[#F2F2F3] !text-[#00000A] mt-5" />
+                    <Button title="Learn More" className="!bg-[#F2F2F3] !text-[#00000A] mt-5 !flex" suffixIcon={<>
+          <svg className="ml-5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M1 15L15 1M15 1H5.66667M15 1V10.3333" stroke="#2B2B33" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+            </>} />
                 </div>
                 <div className='col-span-3 bg-[#F4F4F4] pt-4 pl-4'>
                     <img src="chart-account.svg" alt="h-[630px]" />
