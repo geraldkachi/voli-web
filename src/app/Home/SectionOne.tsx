@@ -101,7 +101,7 @@ const SectionOne = () => {
           </svg>
             </>} />
                 </div>
-                <div className='col-span-3 bg-[#F4F4F4] pt-4 pl-4'>
+                <div className='col-span-3 bg-[#F4F4F4] pt-4 pl-4 flex items-end justify-end'>
                     <img src="chart-account.svg" alt="h-[630px]" />
                 </div>
             </div>
