@@ -97,8 +97,17 @@ const FooterTail = () => {
                         </div>
                     </div>
 
-                    <div className="max-auto max-w-5xl text-center text-xs md:text-lg leading-[36px] text-[#808080] bg-[#FAFAFA] tracking-[-1%] rounded-xl px-5 py-10">
-                        To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank.
+                    <div className="flex px-3 my-5 flex-col sm:hidden">
+                        <hr className="pt-4" />
+                    <div className="flex gap-5 items-center leading-[auto] tracking-[-1%] text-sm text-[#808084] ">
+                        <Link href="/pricing" className="hover:underline">Pricing</Link>
+                        <Link href="/contact-us" className="hover:underline">Contact Us</Link>
+                    </div>
+                    </div>
+
+                    <div className="max-auto max-w-5xl text- text-xs md:text-lg leading-[36px] text-[#808080] bg-[#FAFAFA] tracking-[-1%] rounded-xl px-5 py-10">
+                        {/* To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank. */}
+                        Vollie Finance is a Technology Platform offering financial services in partnership with <br className="hidden sm:block " /> Financial Institutions licensed by the Central Bank Of Nigeria.
                     </div>
 
                     <div className="px-3 md:px-0 py-6 flex md:items-center justify-center md:justify-between">

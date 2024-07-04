@@ -11,10 +11,12 @@ const ReadyToEnjoy = () => {
 
     <div className=" text-center pt-20 text-white animate-text whitespace-nowrap mx-3 md:mx-0">
         <div className="flex flex-col items-center mb-10">
-            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-5xl font-bold py-10 leading-10 lg:leading-[63px]">Ready to <span className="text-[#01C467]">Enjoy</span> the Use <br /> of <span className="text-[#01C467]">Affordability</span> of Streamlined <br /> Business Payments</motion.p>
-            <Button className="btn" title="Book a Demo"  />
+            {/* <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-5xl font-bold py-10 leading-10 lg:leading-[63px]">Ready to <span className="text-[#01C467]">Enjoy</span> the Use <br /> of <span className="text-[#01C467]">Affordability</span> of Streamlined <br /> Business Payments</motion.p> */}
+            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-2xl md:text-[56px] font-bold pt-10 tracking-[-3%] leading-10 lg:leading-[125%]">Get Started with Vollie</motion.p>
+            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-[#CCCCCE] text-base md:text-lg font-medium py-3">You don&apos;t have to spend countless hours each week organizing your <br className="hidden sm:block" /> business finances.</motion.p>
+            <motion.p variants={slideIn('right', 'tween', 0.2, 1)} className="text-[#CCCCCE] text-base md:text-lg font-medium py-3">Try Vollie now and say ‘hello’ to a new, better-than-ever world of <br className="hidden sm:block" />  automated financial management.</motion.p>
+            <Button className="btn !mt-5 !px-10 !py-5" title="Book a Demo"  />
         </div>
-
 
         <div className="hidden -mt-24 md:-mt-48 lg:-mt-[350px] xl:-mt-[400px] md:mb-20 sm:flex items-center justify-center">
             <img src="https://res.cloudinary.com/dejquibd1/image/upload/v1716901176/dash-ready_msbuey.svg" className=" skew- bg-center" alt="" />
