@@ -29,7 +29,7 @@ const RecentArticle = () => {
             </div>
 
 
-            <div className="max-w-5xl mx-auto my-20 px-3 lg:px-0">
+            <div className="max-w-3xl mx-auto my-20 px-3 lg:px-0">
                 <div className="flex flex-col items-center justify-center">
                     <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-xs md:text-sm font-bold leading-[19.2px] md:leading-[22.4px] tracking-[-1%]">FAQs</span>
                     <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-[32px] md:text-[48px] text-center font-semibold md:font-bold tracking-[-4%] md:tracking-[-5%] leading-[135%] mt-6'>
