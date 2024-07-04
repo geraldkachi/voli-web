@@ -53,12 +53,14 @@ const technologies = [
 const SectionOne = () => {
     return (
         <>
-            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.svg')]">
-                <div className='max-w-5xl mx-auto bg-white py-20 px-3 xl:px-0'>
-                    <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span>
-                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl md:text-4xl !leading-[160%] tracking-[-4%] mt-6'>Experience the convenience of streamlining your expense
-                        <br className='hidden md:block' /> management, payrolls, multi-level approvals, and more,
-                        <br className='hidden md:block' /> making your financial tasks a breeze!</motion.p>
+        <div className="bg-black pt-40 sm:pt-80">
+            <div className="object-cover w-full h-full bg-no-repeat bg-cover bg-center mx-auto bg-[url('/bg-lining.sv')]">
+                <div className='max-w-5xl mx-auto bg-whit py-20 px-3 xl:px-0'>
+
+                    {/* <span className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white text-sm leading-[22.4px] tracking-[-1%] sm:hidden">PRODUCTS</span> */}
+                    <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-center text-white font-semibold  text-[32px] md:text-[40px] !leading-[160%] tracking-[-4%]'>Your Business Bookkeeping,
+                        <br className='hidden md:block' /> Made Easier Than Ever.
+                    </motion.p>
 
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center gap-10 py-10'>
                         {technologies.map((item) =>
@@ -67,6 +69,7 @@ const SectionOne = () => {
                     </div>
                 </div>
             </div>
+        </div>
 
             <div className='bg-[#F8FCFA] md:bg-[#FAFAFA]'>
                 <div className='max-w-5xl mx-auto bg-[#F8FCFA] md:bg-[#FAFAFA] pt-20 px-3 md:px-0'>
