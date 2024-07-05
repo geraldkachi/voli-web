@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="bg-[#FAFAFA] md:bg-transparent">
                 <div
                     className={`max-w-7xl mx-auto flex flex-row items-center justify-center gap-5`}
-                >
+                > 
                     <div className="flex flex-col items-center my-7 md:my-16">
                         <div className="bg-[#E7FDF3] text-[#01C467] text-sm font-medium leading-[180%] rounded-3xl px-4 py-2 mb-2 w-max tracking-[-12%]">DITCH THE OVERWHELM</div>
                         <p className={`text-center text-[#00000A] text-[36px] font-extrabold md:text-7xl leading-[48.96px] md:leading-[93.6px] tracking-[-4%] md:tracking-[-5%]`}>
