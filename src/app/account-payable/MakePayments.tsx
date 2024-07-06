@@ -9,7 +9,8 @@ const MakePayments = () => {
             <div className="mx-auto max-w-5xl">
 
                 {/* <StarsCanvas /> */}
-                <div className='text-[28px] md:text-[48px] font-bold leading-[44.8px] md:leading-[74.4px] my-6 text-white tracking-[-3%] md:tracking-[-4%]'>Make <span className="text-[#01C467]">Payments</span> <br className="block md:hidden" /> anyway <br className="hidden md:block" /> you want.</div>
+                {/* <div className='text-[28px] md:text-[48px] font-bold leading-[44.8px] md:leading-[74.4px] my-6 text-white tracking-[-3%] md:tracking-[-4%]'>Make <span className="text-[#01C467]">Payments</span> <br className="block md:hidden" /> anyway <br className="hidden md:block" /> you want.</div> */}
+                <div className='text-[28px] md:text-[48px] font-bold leading-[44.8px] md:leading-[74.4px] my-6 text-white tracking-[-3%] md:tracking-[-4%]'>Settle Multiple Payments<br className="hidden md:block" /> in a Few Clicks</div>
 
                 <div className="flex flex-col sm:flex-row items-start gap-10">
                     {/* batch one */}
