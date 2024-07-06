@@ -6,7 +6,7 @@ import { slideIn } from "@/app/utils/motion"
 
 const ReadyToEnjoy = () => {
   return (
-    <div className="relative z-0 bg-gradient-to-b from-[#23232B] from-10% via-black via-70% to-[#0A0A0B] 10% to-90% max-h">
+    <div className="relative z-0 bg-gradient-to-b from-[#23232B] from-10% via-black via-70% to-[#0A0A0B] 10% to-90% sm:pb-60 md:pb-80">
     <StarsCanvas />
 
     <div className=" text-center pt-20 text-white animate-text whitespace- mx-3 md:mx-0 max-h-full">
