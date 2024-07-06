@@ -32,7 +32,7 @@ const Payrolls = ({icon, title, subtitle, index}: Props) => {
         />
       </motion.div>
 
-      <img src={icon} alt="payable" className="mt-0 bg-contain" />
+      <img src={icon} alt="payable" className={`${index == 0 && "md:bg-right-top md:pr-10"} mt-0 bg-cover bg-left-top hover:bg-contain bg bg-left-bottom`}/>
     </motion.div>
   )
 }

@@ -48,7 +48,7 @@ const Seamless = () => {
             <div className='max-w-6xl mx-auto h-full'>
 
                 <div className='grid md:grid-cols-7 gap- overflow-hidden h-full'>
-            
+
                     <div className='md:col-span-3 bg- md:py-20 px-3 lg:px-0 pt-5 !z-50'>
                         <motion.span variants={planetVariants('bottom')} className="rounded-full bg-[#01C467] px-4 py-3 max-w capitalize text-white font-bold text-xs md:text-sm leading-[22.4px] tracking-[-1%]">TESTIMONIALS</motion.span>
                         <motion.p variants={navVariants} initial="hidden" whileInView="show" className='text-2xl lg:text-[40px] font-semibold leading-9 md:leading-[55px] mt-6'>

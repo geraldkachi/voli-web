@@ -9,9 +9,9 @@ import Seamless from "./Seamless"
 import SectionOne from "./SectionOne"
 import SubFooter from "./SubFooter"
 import Tailored from "./Tailored"
-import { createClient, CreateClientParams } from "contentful"
+// import { createClient, CreateClientParams } from "contentful"
 
-import { motion, useTransform } from 'framer-motion';
+// import { motion, useTransform } from 'framer-motion';
 
 const HomeStart = () => {
   const logosLeft = ['tailored2.svg', 'tailored3.svg', 'tailored2.svg']; // Array of logos for left side
@@ -52,16 +52,16 @@ export default HomeStart
 // }
 
 
-export async function fetchGraphQL(query: any) {
-    return fetch(
-      `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
-        },
-        body: JSON.stringify({ query }),
-      }
-    ).then((response) => response.json());
-  }
+// export async function fetchGraphQL(query: any) {
+//     return fetch(
+//       `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+//         },
+//         body: JSON.stringify({ query }),
+//       }
+//     ).then((response) => response.json());
+//   }
